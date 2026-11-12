@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgofp"
+version = "0.1.0"
+description = "Prior-Guided One-Step Flow Policy (PGOFP): control-prior source distributions for one-step MeanFlow max-entropy RL"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "torch>=2.3",
+    "omegaconf>=2.3",
+    "pyyaml>=6.0",
+    "tensorboard>=2.14",
+]
+
+[project.optional-dependencies]
+mujoco = ["gymnasium[mujoco]>=1.0", "mujoco>=3.1"]
+wandb = ["wandb>=0.16"]
+analysis = ["pandas", "matplotlib", "scipy"]
+dev = ["pytest>=8", "ruff"]
+
+[project.scripts]
+pgofp = "pgofp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "mujoco: requires gymnasium[mujoco]",
+    "slow: longer-running numerical / training tests",
+]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

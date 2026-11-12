@@ -1,0 +1,16 @@
+{
+  "tiers": {
+    "stage_64": "poor"
+  },
+  "calibration": {
+    "stage_64": {
+      "return_mean": 9.0,
+      "return_std": 0.0,
+      "length_mean": 10.0,
+      "failure_rate": 1.0,
+      "episodes": 1
+    }
+  },
+  "random_action_return": 9.0,
+  "note": "tiers are derived from independent calibration seeds only"
+}

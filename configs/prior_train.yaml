@@ -1,0 +1,14 @@
+# PPO prior training entry (scripts/train_prior.py). prior steps are accounted SEPARATELY from flow online steps.
+defaults:
+  - env: half_cheetah
+  - algorithm: ppo
+  - logging: local
+
+seed: 100                       # prior_seed
+device: cpu
+output_dir: outputs/priors
+artifact_dir: artifacts/priors
+checkpoint_fractions: [0.1, 0.25, 0.5, 1.0]   # predefined training stages saved for quality tiers
+calibration:
+  seeds_base: 50000             # calibration seeds are disjoint from eval/test seeds
+  episodes: 10

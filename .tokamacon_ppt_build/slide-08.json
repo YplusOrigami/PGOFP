@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/n0d200","index":7,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/pk7uhsru","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"Profile 的储能目标与磁岛惩罚存在折中","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ojyd8nq9","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"08 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3ipcfi9o","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 式 (8)，附录 C.6–C.7.2","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/2hgv6d8j","kind":"textbox","position":{"left":58,"top":130,"width":1170,"height":58},"text":"r = exp[−5w] × (Wth / 60 kJ)","style":{"fontSize":38,"typeface":"PingFang SC","color":"#167D86","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"ch/h8re1sbq","kind":"chart","position":{"left":50,"top":222,"width":600,"height":345},"chartType":"line","title":"按原文奖励公式计算的示意曲线"},
+{"id":"sh/cnidcnql","kind":"textbox","position":{"left":205,"top":577,"width":420,"height":28},"text":"磁岛宽度 w（m）","style":{"fontSize":22,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"tb/wve5cvut","kind":"table","position":{"left":705,"top":225,"width":520,"height":250},"text":"单束动作\t范围\t零动作解码\nrdep\t0–0.85\t0.425\nwdep\t0.15–0.25\t0.20\nPin\t0.3–0.8 MW\t0.55 MW","rows":4,"cols":3},
+{"id":"sh/ql0vax8f","kind":"textbox","position":{"left":705,"top":507,"width":520,"height":42},"text":"原始零动作对应总功率 2.2 MW","style":{"fontSize":27,"typeface":"PingFang SC","color":"#C25442","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lcbupcr2","kind":"textbox","position":{"left":705,"top":567,"width":520,"height":74},"text":"文本终止：w > 0.15 m，额外惩罚 −10\n动作噪声 σa = 0.1，裁剪后仿射解码","style":{"fontSize":23,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

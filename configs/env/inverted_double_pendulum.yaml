@@ -1,0 +1,5 @@
+name: inverted_double_pendulum
+id: InvertedDoublePendulum-v5
+backend: mujoco
+controllers: [cem_mpc, ppo]
+notes: Two passive hinges and one actuated cart; public velocities clipped to [-10,10].

@@ -1,0 +1,32 @@
+[
+  {
+    "run": "halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s0__44e8f3",
+    "pid": 86661,
+    "log": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/logs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s0.resume.log"
+  },
+  {
+    "run": "halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s1__7ddeae",
+    "pid": 86662,
+    "log": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/logs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s1.resume.log"
+  },
+  {
+    "run": "halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s2__55648c",
+    "pid": 86663,
+    "log": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/logs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s2.resume.log"
+  },
+  {
+    "run": "halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.5__s0__0442b6",
+    "pid": 86664,
+    "log": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/logs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.5__s0.resume.log"
+  },
+  {
+    "run": "halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.5__s1__f29f8b",
+    "pid": 86665,
+    "log": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/logs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.5__s1.resume.log"
+  },
+  {
+    "run": "halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.5__s2__411d7c",
+    "pid": 86666,
+    "log": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/logs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.5__s2.resume.log"
+  }
+]

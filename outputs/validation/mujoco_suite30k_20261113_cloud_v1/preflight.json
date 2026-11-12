@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-11-12T17:52:41Z",
+  "device_requested": "cpu",
+  "device_selected": "cpu",
+  "validation_only": true,
+  "wandb_online_required": true,
+  "wandb": {
+    "authenticated": true,
+    "username": "yplus",
+    "default_entity": "ypluss",
+    "sdk_version": "0.31.0"
+  }
+}

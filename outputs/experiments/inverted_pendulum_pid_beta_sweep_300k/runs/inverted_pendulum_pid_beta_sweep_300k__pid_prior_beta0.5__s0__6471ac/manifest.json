@@ -1,0 +1,38 @@
+{
+  "run_id": "inverted_pendulum_pid_beta_sweep_300k__pid_prior_beta0.5__s0__6471ac",
+  "parent_run_id": null,
+  "outcome": "failed",
+  "config_hash": "c2b79071cd7e48d5",
+  "provenance": {
+    "utc_time": "2026-11-04T08:06:36Z",
+    "python": "3.12.11",
+    "platform": "macOS-15.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.4.0",
+      "tensorboard": "2.21.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch_threads": 1,
+    "git": null
+  },
+  "env_spec_hash": "f7dc42d066cad79e",
+  "controller_versions": [
+    "ipend_pid_v1"
+  ],
+  "smoke": false,
+  "updated_utc": "2026-11-04T08:06:36Z",
+  "summary": {
+    "outcome": "failed",
+    "env_transitions": 10000,
+    "gradient_steps": 5001,
+    "wall_time_sec": 1393.4523360729218,
+    "best_eval_return": 104.0
+  }
+}

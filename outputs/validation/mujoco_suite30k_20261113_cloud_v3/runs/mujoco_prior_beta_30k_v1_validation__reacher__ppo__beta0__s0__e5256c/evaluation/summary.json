@@ -1,0 +1,17 @@
+{
+  "outcome": "completed",
+  "env_transitions": 24,
+  "gradient_steps": 9,
+  "wall_time_sec": 1.2076148986816406,
+  "best_eval_return": -8.60937391269562,
+  "final_eval": {
+    "eval/return_mean": -10.574110964412714,
+    "eval/return_std": 0.0,
+    "eval/length_mean": 8.0,
+    "eval/failure_rate": 0.0,
+    "eval/episodes": 1.0,
+    "eval/action_saturation": 0.0,
+    "eval/action_smoothness": 0.791748183114188,
+    "eval/final_distance": 0.33128965094148516
+  }
+}

@@ -1,0 +1,4 @@
+name: half_cheetah
+id: HalfCheetah-v5
+backend: mujoco
+controllers: [ppo]

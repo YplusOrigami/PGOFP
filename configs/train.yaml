@@ -1,0 +1,49 @@
+# Training entry: groups are selected with `group=name` overrides, leaves with dotted overrides.
+#   python scripts/train.py env=reacher algorithm=prior_flame_m prior=pid source=constant seed=0
+defaults:
+  - algorithm: prior_flame_m
+  - env: inverted_pendulum
+  - prior: pid
+  - source: constant
+  - logging: local
+
+seed: 0
+device: auto
+output_dir: outputs/runs
+resume: null
+resume_mode: episode_restart   # exact_resume | episode_restart | weights_only
+
+train:
+  num_envs: 1
+  total_env_steps: 1000000
+  learning_starts: 5000
+  utd_ratio: 1.0
+  batch_size: 256
+  warmup_source: uniform_action
+  max_grad_norm: 10.0
+  actor_update_interval: 1
+  log_interval: 1000
+
+replay:
+  capacity: 1000000
+
+network:
+  actor_hidden: [256, 256, 256]
+  critic_hidden: [256, 256, 256]
+
+optimizer:
+  actor_lr: 3.0e-4
+  critic_lr: 3.0e-4
+  alpha_lr: 3.0e-4
+
+condition:
+  mode: public_state
+  use_controller_features: false
+
+eval:
+  interval: 10000
+  episodes: 10
+  seed_base: 10000
+
+checkpoint:
+  interval: 50000

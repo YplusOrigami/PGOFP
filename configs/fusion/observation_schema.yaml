@@ -1,0 +1,19 @@
+# PLACEHOLDER schema. The real 64-D HFM field order / units are NOT available yet, so NO indices are invented.
+# Real runs refuse to start while verified: false.
+verified: false
+source: pending_hfm_sdk
+obs_dim: 64
+fields:                      # names from the proposal only; index/count/unit to be filled from the SDK
+  - {name: plasma_current_Ip,   unit: A,   index: null}
+  - {name: position_R_Z,        unit: m,   index: null}
+  - {name: lcfs_contour,        unit: m,   index: null}
+  - {name: x_point_position,    unit: m,   index: null}
+  - {name: x_point_flux,        unit: Wb,  index: null}
+  - {name: flux_loops,          unit: Wb,  index: null}
+mock_fields:                 # used ONLY by the mock backend (tests the interface, proves nothing about HFM)
+  - {name: Ip_error, unit: normalized, index: 0}
+  - {name: R_error, unit: normalized, index: 1}
+  - {name: Z_error, unit: normalized, index: 2}
+  - {name: Ip_rate, unit: normalized, index: 3}
+  - {name: R_rate, unit: normalized, index: 4}
+  - {name: Z_rate, unit: normalized, index: 5}

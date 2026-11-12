@@ -1,0 +1,64 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run la76hxwd
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s2__2f4812/wandb/run-20261020_232044-la76hxwd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run halfcheetah_gaussian_300k__gaussian_flame__s2
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/la76hxwd
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: updating run metadata
+wandb: updating run metadata; uploading history steps 298-299, summary
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792509645.wuaijiadeMacBook-Air-2.local.76723.0
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792509645.wuaijiadeMacBook-Air-2.local.76723.0; uploading data
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792509645.wuaijiadeMacBook-Air-2.local.76723.0
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792509645.wuaijiadeMacBook-Air-2.local.76723.0; uploading data
+wandb: uploading events.out.tfevents.1792509645.wuaijiadeMacBook-Air-2.local.76723.0
+wandb: uploading data
+wandb: 
+wandb: Run history:
+wandb: actions/behavior_saturation_frac ▁▂▁▁▂▃▃▃▃▆▅▆▅▆▆█▇▇▇▇▇▇▇▇▆▇▇▇▇▃▇▇▇█▇█▇▇▄▇
+wandb:                actions/norm_mean ▁▂▃▄▃▄▅▅▅▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇██▇█▇▇██▇█▇▇█
+wandb:          actions/saturation_frac ▁▁▂▂▃▃▄▄▅▄▅▄▅▅▅▆▆▆▅▅▆▆▆▇▇▆▆▅▅▆▆▇█▇▇▆▇▅▆▇
+wandb:                  actor/clip_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▃▃▃▃▄▄▄▅▅▅▅▅▆▆▆▇▇▇▇█
+wandb:                  actor/grad_norm ▁▂▂▃▃▃▃▃▄▄▄▅▅▅▅▅▅▅▅▅▆▆▆▇▇▇▇▇▇▇▇▇▇███████
+wandb:                            alpha ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                 charts/env_steps ▁▁▁▁▁▂▂▂▂▂▃▃▃▄▄▄▄▄▄▄▄▄▄▅▅▅▆▆▆▆▆▆▆▆▆▇▇▇██
+wandb:            charts/episode_length ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:            charts/episode_return ▂▂▃▃▃▃▄▄▁▄▅▆▆▆▆▇▇▆▇▇▇▇▇▇▇▇▇█▇▇██████████
+wandb:                  charts/episodes ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                              +68 ...
+wandb: 
+wandb: Run summary:
+wandb: actions/behavior_saturation_frac 0.16633
+wandb:                actions/norm_mean 1.98146
+wandb:          actions/saturation_frac 0.15169
+wandb:                  actor/clip_rate 0.0125
+wandb:                  actor/grad_norm 6.31654
+wandb:                            alpha 0.1
+wandb:                 charts/env_steps 300000
+wandb:            charts/episode_length 1000
+wandb:            charts/episode_return 9258.846
+wandb:                  charts/episodes 1
+wandb:                              +68 ...
+wandb: 
+wandb: 🚀 View run halfcheetah_gaussian_300k__gaussian_flame__s2 at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/la76hxwd
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s2__2f4812/wandb/run-20261020_232044-la76hxwd/logs
+{
+  "outcome": "completed",
+  "env_transitions": 300000,
+  "gradient_steps": 295001,
+  "wall_time_sec": 53487.327849149704,
+  "best_eval_return": 9478.766128684485
+}
+run dir: outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s2__2f4812

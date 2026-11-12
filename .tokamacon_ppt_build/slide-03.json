@@ -1,0 +1,13 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/gv6zp4","index":2,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/4zitgfqt","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"IsoFlux 的线性响应与执行器动力学","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/p0ra9k7e","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"03 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/q10bip8j","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 §3.1，附录 C.4，表 6–7","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/r29sbup4","kind":"textbox","position":{"left":60,"top":130,"width":630,"height":62},"text":"ẋ = Ax + Bu","style":{"fontSize":43,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/c3itkfqp","kind":"textbox","position":{"left":60,"top":205,"width":650,"height":60},"text":"y = C(x − xeq) + yeq","style":{"fontSize":38,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/d4radk7a","kind":"textbox","position":{"left":60,"top":289,"width":670,"height":45},"text":"x ∈ ℝ¹⁷²     u ∈ ℝ¹⁶     y ∈ ℝ¹⁸⁸","style":{"fontSize":29,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/e5kbmp8v","kind":"textbox","position":{"left":60,"top":359,"width":665,"height":90},"text":"12 主动电流 + 158 被动模态\n+ 等离子体电流 + 垂直运动状态","style":{"fontSize":27,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"tb/sr29w7u1","kind":"table","position":{"left":755,"top":137,"width":470,"height":350},"text":"模型与执行器\t原始实例设置\n策略动作\t12 路 PF / CS 电压\nCS / PF 限幅\t±300 V / ±900 V\n动作延迟\t5 ms，即 5 个控制步\n数值推进\t100 × 10 μs RK3","rows":5,"cols":2},
+{"id":"sh/90vulori","kind":"textbox","position":{"left":60,"top":534,"width":1120,"height":45},"text":"内部 VS 控制环已抑制垂直不稳定模态","style":{"fontSize":30,"typeface":"PingFang SC","color":"#C25442","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ozmdcjax","kind":"textbox","position":{"left":60,"top":591,"width":1130,"height":38},"text":"λ ≈ +225.85 s⁻¹，增长时间约 4.43 ms；策略不控制该回路","style":{"fontSize":24,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

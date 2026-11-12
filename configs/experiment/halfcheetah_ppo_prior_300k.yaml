@@ -1,0 +1,24 @@
+# EXPLORATORY: same budget/seeds/project as halfcheetah_gaussian_300k, but with a frozen PPO prior as the source.
+# Prior: half_cheetah_ppo_seed100/stage_1000000 (tier=good by INDEPENDENT calibration seeds). native pre-tanh (mu, log_std), beta=0.75.
+matrix:
+  name: halfcheetah_ppo_prior_300k
+  seeds: [0, 1, 2]
+  base_overrides:
+    - env=half_cheetah
+    - algorithm=prior_flame_m
+    - prior=ppo
+    - prior.distribution=native
+    - prior.artifact_path=/Volumes/T7/projects/PGOFP/artifacts/priors/half_cheetah_ppo_seed100/stage_1000000
+    - source=constant
+    - source.beta=0.75
+    - logging=wandb_online
+    - logging.wandb.entity=ypluss
+    - logging.wandb.project=pgofp-half_cheetah-exploratory
+    - logging.wandb.upload_artifacts=false
+    - "tags=[exploratory,budget300k,ppo_prior_good]"
+    - train.total_env_steps=300000
+    - eval.interval=10000
+    - eval.episodes=10
+    - checkpoint.interval=50000
+  variants:
+    - {name: ppo_prior_native, overrides: []}

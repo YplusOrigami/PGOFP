@@ -1,0 +1,652 @@
+{
+  "created_utc": "2026-11-12T17:59:22Z",
+  "validation_only": true,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "local": {
+    "all_passed": true,
+    "checks": [
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0__bceb89",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "nio50poa",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/nio50poa",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0__c96b52",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "5ntkm5dk",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/5ntkm5dk",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0__49a0d6",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "gni4wev9",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/gni4wev9",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0__5fd955",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "9h1w426f",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/9h1w426f",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0__24cebe",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "79nizf9x",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/79nizf9x",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0__17ded9",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "v6k9wxuc",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/v6k9wxuc",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__c3a4e0",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "0dgaadl7",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/0dgaadl7",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0__71517f",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "9igq96mi",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/9igq96mi",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0__c5080d",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "x7f8xj77",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/x7f8xj77",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0__d50dd9",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "i926negd",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/i926negd",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0__010f0b",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "z6tf1zwb",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/z6tf1zwb",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0__11f76b",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "t7hvhccb",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/t7hvhccb",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__85ff7b",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "qn33tyqs",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/qn33tyqs",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0__ddd7db",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "ys42gmy1",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/ys42gmy1",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__67aa94",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "z889enlp",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/z889enlp",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0__1130a6",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "4jzeitwc",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/4jzeitwc",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0__089846",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "zdf32zfg",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/zdf32zfg",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0__b2122d",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "w68ttwoq",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/w68ttwoq",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0__25b07e",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "szmr6ziv",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/szmr6ziv",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0__d841af",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "7q64qxpo",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/7q64qxpo",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0__6bfc54",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "w46tkl5h",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/w46tkl5h",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0__52ca2f",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "fx9qvja8",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fx9qvja8",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0__fa9b24",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "a91pgij7",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/a91pgij7",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0__660b26",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "fln6rway",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fln6rway",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0__001c27",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "dvvi84lp",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/dvvi84lp",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0__10d158",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "6rcrf1az",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/6rcrf1az",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0__eb102e",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "dhuh7fq7",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/dhuh7fq7",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__135b9e",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "psyhauul",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/psyhauul",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__223535",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "raoyqou8",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/raoyqou8",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__11af2b",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "z4pdcoki",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/z4pdcoki",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online"
+        }
+      }
+    ]
+  },
+  "cloud": {
+    "all_passed": false,
+    "checks": [
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/nio50poa",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/5ntkm5dk",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/gni4wev9",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/9h1w426f",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/79nizf9x",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/v6k9wxuc",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/0dgaadl7",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/9igq96mi",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/x7f8xj77",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/i926negd",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/z6tf1zwb",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/t7hvhccb",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/qn33tyqs",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/ys42gmy1",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/z889enlp",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/4jzeitwc",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/zdf32zfg",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/w68ttwoq",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/szmr6ziv",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/7q64qxpo",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/w46tkl5h",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fx9qvja8",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/a91pgij7",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fln6rway",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/dvvi84lp",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/6rcrf1az",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/dhuh7fq7",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/psyhauul",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/raoyqou8",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0",
+        "ok": false,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/z4pdcoki",
+        "state": "finished",
+        "eval_and_loss_curves_visible": false
+      }
+    ]
+  }
+}

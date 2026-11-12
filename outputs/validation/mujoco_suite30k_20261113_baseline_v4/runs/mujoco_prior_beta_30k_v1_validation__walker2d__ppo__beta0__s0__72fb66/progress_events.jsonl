@@ -1,0 +1,21 @@
+{"stage": "initializing", "current": 0, "total": 1, "unit": "tasks", "message": "", "status": "running", "updated_at": 1794508506.8373692}
+{"stage": "prior_evaluation", "current": 0, "total": 1, "unit": "episodes", "message": "native_stochastic", "status": "running", "updated_at": 1794508509.5622709}
+{"stage": "prior_evaluation", "current": 1, "total": 1, "unit": "episodes", "message": "episode_step=8/8", "status": "running", "updated_at": 1794508509.570174}
+{"stage": "prior_evaluation_deterministic", "current": 0, "total": 1, "unit": "episodes", "message": "native_stochastic", "status": "running", "updated_at": 1794508509.572732}
+{"stage": "prior_evaluation_deterministic", "current": 1, "total": 1, "unit": "episodes", "message": "episode_step=8/8", "status": "running", "updated_at": 1794508509.58064}
+{"stage": "warmup", "current": 0, "total": 16, "unit": "steps", "message": "gradient_steps=0", "status": "running", "updated_at": 1794508509.642418}
+{"stage": "warmup", "current": 16, "total": 16, "unit": "steps", "message": "gradient_steps=1", "status": "running", "updated_at": 1794508509.838179}
+{"stage": "flow_training", "current": 16, "total": 24, "unit": "steps", "message": "gradient_steps=1", "status": "running", "updated_at": 1794508509.8922}
+{"stage": "flow_training", "current": 24, "total": 24, "unit": "steps", "message": "gradient_steps=9", "status": "running", "updated_at": 1794508510.700757}
+{"stage": "flow_evaluation", "current": 0, "total": 1, "unit": "episodes", "message": "", "status": "running", "updated_at": 1794508510.7806752}
+{"stage": "flow_evaluation", "current": 1, "total": 1, "unit": "episodes", "message": "env_steps=24; episode_step=8/8", "status": "running", "updated_at": 1794508510.791065}
+{"stage": "flow_evaluation", "current": 1, "total": 1, "unit": "episodes", "message": "env_steps=24; episode_step=8/8", "status": "running", "updated_at": 1794508510.8004842}
+{"stage": "checkpoint", "current": 0, "total": 1, "unit": "files", "message": "best", "status": "running", "updated_at": 1794508510.81234}
+{"stage": "checkpoint", "current": 1, "total": 1, "unit": "files", "message": "best", "status": "running", "updated_at": 1794508510.845398}
+{"stage": "checkpoint", "current": 1, "total": 1, "unit": "files", "message": "last", "status": "running", "updated_at": 1794508510.881623}
+{"stage": "checkpoint", "current": 1, "total": 1, "unit": "files", "message": "last", "status": "running", "updated_at": 1794508510.9132328}
+{"stage": "checkpoint", "current": 1, "total": 1, "unit": "files", "message": "final", "status": "running", "updated_at": 1794508510.94073}
+{"stage": "flow_evaluation", "current": 0, "total": 1, "unit": "episodes", "message": "", "status": "running", "updated_at": 1794508510.945249}
+{"stage": "flow_evaluation", "current": 1, "total": 1, "unit": "episodes", "message": "env_steps=24; episode_step=8/8", "status": "running", "updated_at": 1794508510.9518661}
+{"stage": "flow_evaluation", "current": 1, "total": 1, "unit": "episodes", "message": "env_steps=24; episode_step=8/8", "status": "running", "updated_at": 1794508510.9586391}
+{"stage": "completed", "current": 24, "total": 24, "unit": "steps", "message": "", "status": "completed", "updated_at": 1794508510.969388}

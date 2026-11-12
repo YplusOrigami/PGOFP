@@ -1,0 +1,157 @@
+seed: 0
+run_name: mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0
+output_dir: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs
+device: cpu
+resume: null
+resume_mode: episode_restart
+train:
+  num_envs: 1
+  total_env_steps: 24
+  learning_starts: 16
+  utd_ratio: 1.0
+  batch_size: 256
+  warmup_source: uniform_action
+  max_grad_norm: 10.0
+  actor_update_interval: 1
+  log_interval: 8
+  sync_device_timing: false
+replay:
+  capacity: 64
+network:
+  actor_hidden:
+  - 256
+  - 256
+  - 256
+  critic_hidden:
+  - 256
+  - 256
+  - 256
+  time_embed_dim: 32
+  time_max_freq: 4.0
+  actor_activation: silu
+  critic_activation: relu
+  layer_norm: false
+optimizer:
+  actor_lr: 0.0003
+  critic_lr: 0.0003
+  alpha_lr: 0.0003
+algorithm:
+  name: prior_flame_m
+  gamma: 0.99
+  target_tau: 0.005
+  K_train: 32
+  K_local: 16
+  sigma_local: 0.3
+  K_exec: 1
+  K_eval: 1
+  actor_objective: reverse_qrmf
+  use_entropy: true
+  zt_proposal: standard_normal
+  source_scope:
+  - behavior
+  - actor
+  - target
+  atanh_eps: 0.001
+  flow:
+    time_delta: 0.02
+    flow_ratio: 0.5
+    time_sampling: uniform
+    logit_mean: -0.4
+    logit_std: 1.0
+  temperature:
+    mode: fixed
+    alpha: 0.1
+    target_entropy: auto
+    alpha_min: 0.001
+    alpha_max: 10.0
+  density:
+    method: continuous_inverse_proxy
+    steps: 5
+    solver: heun
+    trace: hutchinson
+    n_trace_samples: 1
+    chunk_size: 8192
+    grid:
+    - 0.0
+    - 0.5
+    - 1.0
+    logdet: full
+  params: {}
+  forces: {}
+  inherits: null
+env:
+  name: walker2d
+  id: Walker2d-v5
+  backend: mujoco
+  kwargs: {}
+  normalize_obs: true
+  obs_clip: 10.0
+  reward_scale: 1.0
+  controllers:
+  - ppo
+  notes: ''
+prior:
+  type: ppo
+  controller_config: null
+  controller: {}
+  artifact_path: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/validation_priors/walker2d_ppo_seed100/stage_64
+  distribution: native
+  components: []
+  fallback: gaussian
+  model_access: observation_model
+  cache_in_replay: true
+source:
+  kind: prior_mixture
+  schedule: constant
+  beta: 0.5
+  sigma_prior: 0.3
+  sigma_base: 1.0
+  sigma_min: 0.05
+  sigma_max: 2.0
+  std_multiplier: 1.0
+  total_steps: 1000000
+  beta_start: 0.0
+  beta_end: 0.75
+  sigma_start: 1.0
+  sigma_end: 0.3
+  points: []
+  max_delta: 0.0
+condition:
+  mode: public_state
+  use_reference: true
+  use_phase: true
+  use_controller_features: false
+  source_features: auto
+  reference_scale: 1.0
+logging:
+  jsonl: true
+  tensorboard: true
+  flush_every: 1
+  wandb:
+    mode: online
+    project: pgofp-smoke
+    entity: ypluss
+    group: mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5
+    tags: []
+    upload_artifacts: false
+    require_online: true
+  histogram_interval: 0
+  video_interval: 0
+eval:
+  interval: 24
+  episodes: 1
+  seed_base: 10000
+  max_steps: 8
+  condition_bank_size: 0
+  representative_action: false
+checkpoint:
+  interval: 24
+  save_replay: true
+  best_metric: eval/return_mean
+tags:
+- mujoco_prior_beta_30k_v1_validation
+- budget30k
+- ppo
+- beta_sweep
+notes: ''
+smoke: true

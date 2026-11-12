@@ -1,0 +1,8 @@
+{
+  "outcome": "completed",
+  "env_transitions": 3000,
+  "gradient_steps": 0,
+  "wall_time_sec": 2.272486925125122,
+  "best_eval_return": 56.6
+}
+run dir: outputs/experiments/validation_small/runs/validation_small__pid_noisy_source_only__s1__f450d4

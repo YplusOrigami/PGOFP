@@ -1,0 +1,10 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/5phqbg","index":11,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/65kfy9s3","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"Profile：相近奖励掩盖了动作边界使用差异","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/t8vytore","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"12 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/s7mx0jat","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 表 3，§4.3，附录 C.8.4","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"ch/36t4r69s","kind":"chart","position":{"left":48,"top":140,"width":575,"height":367},"chartType":"bar","title":"评估奖励"},
+{"id":"ch/i5kni187","kind":"chart","position":{"left":655,"top":140,"width":575,"height":367},"chartType":"bar","title":"论文报告的饱和指标"},
+{"id":"sh/1cvyxorq","kind":"textbox","position":{"left":58,"top":548,"width":1160,"height":44},"text":"奖励范围仅 0.0091，饱和指标最大相差约 20.5 倍","style":{"fontSize":30,"typeface":"PingFang SC","color":"#167D86","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/gbmh43a5","kind":"textbox","position":{"left":58,"top":610,"width":1160,"height":40},"text":"统计包含位置、宽度和功率通道；缺少误差条，不能直接判断微小差异显著","style":{"fontSize":24,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

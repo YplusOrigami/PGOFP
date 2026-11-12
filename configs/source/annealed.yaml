@@ -1,0 +1,11 @@
+# Slow annealing: beta up / sigma down over total_steps. Source parameters become network inputs (source_features=auto).
+kind: prior_mixture
+schedule: linear
+beta_start: 0.0
+beta_end: 0.75
+sigma_start: 1.0
+sigma_end: 0.3
+beta: 0.75
+sigma_prior: 0.3
+total_steps: 1000000
+max_delta: 0.0

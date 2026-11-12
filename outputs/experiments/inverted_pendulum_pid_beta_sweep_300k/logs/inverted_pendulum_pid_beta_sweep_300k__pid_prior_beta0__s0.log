@@ -1,0 +1,51 @@
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/experiments/inverted_pendulum_pid_beta_sweep_300k/runs/inverted_pendulum_pid_beta_sweep_300k__pid_prior_beta0__s0__4110f8/wandb/offline-run-20261104_154310-8am8cwnf
+wandb: View this run in the terminal with `wandb leet`
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /Volumes/T7/projects/PGOFP/outputs/experiments/inverted_pendulum_pid_beta_sweep_300k/runs/inverted_pendulum_pid_beta_sweep_300k__pid_prior_beta0__s0__4110f8/wandb/offline-run-20261104_154310-8am8cwnf
+wandb: Find logs at: ./outputs/experiments/inverted_pendulum_pid_beta_sweep_300k/runs/inverted_pendulum_pid_beta_sweep_300k__pid_prior_beta0__s0__4110f8/wandb/offline-run-20261104_154310-8am8cwnf/logs
+Traceback (most recent call last):
+  File "/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/serialization.py", line 1003, in save
+    _save(
+  File "/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/serialization.py", line 1312, in _save
+    zip_file.write_record(name, storage, num_bytes)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/checkpoint.py", line 49, in save
+    torch.save(state, f)
+  File "/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/serialization.py", line 1002, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/serialization.py", line 854, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:672] . unexpected pos 957632 vs 957520
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Volumes/T7/projects/PGOFP/scripts/train.py", line 8, in <module>
+    sys.exit(COMMANDS["train"](sys.argv[1:]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/cli.py", line 58, in train
+    summary = runner.train()
+              ^^^^^^^^^^^^^^
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/runner.py", line 198, in train
+    self._loop()
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/runner.py", line 285, in _loop
+    self._evaluate()
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/runner.py", line 329, in _evaluate
+    self.save_checkpoint("best", with_replay=False)
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/runner.py", line 348, in save_checkpoint
+    path = self.ckpt.save(name, state, replay=self.replay if (with_replay and name == "last") else None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/checkpoint.py", line 48, in save
+    with open(tmp, "wb") as f:
+         ^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device

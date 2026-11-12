@@ -1,0 +1,29 @@
+{
+  "schema": "pgofp.prior_artifact.v1",
+  "created_utc": "2026-11-12T18:32:32Z",
+  "env_id": "HalfCheetah-v5",
+  "obs_dim": 17,
+  "action_dim": 6,
+  "action_low": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "action_high": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "distribution": "tanh_gaussian",
+  "prior_seed": 100,
+  "stateful": false,
+  "smoke": true,
+  "requested_prior_steps": 64,
+  "content_hash": "12f26eb882074ec8f69148ea77f78af440ad7c63468a555e2fdc43c3dd4c4009"
+}

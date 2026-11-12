@@ -1,0 +1,5 @@
+name: reacher
+id: Reacher-v5
+backend: mujoco
+controllers: [pid, cem_mpc, ppo]
+notes: Standard reward/termination. Target is in the public observation; IK reference is controller-side only.

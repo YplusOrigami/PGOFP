@@ -1,0 +1,9 @@
+{
+  "experiment": "inverted_pendulum_pid_beta_sweep_300k_retry1",
+  "restart_from_scratch": true,
+  "previous_experiment": "inverted_pendulum_pid_beta_sweep_300k",
+  "reason": "Previous seed0 runs failed with ENOSPC during checkpoint creation. New directory passed 8 MiB write/fsync/atomic rename/readback test; original root cause remains unconfirmed.",
+  "wandb_mode": "offline",
+  "seed_order": "One seed across all three beta values, then next seed",
+  "max_parallel": 3
+}

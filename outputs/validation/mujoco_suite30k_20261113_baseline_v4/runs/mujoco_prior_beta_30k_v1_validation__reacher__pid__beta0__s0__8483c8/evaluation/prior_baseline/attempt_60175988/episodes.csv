@@ -1,0 +1,2 @@
+mode,seed,ret,length,terminated,truncated,extras
+prior_eval,10000,-7.652098471107861,8,False,True,"{'action_saturation': 0.25, 'action_smoothness': 0.23597850969859532, 'reward_dist': -0.16457637508373618, 'final_distance': 0.16457637508373618, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.06260425016080262, 'prior/atanh_clamp_ratio': 0.25}"

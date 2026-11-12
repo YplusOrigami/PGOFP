@@ -1,0 +1,26 @@
+# CEM sampling MPC. Planning model: independent MjModel, state reconstructed from the PUBLIC observation only
+# (model_access=observation_model). No warm start; query randomness fixed by (obs, seed).
+name: cem_mpc
+version: cem_mpc_v1
+model_access: observation_model
+horizon: 10
+population: 64
+elite_fraction: 0.125
+iterations: 3
+init_std: 0.5
+min_std: 0.05
+timeout_s: 0.5
+tasks:
+  InvertedPendulum-v5:
+    horizon: 15
+    population: 128
+    iterations: 5
+    init_std: 0.4
+    elite_fraction: 0.1
+    cost: {w_x: 3.0, w_xdot: 1.0, w_theta: 20.0}
+  Reacher-v5:
+    horizon: 10
+    population: 64
+    iterations: 4
+    init_std: 0.5
+    cost: {w_u: 0.1}

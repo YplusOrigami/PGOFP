@@ -1,0 +1,50 @@
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Using an existing wandb-core service via WANDB_SERVICE.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run fkekli2q
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v3/prior_training/walker2d_3d782b15/walker2d_ppo_seed100/wandb/run-20261113_020853-fkekli2q
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run walker2d_ppo_seed100
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fkekli2q
+wandb: updating run metadata
+wandb: uploading wandb-metadata.json; uploading requirements.txt; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 0-0, summary
+wandb: 
+wandb: Run history:
+wandb:        charts/env_steps ▁
+wandb:   charts/episode_length ▁
+wandb:   charts/episode_return ▁
+wandb: charts/steps_per_second ▁
+wandb:  charts/terminated_frac ▁
+wandb:      entropy/gaussian_z ▁
+wandb:             loss/policy ▁
+wandb:              loss/value ▁
+wandb:           ppo/approx_kl ▁
+wandb:           ppo/clip_frac ▁
+wandb: 
+wandb: Run summary:
+wandb:        charts/env_steps 64
+wandb:   charts/episode_length 22.5
+wandb:   charts/episode_return 4.81958
+wandb: charts/steps_per_second 2994.29392
+wandb:  charts/terminated_frac 1
+wandb:      entropy/gaussian_z 5.51363
+wandb:             loss/policy 0.0
+wandb:              loss/value 12.06089
+wandb:                 outcome completed
+wandb:           ppo/approx_kl -0.0
+wandb:                      +3 ...
+wandb: 
+wandb: 🚀 View run walker2d_ppo_seed100 at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fkekli2q
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: Synced 4 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./outputs/validation/mujoco_suite30k_20261113_cloud_v3/prior_training/walker2d_3d782b15/walker2d_ppo_seed100/wandb/run-20261113_020853-fkekli2q/logs
+{
+  "artifact_root": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v3/validation_priors/walker2d_ppo_seed100",
+  "tiers": {
+    "stage_64": "good"
+  }
+}

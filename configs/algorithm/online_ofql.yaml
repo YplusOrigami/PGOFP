@@ -1,0 +1,18 @@
+# FBC + differentiable-Q guidance baseline (NOT FLAME). Uses eta/q_scale, never alpha_ent.
+name: online_ofql
+gamma: 0.99
+target_tau: 0.005
+K_exec: 1
+K_eval: 1
+flow:
+  time_delta: 0.02
+  flow_ratio: 0.5
+  time_sampling: uniform
+params:
+  eta: 0.1                 # Q weight coefficient; alpha_q = eta / EMA(|Q|)
+  q_ema: 0.99
+  explore_sigma: 0.1       # external Gaussian exploration noise (normalized action coords)
+  explore_sigma_final: 0.02
+  explore_anneal_steps: 200000
+forces:
+  source.kind: gaussian      # OFQL is defined with the standard Gaussian source

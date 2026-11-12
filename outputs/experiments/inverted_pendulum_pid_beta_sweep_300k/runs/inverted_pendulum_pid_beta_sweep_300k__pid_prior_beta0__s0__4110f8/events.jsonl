@@ -1,0 +1,2 @@
+{"utc": "2026-11-04T08:06:05Z", "kind": "checkpoint", "name": "best", "env_transitions": 10000, "path": "/Volumes/T7/projects/PGOFP/outputs/experiments/inverted_pendulum_pid_beta_sweep_300k/runs/inverted_pendulum_pid_beta_sweep_300k__pid_prior_beta0__s0__4110f8/checkpoints/best.pt"}
+{"utc": "2026-11-04T09:33:13Z", "kind": "exception", "env_transitions": 30000, "error": "OSError: [Errno 28] No space left on device"}

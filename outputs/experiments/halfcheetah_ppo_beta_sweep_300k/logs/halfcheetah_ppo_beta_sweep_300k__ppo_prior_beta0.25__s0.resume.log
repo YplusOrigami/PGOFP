@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "/Volumes/T7/projects/PGOFP/scripts/train.py", line 5, in <module>
+    from pgofp.cli import COMMANDS
+ModuleNotFoundError: No module named 'pgofp'
+Traceback (most recent call last):
+  File "/Volumes/T7/projects/PGOFP/scripts/train.py", line 5, in <module>
+    from pgofp.cli import COMMANDS
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/cli.py", line 10, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run obcguv32
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/runs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s0__44e8f3/wandb/run-20261030_031327-obcguv32
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run HalfCheetah-v5__prior_flame_m__ppo-b0.25__s0__b94d3828
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/obcguv32
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading ._events.out.tfevents.1793301209.wuaijiadeMacBook-Air-2.local.86661.0
+wandb: uploading summary
+wandb: 
+wandb: Run summary:
+wandb: actions/behavior_saturation_frac 0.1645
+wandb:                actions/norm_mean 2.00524
+wandb:          actions/saturation_frac 0.13932
+wandb:                  actor/clip_rate 0.00834
+wandb:                  actor/grad_norm 5.86153
+wandb:                            alpha 0.1
+wandb:                 charts/env_steps 286000
+wandb:            charts/episode_length 1000
+wandb:            charts/episode_return 8818.53
+wandb:                  charts/episodes 1
+wandb:                              +70 ...
+wandb: 
+wandb: 🚀 View run HalfCheetah-v5__prior_flame_m__ppo-b0.25__s0__b94d3828 at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/obcguv32
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./outputs/experiments/halfcheetah_ppo_beta_sweep_300k/runs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s0__44e8f3/wandb/run-20261030_031327-obcguv32/logs
+{
+  "outcome": "completed",
+  "env_transitions": 300000,
+  "gradient_steps": 295001,
+  "wall_time_sec": 20929.61670398712,
+  "best_eval_return": 8888.657642981283
+}
+run dir: /Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta_sweep_300k/runs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s0__44e8f3

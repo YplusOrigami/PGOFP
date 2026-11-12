@@ -1,0 +1,7 @@
+{
+  "inverted_pendulum": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v1/validation_priors/inverted_pendulum_ppo_seed100/stage_64",
+    "status": "preparing",
+    "updated_utc": "2026-11-12T17:52:43Z"
+  }
+}

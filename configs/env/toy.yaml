@@ -1,0 +1,6 @@
+name: toy
+id: ToyReach-v0
+backend: toy
+kwargs: {action_dim: 2, horizon: 20}
+controllers: []
+notes: Deterministic toy for tests and smoke; has exact snapshots.

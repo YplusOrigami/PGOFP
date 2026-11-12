@@ -1,0 +1,5 @@
+activation: tanh
+algorithm: ppo
+hidden_dims:
+- 64
+- 64

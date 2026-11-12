@@ -1,0 +1,56 @@
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Using an existing wandb-core service via WANDB_SERVICE.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run qzrkuc5t
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v3/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__13c512/wandb/run-20261113_021114-qzrkuc5t
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/qzrkuc5t
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: updating run metadata
+wandb: uploading requirements.txt; uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading wandb-metadata.json
+wandb: uploading requirements.txt; uploading output.log; uploading config.yaml
+wandb: uploading history steps 0-4, summary, console lines 0-1
+wandb: 
+wandb: Run history:
+wandb: actions/behavior_saturation_frac ▁
+wandb:                actions/norm_mean ▁█
+wandb:          actions/saturation_frac █▁
+wandb:                  actor/clip_rate ▁▁
+wandb:                  actor/grad_norm █▁
+wandb:                            alpha ▁▁
+wandb:                 charts/env_steps ▁▅███
+wandb:            charts/episode_length ▁
+wandb:            charts/episode_return ▁
+wandb:                  charts/episodes ▁
+wandb:                              +56 ...
+wandb: 
+wandb: Run summary:
+wandb: actions/behavior_saturation_frac 0
+wandb:                actions/norm_mean 1.53001
+wandb:          actions/saturation_frac 0.00846
+wandb:                  actor/clip_rate 0
+wandb:                  actor/grad_norm 0.0543
+wandb:                            alpha 0.1
+wandb:                 best_eval_return 6.19658
+wandb:                 charts/env_steps 24
+wandb:            charts/episode_length 17
+wandb:            charts/episode_return -0.7207
+wandb:                              +61 ...
+wandb: 
+wandb: 🚀 View run mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0 at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/qzrkuc5t
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./outputs/validation/mujoco_suite30k_20261113_cloud_v3/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__13c512/wandb/run-20261113_021114-qzrkuc5t/logs
+{
+  "outcome": "completed",
+  "env_transitions": 24,
+  "gradient_steps": 9,
+  "wall_time_sec": 1.2348711490631104,
+  "best_eval_return": 6.19657728043042
+}
+run dir: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v3/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__13c512

@@ -1,0 +1,29 @@
+{
+  "schema": "pgofp.prior_artifact.v1",
+  "created_utc": "2026-11-12T17:54:25Z",
+  "env_id": "Walker2d-v5",
+  "obs_dim": 17,
+  "action_dim": 6,
+  "action_low": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "action_high": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "distribution": "tanh_gaussian",
+  "prior_seed": 100,
+  "stateful": false,
+  "smoke": true,
+  "requested_prior_steps": 64,
+  "content_hash": "e4733c9ae798246a432b46beabd4a320dbf4fb094f7cf3b36ee6089521b7acd4"
+}

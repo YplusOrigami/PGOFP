@@ -1,0 +1,13 @@
+# A0/A1 core matrix. Unsupported task/prior combinations are written to the manifest as `skipped` with the reason.
+matrix:
+  name: mujoco_main
+  description: Gaussian PGOFP (same code) vs prior sources vs SAC on the first-batch MuJoCo tasks.
+  seeds: [0, 1, 2, 3, 4]
+  axes:
+    env: [inverted_pendulum, reacher, half_cheetah, hopper]
+  variants:
+    - {name: gaussian_flame, overrides: [algorithm=gaussian_flame_m, prior=gaussian]}
+    - {name: pid_prior, overrides: [algorithm=prior_flame_m, prior=pid, source=constant]}
+    - {name: mpc_prior, overrides: [algorithm=prior_flame_m, prior=mpc, source=constant]}
+    - {name: ppo_prior, overrides: [algorithm=prior_flame_m, prior=ppo, source=constant]}
+    - {name: sac, overrides: [algorithm=sac, prior=gaussian]}

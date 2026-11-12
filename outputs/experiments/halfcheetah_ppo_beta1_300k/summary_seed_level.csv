@@ -1,0 +1,4 @@
+run_key,status,variant,seed,n_evals,final_tail_return,auc_return,max_drawdown,tail_return_std,final_failure_rate,final_length,steps_to_threshold,run_dir
+halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s0,failed,ppo_prior_beta1,0,1,-514.3586857432036,-514.3586857432036,0.0,nan,0.0,1000.0,,outputs/experiments/halfcheetah_ppo_beta1_300k/runs/halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s0__711d1e
+halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s1,failed,ppo_prior_beta1,1,1,-600.3842081810924,-600.3842081810924,0.0,nan,0.0,1000.0,,outputs/experiments/halfcheetah_ppo_beta1_300k/runs/halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s1__09784a
+halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s2,failed,ppo_prior_beta1,2,0,nan,nan,nan,nan,nan,nan,,outputs/experiments/halfcheetah_ppo_beta1_300k/runs/halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s2__3660cd

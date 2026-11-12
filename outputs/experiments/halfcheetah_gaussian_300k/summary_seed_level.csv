@@ -1,0 +1,4 @@
+run_key,status,variant,seed,n_evals,final_tail_return,auc_return,max_drawdown,tail_return_std,final_failure_rate,final_length,steps_to_threshold,run_dir
+halfcheetah_gaussian_300k__gaussian_flame__s0,completed,gaussian_flame,0,31,7970.626368680961,6428.314938618683,1227.2788784578624,485.40949490934645,0.0,1000.0,,outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s0__2a4eb5
+halfcheetah_gaussian_300k__gaussian_flame__s1,completed,gaussian_flame,1,31,7098.08879324835,5220.000724733406,546.1267617088083,198.60882615874763,0.0,1000.0,,outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s1__95c502
+halfcheetah_gaussian_300k__gaussian_flame__s2,completed,gaussian_flame,2,31,8673.423215625944,6905.9023330374375,2234.7025028627595,619.7763881055153,0.0,1000.0,,outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s2__2f4812

@@ -1,0 +1,10 @@
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "outcome": "completed",
+  "env_transitions": 15000,
+  "gradient_steps": 14001,
+  "wall_time_sec": 3149.659590959549,
+  "best_eval_return": 1000.0
+}
+run dir: outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s1__bbc45f

@@ -1,0 +1,3 @@
+type: ppo
+artifact_path: null              # REQUIRED: PriorArtifact directory from scripts/train_prior.py
+distribution: native             # native (pre-tanh mu/log_std as-is) | center_gaussian (explicit sigma_prior)

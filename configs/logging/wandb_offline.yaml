@@ -1,0 +1,7 @@
+jsonl: true
+tensorboard: true
+flush_every: 20
+wandb:
+  mode: offline             # sync later with: wandb sync <run>/wandb/offline-run-*
+  project: pgofp
+  upload_artifacts: false

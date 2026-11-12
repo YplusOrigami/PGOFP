@@ -1,0 +1,58 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run jpdgi5aw
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s1__95c502/wandb/run-20261020_232044-jpdgi5aw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run halfcheetah_gaussian_300k__gaussian_flame__s1
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/jpdgi5aw
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792509644.wuaijiadeMacBook-Air-2.local.76722.0
+wandb: uploading history steps 298-299, summary
+wandb: 
+wandb: Run history:
+wandb: actions/behavior_saturation_frac ▁▁▅▆▅▄▅▆▇▆▆▇▇▇█▇▇▇▇▆▇▆▆▆▆▇▇▇▆▇▆▇▆▇▇▇▇███
+wandb:                actions/norm_mean ▁▃▄▆▆▆▆▆█▇▇▇▇▇▆█▇▆▇█▆▇▇▆▇▇▆▇▆█▇█▇█▇▇▇██▇
+wandb:          actions/saturation_frac ▁▃▅▆▄▆▅▆▆▆▆▇▆▇▆▇▇▆▄▅▅▅▇▆▅█▆▅▅▅▆▇▆▄▇▇▇▄▇▇
+wandb:                  actor/clip_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▃▃▄▅▅▆▆▆▆▆█
+wandb:                  actor/grad_norm ▁▂▂▂▂▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▅▅▅▅▅▆▅▆▆▆▆▆▇▆▇▇▇█▇█
+wandb:                            alpha ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                 charts/env_steps ▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇████
+wandb:            charts/episode_length ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:            charts/episode_return ▁▂▂▂▂▃▄▄▅▄▅▄▅▅▅▆▆▆▆▆▇▇▇▇▇▇▇▇▇█▇▇▇▇██████
+wandb:                  charts/episodes ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                              +68 ...
+wandb: 
+wandb: Run summary:
+wandb: actions/behavior_saturation_frac 0.1365
+wandb:                actions/norm_mean 1.92974
+wandb:          actions/saturation_frac 0.11068
+wandb:                  actor/clip_rate 0.00084
+wandb:                  actor/grad_norm 4.42456
+wandb:                            alpha 0.1
+wandb:                 charts/env_steps 300000
+wandb:            charts/episode_length 1000
+wandb:            charts/episode_return 7577.2236
+wandb:                  charts/episodes 1
+wandb:                              +68 ...
+wandb: 
+wandb: 🚀 View run halfcheetah_gaussian_300k__gaussian_flame__s1 at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/jpdgi5aw
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s1__95c502/wandb/run-20261020_232044-jpdgi5aw/logs
+{
+  "outcome": "completed",
+  "env_transitions": 300000,
+  "gradient_steps": 295001,
+  "wall_time_sec": 53574.68023395538,
+  "best_eval_return": 7427.598044692451
+}
+run dir: outputs/experiments/halfcheetah_gaussian_300k/runs/halfcheetah_gaussian_300k__gaussian_flame__s1__95c502

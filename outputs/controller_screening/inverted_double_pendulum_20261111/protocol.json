@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-11-11T10:15:23.736050+00:00",
+  "env": "InvertedDoublePendulum-v5",
+  "episodes_per_method": 20,
+  "environment_seed_range": [
+    50000,
+    50019
+  ],
+  "controller_seed": 0,
+  "methods": [
+    "random",
+    "zero",
+    "mpc"
+  ],
+  "no_learning": true,
+  "max_steps": 1000,
+  "deployment_action_limit": 0.999,
+  "gymnasium_version": "1.4.0",
+  "mujoco_version": "3.16.0",
+  "python": "3.12.11",
+  "controller": {
+    "name": "cem_mpc",
+    "version": "double_pendulum_cem_v1",
+    "model_access": "observation_model",
+    "horizon": 10,
+    "population": 64,
+    "elite_fraction": 0.125,
+    "iterations": 4,
+    "init_std": 0.5,
+    "min_std": 0.05,
+    "timeout_s": 0.5,
+    "cost": {
+      "healthy_reward": 10.0
+    }
+  },
+  "model_access": "public observation only; clipped velocities; independent planning model",
+  "cost": "environment distance+velocity penalty plus 10 per absorbing planned-fall step; no extra action penalty",
+  "source_sha256": {
+    "src/pgofp/envs/mujoco/planning.py": "ce12801de515773362468d3192a9bdd24e4631bf478b03403f030ccf89a4f8a4",
+    "src/pgofp/controllers/mpc.py": "4305eb8a33977e2849d61e39efb81b8f19ba349575be06c477fd64c40cd77b41",
+    "scripts/screen_double_pendulum_mpc.py": "d31bf2852c9daa2c7363f2fed3cfaa808e22a4b4184ed45216b914012a252425"
+  }
+}

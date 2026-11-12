@@ -1,0 +1,11 @@
+name: sac
+gamma: 0.99
+target_tau: 0.005
+temperature:
+  mode: auto
+  alpha: 0.2
+  target_entropy: auto
+params:
+  hidden: [256, 256]
+forces:
+  source.kind: gaussian      # SAC has no flow source; avoids a dangling prior-mixture source with prior=gaussian

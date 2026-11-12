@@ -1,0 +1,2 @@
+type: pid
+controller_config: auto          # -> configs/controller/<env.name>_pid.yaml

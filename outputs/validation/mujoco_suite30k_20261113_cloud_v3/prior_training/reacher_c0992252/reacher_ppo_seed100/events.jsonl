@@ -1,0 +1,2 @@
+{"utc": "2026-11-12T18:08:28Z", "kind": "wandb_connected", "run_id": "8eed0qbm", "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/8eed0qbm", "project": "pgofp-smoke", "entity": "ypluss", "mode": "online"}
+{"utc": "2026-11-12T18:08:30Z", "kind": "prior_stage_exported", "name": "stage_64", "step": 64, "calibration": {"return_mean": -31.399397306127096, "return_std": 0.0, "length_mean": 50.0, "failure_rate": 0.0, "episodes": 1}}

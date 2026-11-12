@@ -1,0 +1,25 @@
+# PID-source beta sweep, same training budget/hyperparameters as the HalfCheetah scan.
+# beta=0 keeps PID context identical but sampling/density reduce exactly to the base Gaussian.
+matrix:
+  name: inverted_pendulum_pid_beta_sweep_300k_retry1
+  seeds: [0, 1, 2]
+  base_overrides:
+    - env=inverted_pendulum
+    - algorithm=prior_flame_m
+    - prior=pid
+    - source=constant
+    - logging=wandb_online
+    - logging.wandb.mode=offline  # original key failed AuthenticationError during preflight
+    - logging.wandb.entity=ypluss
+    - logging.wandb.project=pgofp-inverted_pendulum-exploratory
+    - logging.wandb.upload_artifacts=false
+    - logging.flush_every=1
+    - "tags=[exploratory,budget300k,pid,beta_sweep]"
+    - train.total_env_steps=300000
+    - eval.interval=10000
+    - eval.episodes=10
+    - checkpoint.interval=50000
+  variants:
+    - {name: pid_prior_beta0, overrides: [source.beta=0.0]}
+    - {name: pid_prior_beta0.5, overrides: [source.beta=0.5]}
+    - {name: pid_prior_beta1, overrides: [source.beta=1.0]}

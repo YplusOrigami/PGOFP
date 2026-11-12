@@ -1,0 +1,1042 @@
+{
+  "created_utc": "2026-11-12T18:38:28Z",
+  "validation_only": true,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "local": {
+    "all_passed": true,
+    "checks": [
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0__af8c7a",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "o4j7ee25",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/o4j7ee25",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0__287027",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "q6uxnwmz",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q6uxnwmz",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 91,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0__e6e3af",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "epp03lal",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/epp03lal",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0__238cd0",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "b5e4vvme",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/b5e4vvme",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0__888ab6",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "o3ylnbnh",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/o3ylnbnh",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 91,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0__00877f",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "5spm0ki1",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/5spm0ki1",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__88afb8",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "i98gvudi",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/i98gvudi",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 85,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0__d816d1",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "zz7klp73",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/zz7klp73",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0__f3182c",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "1rzf0b6x",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/1rzf0b6x",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 85,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0__bbd6c1",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "fi1ii1y9",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fi1ii1y9",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0__fe73e6",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "5ppjazmu",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/5ppjazmu",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 91,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0__bd0720",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "by61n91k",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/by61n91k",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__72fb66",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "bgz0c02p",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/bgz0c02p",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0__f93b51",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "32r93v3o",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/32r93v3o",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 91,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__d3a062",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "l43bny6z",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/l43bny6z",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0__d3a27d",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "r7kq6t19",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/r7kq6t19",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0__2fff30",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "qbw5rs1g",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/qbw5rs1g",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 91,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0__77f90c",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "3kyma1vs",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/3kyma1vs",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0__0f2795",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "wzltf99p",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/wzltf99p",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 83,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0__f51310",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "hj4v0nvr",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/hj4v0nvr",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 85,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0__9978b1",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "464uu4mx",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/464uu4mx",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 83,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0__8483c8",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "q07r1tln",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q07r1tln",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 82,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0__c6db01",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "fzb6rsbe",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fzb6rsbe",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 84,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0__707f30",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "8fckf6jp",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/8fckf6jp",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 82,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0__a2bc42",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "6v6v2qjn",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/6v6v2qjn",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 82,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0__5e8b6d",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "9bdbvkdy",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/9bdbvkdy",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 84,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0__ee3f9e",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "h8tafd4t",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/h8tafd4t",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 82,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__60dc92",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "kh04x3yo",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/kh04x3yo",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 83,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__3b6183",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "s4pebv0c",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/s4pebv0c",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 85,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__12e0d3",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": {
+          "run_id": "q5u74hs2",
+          "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q5u74hs2",
+          "project": "pgofp-smoke",
+          "entity": "ypluss",
+          "mode": "online",
+          "scalar_source": "direct"
+        },
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 83,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      }
+    ]
+  },
+  "cloud": {
+    "all_passed": true,
+    "checks": [
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/o4j7ee25",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q6uxnwmz",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/epp03lal",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/b5e4vvme",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/o3ylnbnh",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/5spm0ki1",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/i98gvudi",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/zz7klp73",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/1rzf0b6x",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fi1ii1y9",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/5ppjazmu",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/by61n91k",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/bgz0c02p",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/32r93v3o",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/l43bny6z",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/r7kq6t19",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/qbw5rs1g",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/3kyma1vs",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/wzltf99p",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/hj4v0nvr",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/464uu4mx",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q07r1tln",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/fzb6rsbe",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/8fckf6jp",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/6v6v2qjn",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/9bdbvkdy",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/h8tafd4t",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/kh04x3yo",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/s4pebv0c",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0",
+        "ok": true,
+        "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q5u74hs2",
+        "state": "finished",
+        "eval_and_loss_curves_visible": true
+      }
+    ]
+  }
+}

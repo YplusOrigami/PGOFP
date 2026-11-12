@@ -1,0 +1,4 @@
+# No learner updates. mode=deterministic: tanh(center); mode=noisy_source: sample the configured source (zero-velocity flow).
+name: controller_only
+params:
+  mode: deterministic       # deterministic | noisy_source

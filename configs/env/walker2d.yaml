@@ -1,0 +1,5 @@
+# Extension preset: not part of the default main matrix until it passes smoke.
+name: walker2d
+id: Walker2d-v5
+backend: mujoco
+controllers: [ppo]

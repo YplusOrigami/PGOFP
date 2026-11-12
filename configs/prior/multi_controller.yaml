@@ -1,0 +1,4 @@
+type: multi
+components:
+  - {type: pid, controller_config: inverted_pendulum_pid, weight: 0.5}
+  - {type: cem_mpc, controller_config: cem_mpc, weight: 0.5}

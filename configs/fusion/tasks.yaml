@@ -1,0 +1,7 @@
+# F1 / F2 task horizons and terminal semantics are PROVISIONAL (from the proposal); confirm with the backend task spec.
+verified: false
+tasks:
+  F1: {description: divertor-to-limiter transition, horizon_steps: 300, terminal_on_horizon: pending, status: provisional}
+  F2: {description: divertor/limiter-to-XPT, horizon_steps: 500, terminal_on_horizon: pending, status: provisional}
+control_period_s: 0.01
+shots: {count: 4, train: pending, calibration: pending, test: pending}

@@ -1,0 +1,21 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run iejpsf8u
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in outputs/experiments/halfcheetah_ppo_beta_sweep_300k/runs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s2__55648c/wandb/run-20261028_172654-iejpsf8u
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s2
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/iejpsf8u
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: 500 encountered ({"error":"mysql query exceeded guard deadline: context deadline exceeded"}), retrying request
+wandb: 500 encountered ({"error":"An internal error occurred. Please contact support."}), retrying request
+wandb: 500 encountered ({"error":"An internal error occurred. Please contact support."}), retrying request
+wandb: 500 encountered ({"error":"An internal error occurred. Please contact support."}), retrying request
+wandb: 500 encountered ({"error":"An internal error occurred. Please contact support."}), retrying request

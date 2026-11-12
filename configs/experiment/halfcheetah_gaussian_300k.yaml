@@ -1,0 +1,19 @@
+# EXPLORATORY: 300k steps (30% of the 1M default budget), 3 seeds, Gaussian-source FLAME. Not a formal result.
+matrix:
+  name: halfcheetah_gaussian_300k
+  seeds: [0, 1, 2]
+  base_overrides:
+    - env=half_cheetah
+    - algorithm=gaussian_flame_m
+    - prior=gaussian
+    - logging=wandb_online
+    - logging.wandb.entity=ypluss
+    - logging.wandb.project=pgofp-half_cheetah-exploratory
+    - logging.wandb.upload_artifacts=false
+    - "tags=[exploratory,budget300k]"
+    - train.total_env_steps=300000
+    - eval.interval=10000
+    - eval.episodes=10
+    - checkpoint.interval=50000
+  variants:
+    - {name: gaussian_flame, overrides: []}

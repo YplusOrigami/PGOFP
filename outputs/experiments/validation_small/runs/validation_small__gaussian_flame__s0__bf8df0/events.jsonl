@@ -1,0 +1,9 @@
+{"utc": "2026-10-20T09:13:16Z", "kind": "checkpoint", "name": "best", "env_transitions": 2500, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/best.pt"}
+{"utc": "2026-10-20T09:22:30Z", "kind": "checkpoint", "name": "best", "env_transitions": 5000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/best.pt"}
+{"utc": "2026-10-20T09:22:30Z", "kind": "checkpoint", "name": "last", "env_transitions": 5000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/last.pt"}
+{"utc": "2026-10-20T09:31:28Z", "kind": "checkpoint", "name": "best", "env_transitions": 7500, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/best.pt"}
+{"utc": "2026-10-20T09:40:27Z", "kind": "checkpoint", "name": "best", "env_transitions": 10000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/best.pt"}
+{"utc": "2026-10-20T09:40:27Z", "kind": "checkpoint", "name": "last", "env_transitions": 10000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/last.pt"}
+{"utc": "2026-10-20T09:58:48Z", "kind": "checkpoint", "name": "last", "env_transitions": 15000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/last.pt"}
+{"utc": "2026-10-20T09:58:48Z", "kind": "checkpoint", "name": "last", "env_transitions": 15000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/last.pt"}
+{"utc": "2026-10-20T09:58:48Z", "kind": "checkpoint", "name": "final", "env_transitions": 15000, "path": "outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0/checkpoints/final.pt"}

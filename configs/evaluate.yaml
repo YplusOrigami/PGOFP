@@ -1,0 +1,9 @@
+# scripts/evaluate.py: evaluate a checkpoint on fixed seeds with FROZEN source parameters and normalizer.
+checkpoint: null
+eval_seeds_base: 20000
+episodes: 20
+K_eval: 1
+representative_action: true
+condition_bank_size: 64
+condition_samples: 2048
+video: false

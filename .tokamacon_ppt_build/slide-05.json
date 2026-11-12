@@ -1,0 +1,13 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/q3rywp","index":4,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/1c3mx8jq","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"IsoFlux 奖励同时约束三类跟踪误差","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/0bul43i5","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"05 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/r6l4ry18","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 式 (7)，图 2，附录 C.7.1","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/q5c3yt03","kind":"textbox","position":{"left":58,"top":130,"width":590,"height":48},"text":"eIp = |Ip / 1000 − Iref|","style":{"fontSize":30,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/d83mt8je","kind":"textbox","position":{"left":58,"top":192,"width":590,"height":48},"text":"eψ = ⅛ Σᵢ |ψcp,i − ψX|","style":{"fontSize":30,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/s7ul03it","kind":"textbox","position":{"left":58,"top":254,"width":590,"height":48},"text":"eBX = ‖BX‖₂","style":{"fontSize":30,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3i1kne1c","kind":"textbox","position":{"left":670,"top":135,"width":555,"height":80},"text":"rₖ = clip[(ebad − eₖ) / (ebad − egood), 0, 1]","style":{"fontSize":27,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ihs3u90r","kind":"textbox","position":{"left":670,"top":236,"width":555,"height":48},"text":"默认 r = (rIp + rψ + rBX) / 3","style":{"fontSize":29,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/8b698vud","kind":"textbox","position":{"left":670,"top":303,"width":550,"height":80},"text":"动作平滑项默认关闭\n奖励尺度与终止阈值分别配置","style":{"fontSize":24,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/y1sz69gb","kind":"image","position":{"left":58,"top":420,"width":1160,"height":213},"fit":"contain","alt":"TokamaCon论文图：flux_rollout"}
+]}

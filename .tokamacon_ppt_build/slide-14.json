@@ -1,0 +1,9 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/x1xdah","index":13,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/9kbatore","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"模型范围与复现参数仍需明确","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/oj2tkjqt","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"14 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/7exc3yps","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 表 1、8，图 3，式 (12)，附录 F","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"tb/5wra9kfm","kind":"table","position":{"left":58,"top":134,"width":1165,"height":310},"text":"核对项\tPDF 中的不同表述\t影响\n磁岛种子\t正文 0.15 m；表 8 为 0.015 m\t初始难度相差明显\n破裂阈值\t文字 0.15 m；图 3 约 0.06 m\t图与配置无法直接对齐\n饱和比例\t任一通道触边；时间 × 通道平均\t两种统计不等价\nZeroAction\t零原始动作；非零物理功率\t需核对基线路径","rows":5,"cols":3},
+{"id":"sh/298vmxsf","kind":"textbox","position":{"left":58,"top":490,"width":1160,"height":70},"text":"IsoFlux 局部线性化；Profile 固定 ne、经验输运、合成 ECE 与降阶 NTM","style":{"fontSize":26,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3ahwv290","kind":"textbox","position":{"left":58,"top":581,"width":1160,"height":65},"text":"两个回路独立；主表缺少置信区间；模拟器一致性不构成实机部署验证","style":{"fontSize":25,"typeface":"PingFang SC","color":"#C25442","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

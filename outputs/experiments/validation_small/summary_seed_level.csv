@@ -1,0 +1,9 @@
+run_key,status,variant,seed,n_evals,final_tail_return,auc_return,max_drawdown,tail_return_std,final_failure_rate,final_length,steps_to_threshold,run_dir
+validation_small__gaussian_flame__s0,completed,gaussian_flame,0,7,1000.0,647.9,0.0,0.0,0.0,1000.0,10000.0,outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s0__bf8df0
+validation_small__gaussian_flame__s1,completed,gaussian_flame,1,7,1000.0,591.38,786.6,0.0,0.0,1000.0,7500.0,outputs/experiments/validation_small/runs/validation_small__gaussian_flame__s1__bbc45f
+validation_small__pid_prior__s0,completed,pid_prior,0,7,1000.0,473.16,440.6,0.0,0.0,1000.0,10000.0,outputs/experiments/validation_small/runs/validation_small__pid_prior__s0__4e33f1
+validation_small__pid_prior__s1,completed,pid_prior,1,7,1000.0,285.32,161.59999999999997,0.0,0.0,1000.0,15000.0,outputs/experiments/validation_small/runs/validation_small__pid_prior__s1__43111b
+validation_small__pid_controller_only__s0,completed,pid_controller_only,0,3,1000.0,1000.0,0.0,0.0,0.0,1000.0,1500.0,outputs/experiments/validation_small/runs/validation_small__pid_controller_only__s0__3ddb5e
+validation_small__pid_controller_only__s1,completed,pid_controller_only,1,3,1000.0,1000.0,0.0,0.0,0.0,1000.0,1500.0,outputs/experiments/validation_small/runs/validation_small__pid_controller_only__s1__044898
+validation_small__pid_noisy_source_only__s0,completed,pid_noisy_source_only,0,3,68.0,18.5,20.6,29.9,1.0,69.0,censored,outputs/experiments/validation_small/runs/validation_small__pid_noisy_source_only__s0__f231dd
+validation_small__pid_noisy_source_only__s1,completed,pid_noisy_source_only,1,3,15.4,44.7,41.2,20.6,1.0,16.4,censored,outputs/experiments/validation_small/runs/validation_small__pid_noisy_source_only__s1__f450d4

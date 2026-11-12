@@ -1,0 +1,54 @@
+{
+  "run_id": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0__11f76b",
+  "parent_run_id": null,
+  "outcome": "completed",
+  "config_hash": "4052d33004518fb8",
+  "provenance": {
+    "utc_time": "2026-11-12T17:56:23Z",
+    "python": "3.12.11",
+    "platform": "macOS-15.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.4.0",
+      "tensorboard": "2.21.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch_threads": 1,
+    "git": null
+  },
+  "env_spec_hash": "ae9b847b50d14722",
+  "controller_versions": [
+    "ppo:a005500c8863:native"
+  ],
+  "smoke": true,
+  "updated_utc": "2026-11-12T17:56:23Z",
+  "summary": {
+    "outcome": "completed",
+    "env_transitions": 24,
+    "gradient_steps": 9,
+    "wall_time_sec": 1.1829888820648193,
+    "best_eval_return": 8.046554719749487,
+    "final_eval": {
+      "eval/return_mean": 7.848932561262846,
+      "eval/return_std": 0.0,
+      "eval/length_mean": 8.0,
+      "eval/failure_rate": 0.0,
+      "eval/episodes": 1.0,
+      "eval/action_saturation": 0.0,
+      "eval/action_smoothness": 0.6281615282808032
+    }
+  },
+  "wandb": {
+    "run_id": "t7hvhccb",
+    "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/t7hvhccb",
+    "project": "pgofp-smoke",
+    "entity": "ypluss",
+    "mode": "online"
+  }
+}

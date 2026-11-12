@@ -1,0 +1,5 @@
+{
+  "prior_pretrain_env_steps": 64,
+  "prior_seed": 100,
+  "wall_time_sec": 0.08972024917602539
+}

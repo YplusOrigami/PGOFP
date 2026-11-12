@@ -1,0 +1,5 @@
+# Identical code path and hyper-parameters to prior_flame_m; ONLY the source distribution is replaced by N(0, I).
+inherits: prior_flame_m
+name: gaussian_flame_m
+forces:
+  source.kind: gaussian

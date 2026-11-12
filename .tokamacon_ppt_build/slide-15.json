@@ -1,0 +1,13 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/yrsebj","index":14,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/5wju9o3y","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"结论与后续研究问题","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/4vadgj2d","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"15 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ri1cbel4","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 §5，附录 B.3、F；研究设想另标","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/qhsvi9kj","kind":"textbox","position":{"left":58,"top":140,"width":1160,"height":34},"text":"平台价值","style":{"fontSize":27,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/dkjudo3a","kind":"textbox","position":{"left":58,"top":183,"width":1160,"height":110},"text":"统一 EAST 相关模型、任务接口和 GPU 批量 rollout","style":{"fontSize":25,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/sjadkj2p","kind":"textbox","position":{"left":58,"top":276,"width":1160,"height":34},"text":"最有力的实验认识","style":{"fontSize":27,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/fm1wfy10","kind":"textbox","position":{"left":58,"top":319,"width":1160,"height":110},"text":"记忆有价值；奖励难以概括动作行为；跨平衡态泛化仍弱","style":{"fontSize":25,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/elsvmtkv","kind":"textbox","position":{"left":58,"top":412,"width":1160,"height":34},"text":"研究设想：控制先验与鲁棒学习","style":{"fontSize":27,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/crutw3it","kind":"textbox","position":{"left":58,"top":455,"width":1160,"height":110},"text":"同等观测下比较 PID、先验加噪声与学习策略，保留未见平衡态测试","style":{"fontSize":25,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/xs3u58ze","kind":"textbox","position":{"left":58,"top":590,"width":1160,"height":54},"text":"讨论：哪些隐变量最值得估计？怎样验证模型变化下的控制收益？","style":{"fontSize":29,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

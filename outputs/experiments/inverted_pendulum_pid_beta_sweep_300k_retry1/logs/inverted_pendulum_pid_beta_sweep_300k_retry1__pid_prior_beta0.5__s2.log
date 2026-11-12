@@ -1,0 +1,18 @@
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/experiments/inverted_pendulum_pid_beta_sweep_300k_retry1/runs/inverted_pendulum_pid_beta_sweep_300k_retry1__pid_prior_beta0.5__s2__63dd2a/wandb/offline-run-20261106_180758-86248fas
+wandb: View this run in the terminal with `wandb leet`
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /Volumes/T7/projects/PGOFP/outputs/experiments/inverted_pendulum_pid_beta_sweep_300k_retry1/runs/inverted_pendulum_pid_beta_sweep_300k_retry1__pid_prior_beta0.5__s2__63dd2a/wandb/offline-run-20261106_180758-86248fas
+wandb: Find logs at: ./outputs/experiments/inverted_pendulum_pid_beta_sweep_300k_retry1/runs/inverted_pendulum_pid_beta_sweep_300k_retry1__pid_prior_beta0.5__s2__63dd2a/wandb/offline-run-20261106_180758-86248fas/logs
+{
+  "outcome": "completed",
+  "env_transitions": 300000,
+  "gradient_steps": 295001,
+  "wall_time_sec": 82038.68627691269,
+  "best_eval_return": 1000.0
+}
+run dir: /Volumes/T7/projects/PGOFP/outputs/experiments/inverted_pendulum_pid_beta_sweep_300k_retry1/runs/inverted_pendulum_pid_beta_sweep_300k_retry1__pid_prior_beta0.5__s2__63dd2a

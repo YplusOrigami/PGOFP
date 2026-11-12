@@ -1,0 +1,5 @@
+name: inverted_pendulum
+id: InvertedPendulum-v5
+backend: mujoco
+controllers: [pid, cem_mpc, ppo]
+notes: Reward saturates at 1 per step; judge by episode length / failure, not return alone.

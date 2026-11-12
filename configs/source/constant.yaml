@@ -1,0 +1,7 @@
+kind: prior_mixture
+schedule: constant
+beta: 0.75
+sigma_prior: 0.3
+sigma_base: 1.0
+sigma_min: 0.05
+sigma_max: 2.0

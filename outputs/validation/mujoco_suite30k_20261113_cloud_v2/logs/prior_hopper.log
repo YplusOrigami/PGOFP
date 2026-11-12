@@ -1,0 +1,30 @@
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Using an existing wandb-core service via WANDB_SERVICE.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run yy3ituro
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/prior_training/hopper_9c24be14/hopper_ppo_seed100/wandb/run-20261113_015415-yy3ituro
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hopper_ppo_seed100
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/yy3ituro
+wandb: updating run metadata; uploading data
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading ._events.out.tfevents.1794506057.wuaijiadeMacBook-Air-2.local.11115.0; uploading wandb-metadata.json; uploading requirements.txt
+wandb: uploading wandb-summary.json; uploading ._events.out.tfevents.1794506057.wuaijiadeMacBook-Air-2.local.11115.0; uploading wandb-metadata.json
+wandb: 
+wandb: Run summary:
+wandb:                  outcome completed
+wandb: prior_pretrain_env_steps 64
+wandb:               prior_seed 100
+wandb: 
+wandb: 🚀 View run hopper_ppo_seed100 at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/yy3ituro
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: Synced 4 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./outputs/validation/mujoco_suite30k_20261113_cloud_v2/prior_training/hopper_9c24be14/hopper_ppo_seed100/wandb/run-20261113_015415-yy3ituro/logs
+{
+  "artifact_root": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/validation_priors/hopper_ppo_seed100",
+  "tiers": {
+    "stage_64": "good"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "inverted_pendulum": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/inverted_pendulum_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "47b1c74ca09fe2d0c03c86049967a76d14842cc883a88847f5d964357fd1f298",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-12T18:32:18Z"
+  },
+  "reacher": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/reacher_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "045c5b7a5ab6388fd50c2a044b900c2c806e1370f91e8cff1219a1b31ac9ce16",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-12T18:32:26Z"
+  },
+  "half_cheetah": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/half_cheetah_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "12f26eb882074ec8f69148ea77f78af440ad7c63468a555e2fdc43c3dd4c4009",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-12T18:32:36Z"
+  },
+  "hopper": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/hopper_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "7f2b9f8b0e5efe3e690801279842a6bed24e2ef5e70dd71ef7b5aae5db909f7b",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-12T18:32:45Z"
+  },
+  "walker2d": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/walker2d_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "ee7e4f781188c12f1a4e4ddc8b6308060457324f87673966d15b35ebc79b25d2",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-12T18:32:54Z"
+  },
+  "inverted_double_pendulum": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/inverted_double_pendulum_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "fc030c0950cb484f5527075966a21b2f1e59d243758c9fb9dcf150f9cb5069a2",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-12T18:33:02Z"
+  }
+}

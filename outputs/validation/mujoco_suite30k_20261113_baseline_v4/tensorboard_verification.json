@@ -1,0 +1,354 @@
+{
+  "all_passed": true,
+  "checked_runs": 30,
+  "checks": [
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0__d816d1",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__88afb8",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0__f3182c",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0__fe73e6",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0__bbd6c1",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0__bd0720",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__3b6183",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__60dc92",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__12e0d3",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0__2fff30",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0__d3a27d",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0__77f90c",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0__f51310",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0__0f2795",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0__9978b1",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0__287027",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0__af8c7a",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0__e6e3af",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0__5e8b6d",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0__a2bc42",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0__ee3f9e",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0__c6db01",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0__8483c8",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0__707f30",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0__888ab6",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0__238cd0",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0__00877f",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0__f93b51",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__72fb66",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__d3a062",
+      "ok": true,
+      "checked_keys": [
+        "prior_eval/return_mean",
+        "prior_eval/return_std",
+        "loss/actor_qrmf",
+        "eval/return_mean",
+        "eval_representative/return_mean",
+        "prior_eval_deterministic/return_mean"
+      ]
+    }
+  ]
+}

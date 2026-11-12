@@ -1,0 +1,13 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/198s2u","index":3,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/0fmp8z29","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"稀疏诊断与 5 ms 延迟构成部分可观测问题","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lgvq14je","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"04 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/q9472pkr","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 §3.1，图 7，附录 D.2","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/badovu1c","kind":"textbox","position":{"left":60,"top":132,"width":540,"height":42},"text":"12 维 actor 观测","style":{"fontSize":31,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/cbmp4f2x","kind":"textbox","position":{"left":60,"top":188,"width":540,"height":94},"text":"8 个控制点磁通 + X 点磁通\nX 点两个磁场分量 + Ip","style":{"fontSize":27,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/dcv6xkji","kind":"textbox","position":{"left":680,"top":132,"width":540,"height":42},"text":"188 维特权输出","style":{"fontSize":31,"typeface":"PingFang SC","color":"#167D86","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/2lk7y5kv","kind":"textbox","position":{"left":680,"top":188,"width":540,"height":94},"text":"追加线圈电流、位置与被动涡流模态\n瞬时传感观测仍缺少内部动态信息","style":{"fontSize":26,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3mtora1g","kind":"textbox","position":{"left":60,"top":305,"width":1160,"height":55},"text":"π(aₜ | oₜ)     与     π(aₜ | o₀:ₜ)","style":{"fontSize":35,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/wzyxkryt","kind":"image","position":{"left":60,"top":387,"width":1160,"height":218},"fit":"contain","alt":"TokamaCon论文图：magnetic_trace"},
+{"id":"sh/694zmdgn","kind":"textbox","position":{"left":60,"top":625,"width":1150,"height":30},"text":"原文 PPO-LSTM 示例：等磁通共漂移、X 点磁场与电流跟踪","style":{"fontSize":21,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

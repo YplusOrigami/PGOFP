@@ -1,0 +1,16 @@
+{
+  "tiers": {
+    "stage_64": "good"
+  },
+  "calibration": {
+    "stage_64": {
+      "return_mean": 14.673376869504503,
+      "return_std": 0.0,
+      "length_mean": 27.0,
+      "failure_rate": 1.0,
+      "episodes": 1
+    }
+  },
+  "random_action_return": 7.108224131447805,
+  "note": "tiers are derived from independent calibration seeds only"
+}

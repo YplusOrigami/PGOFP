@@ -1,0 +1,3 @@
+mode,seed,ret,length,terminated,truncated,extras
+prior_eval,10000,-6.189452353606082,8,False,True,"{'action_saturation': 0.0, 'action_smoothness': 0.5229161722319466, 'reward_dist': -0.3446746968984002, 'final_distance': 0.3446746968984002, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.059286500345479}"
+prior_eval_deterministic,10000,-2.8915881259375213,8,False,True,"{'action_saturation': 0.0, 'action_smoothness': 1.171184703707695e-05, 'reward_dist': -0.3612294761382261, 'final_distance': 0.3612294761382261, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.041166749952026294}"

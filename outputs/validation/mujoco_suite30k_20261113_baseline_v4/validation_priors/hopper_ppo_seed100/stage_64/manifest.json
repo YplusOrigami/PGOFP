@@ -1,0 +1,23 @@
+{
+  "schema": "pgofp.prior_artifact.v1",
+  "created_utc": "2026-11-12T18:32:41Z",
+  "env_id": "Hopper-v5",
+  "obs_dim": 11,
+  "action_dim": 3,
+  "action_low": [
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "action_high": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "distribution": "tanh_gaussian",
+  "prior_seed": 100,
+  "stateful": false,
+  "smoke": true,
+  "requested_prior_steps": 64,
+  "content_hash": "7f2b9f8b0e5efe3e690801279842a6bed24e2ef5e70dd71ef7b5aae5db909f7b"
+}

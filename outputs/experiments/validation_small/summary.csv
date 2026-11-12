@@ -1,0 +1,5 @@
+variant,n_seeds_planned,n_completed,n_failed,n_skipped,final_tail_return_mean,final_tail_return_ci_lo,final_tail_return_ci_hi,auc_return_mean,auc_return_ci_lo,auc_return_ci_hi,max_drawdown_mean,max_drawdown_ci_lo,max_drawdown_ci_hi,tail_return_std_mean,tail_return_std_ci_lo,tail_return_std_ci_hi,final_failure_rate_mean,final_failure_rate_ci_lo,final_failure_rate_ci_hi,note
+gaussian_flame,2,2,0,0,1000.0,1000.0,1000.0,619.64,591.38,647.9,393.3,0.0,786.6,0.0,0.0,0.0,0.0,0.0,0.0,CI over training seeds; unstable for < 5 seeds
+pid_prior,2,2,0,0,1000.0,1000.0,1000.0,379.24,285.32,473.16,301.1,161.59999999999997,440.6,0.0,0.0,0.0,0.0,0.0,0.0,CI over training seeds; unstable for < 5 seeds
+pid_controller_only,2,2,0,0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,CI over training seeds; unstable for < 5 seeds
+pid_noisy_source_only,2,2,0,0,41.7,15.4,68.0,31.6,18.5,44.7,30.900000000000002,20.6,41.2,25.25,20.6,29.9,1.0,1.0,1.0,CI over training seeds; unstable for < 5 seeds

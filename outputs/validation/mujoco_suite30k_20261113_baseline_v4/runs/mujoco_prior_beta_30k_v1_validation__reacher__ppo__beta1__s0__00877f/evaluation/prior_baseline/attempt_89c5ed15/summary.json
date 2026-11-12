@@ -1,0 +1,87 @@
+{
+  "env_id": "Reacher-v5",
+  "prior_type": "ppo",
+  "beta": 1.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 1,
+  "max_steps": 8,
+  "smoke": true,
+  "prior_config": {
+    "type": "ppo",
+    "controller_config": null,
+    "controller": {},
+    "artifact_path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/reacher_ppo_seed100/stage_64",
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "native_stochastic",
+  "controller_versions": [
+    "ppo:045c5b7a5ab6:native"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": -6.189452353606082,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 8.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 1.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.5229161722319466,
+      "prior_eval/final_distance": 0.3446746968984002
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": -6.189452353606082,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.5229161722319466,
+          "reward_dist": -0.3446746968984002,
+          "final_distance": 0.3446746968984002,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.056666749969735974
+        }
+      }
+    ]
+  },
+  "prior_eval_deterministic": {
+    "summary": {
+      "prior_eval_deterministic/return_mean": -2.8915881259375213,
+      "prior_eval_deterministic/return_std": 0.0,
+      "prior_eval_deterministic/length_mean": 8.0,
+      "prior_eval_deterministic/failure_rate": 0.0,
+      "prior_eval_deterministic/episodes": 1.0,
+      "prior_eval_deterministic/action_saturation": 0.0,
+      "prior_eval_deterministic/action_smoothness": 1.171184703707695e-05,
+      "prior_eval_deterministic/final_distance": 0.3612294761382261
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": -2.8915881259375213,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 1.171184703707695e-05,
+          "reward_dist": -0.3612294761382261,
+          "final_distance": 0.3612294761382261,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.0404271252136823
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 0.022383333000107086,
+  "attempt_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0__00877f/evaluation/prior_baseline/attempt_89c5ed15"
+}

@@ -1,0 +1,3 @@
+{"utc": "2026-10-20T09:06:59Z", "kind": "checkpoint", "name": "best", "env_transitions": 1500, "path": "outputs/experiments/validation_small/runs/validation_small__pid_controller_only__s0__3ddb5e/checkpoints/best.pt"}
+{"utc": "2026-10-20T09:07:01Z", "kind": "checkpoint", "name": "last", "env_transitions": 3000, "path": "outputs/experiments/validation_small/runs/validation_small__pid_controller_only__s0__3ddb5e/checkpoints/last.pt"}
+{"utc": "2026-10-20T09:07:01Z", "kind": "checkpoint", "name": "final", "env_transitions": 3000, "path": "outputs/experiments/validation_small/runs/validation_small__pid_controller_only__s0__3ddb5e/checkpoints/final.pt"}

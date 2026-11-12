@@ -1,0 +1,10 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/p5l7oe","index":10,"layout":{"id":"ly/zipkbmto","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/d8napkfe","kind":"textbox","position":{"left":56,"top":36,"width":1168,"height":64},"text":"IsoFlux：记忆明显改善 PPO，PID 仍然很强","style":{"fontSize":42,"typeface":"PingFang SC","color":"#14283F","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/s7etwfyt","kind":"textbox","position":{"left":1158,"top":674,"width":80,"height":24},"text":"11 / 15","style":{"fontSize":16,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/r65snax8","kind":"textbox","position":{"left":56,"top":674,"width":1070,"height":24},"text":"来源：论文 表 3，图 6(a)，§4.3","style":{"fontSize":15,"typeface":"PingFang SC","color":"#53667A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"ch/qtg36lwf","kind":"chart","position":{"left":52,"top":139,"width":608,"height":377},"chartType":"bar","title":"主实例评估奖励（EAST 152444）"},
+{"id":"im/ih0zi1wb","kind":"image","position":{"left":715,"top":145,"width":510,"height":330},"fit":"contain","alt":"TokamaCon论文图：learning"},
+{"id":"sh/c3it8jyx","kind":"textbox","position":{"left":58,"top":548,"width":1160,"height":45},"text":"LSTM 缩小约 78.1% 的 PPO–FO 奖励差距","style":{"fontSize":30,"typeface":"PingFang SC","color":"#285DAD","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/kvmtcfuh","kind":"textbox","position":{"left":58,"top":609,"width":1160,"height":40},"text":"FO 比 PID 高 0.0263，但使用更多状态信息；结果未证明传感器 RL 超过 PID","style":{"fontSize":24,"typeface":"PingFang SC","color":"#14283F","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

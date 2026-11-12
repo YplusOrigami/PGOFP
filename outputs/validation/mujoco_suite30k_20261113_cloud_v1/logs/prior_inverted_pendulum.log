@@ -1,0 +1,32 @@
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Using an existing wandb-core service via WANDB_SERVICE.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run 1e12rb8y
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v1/prior_training/inverted_pendulum_9ffeb9df/inverted_pendulum_ppo_seed100/wandb/run-20261113_015245-1e12rb8y
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run inverted_pendulum_ppo_seed100
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/1e12rb8y
+wandb: updating run metadata
+wandb: uploading config.yaml; uploading ._events.out.tfevents.1794505967.wuaijiadeMacBook-Air-2.local.10882.0; uploading wandb-metadata.json; uploading requirements.txt; uploading wandb-summary.json
+wandb: uploading wandb-metadata.json; uploading requirements.txt; uploading wandb-summary.json
+wandb: uploading summary
+wandb: 🚀 View run inverted_pendulum_ppo_seed100 at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/1e12rb8y
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: Synced 4 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./outputs/validation/mujoco_suite30k_20261113_cloud_v1/prior_training/inverted_pendulum_9ffeb9df/inverted_pendulum_ppo_seed100/wandb/run-20261113_015245-1e12rb8y/logs
+Traceback (most recent call last):
+  File "/Volumes/T7/projects/PGOFP/scripts/train_prior.py", line 8, in <module>
+    sys.exit(COMMANDS["train_prior"](sys.argv[1:]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/cli.py", line 152, in train_prior
+    tr.run(total, log_fn=logger.write_scalars, eval_interval=max(total // 50, 2048), eval_episodes=5, stage_steps=stage_steps, on_stage=on_stage)
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/training/prior_trainer.py", line 192, in run
+    on_stage(s, self)
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/cli.py", line 146, in on_stage
+    logger.write_artifact(f"{prior_id}-{name}", art_root / name, "prior",
+  File "/Volumes/T7/projects/PGOFP/src/pgofp/logging/logger.py", line 74, in write_artifact
+    self.event("artifact", name=name, path=str(path), kind=kind, meta=meta or {})
+TypeError: Logger.event() got multiple values for argument 'kind'

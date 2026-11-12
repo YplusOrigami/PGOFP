@@ -1,0 +1,50 @@
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Using an existing wandb-core service via WANDB_SERVICE.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run q6fqppst
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/prior_training/half_cheetah_4c7e8dd2/half_cheetah_ppo_seed100/wandb/run-20261113_023229-q6fqppst
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run half_cheetah_ppo_seed100
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q6fqppst
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: updating run metadata; uploading data
+wandb: uploading requirements.txt; uploading wandb-summary.json; uploading config.yaml; uploading wandb-metadata.json
+wandb: uploading history steps 0-0, summary
+wandb: 
+wandb: Run history:
+wandb:        charts/env_steps ▁
+wandb: charts/steps_per_second ▁
+wandb:      entropy/gaussian_z ▁
+wandb:             loss/policy ▁
+wandb:              loss/value ▁
+wandb:           ppo/approx_kl ▁
+wandb:           ppo/clip_frac ▁
+wandb: 
+wandb: Run summary:
+wandb:         charts/env_steps 64
+wandb:  charts/steps_per_second 2175.83918
+wandb:       entropy/gaussian_z 5.51363
+wandb:              loss/policy 0.0
+wandb:               loss/value 37.96977
+wandb:                  outcome completed
+wandb:            ppo/approx_kl 0.0
+wandb:            ppo/clip_frac 0
+wandb: prior_pretrain_env_steps 64
+wandb:               prior_seed 100
+wandb: 
+wandb: 🚀 View run half_cheetah_ppo_seed100 at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/q6fqppst
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: Synced 4 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./outputs/validation/mujoco_suite30k_20261113_baseline_v4/prior_training/half_cheetah_4c7e8dd2/half_cheetah_ppo_seed100/wandb/run-20261113_023229-q6fqppst/logs
+{
+  "artifact_root": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/validation_priors/half_cheetah_ppo_seed100",
+  "tiers": {
+    "stage_64": "good"
+  }
+}

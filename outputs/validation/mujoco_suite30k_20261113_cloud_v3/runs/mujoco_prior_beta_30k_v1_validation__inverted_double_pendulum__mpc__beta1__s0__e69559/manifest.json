@@ -1,0 +1,55 @@
+{
+  "run_id": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__e69559",
+  "parent_run_id": null,
+  "outcome": "completed",
+  "config_hash": "b3ee866830b1b904",
+  "provenance": {
+    "utc_time": "2026-11-12T18:14:12Z",
+    "python": "3.12.11",
+    "platform": "macOS-15.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.4.0",
+      "tensorboard": "2.21.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch_threads": 1,
+    "git": null
+  },
+  "env_spec_hash": "08a1d9a83dd73b61",
+  "controller_versions": [
+    "double_pendulum_cem_v1"
+  ],
+  "smoke": true,
+  "updated_utc": "2026-11-12T18:14:13Z",
+  "summary": {
+    "outcome": "completed",
+    "env_transitions": 24,
+    "gradient_steps": 9,
+    "wall_time_sec": 3.435884952545166,
+    "best_eval_return": 74.71309564809758,
+    "final_eval": {
+      "eval/return_mean": 74.49990019779825,
+      "eval/return_std": 0.0,
+      "eval/length_mean": 8.0,
+      "eval/failure_rate": 0.0,
+      "eval/episodes": 1.0,
+      "eval/action_saturation": 0.0,
+      "eval/action_smoothness": 0.6080844104290009
+    }
+  },
+  "wandb": {
+    "run_id": "ewblqt3d",
+    "url": "https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/ewblqt3d",
+    "project": "pgofp-smoke",
+    "entity": "ypluss",
+    "mode": "online",
+    "scalar_source": "direct"
+  }
+}

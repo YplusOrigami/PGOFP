@@ -1,0 +1,2 @@
+{"utc": "2026-11-03T14:46:26Z", "kind": "checkpoint", "name": "best", "env_transitions": 10000, "path": "/Volumes/T7/projects/PGOFP/outputs/experiments/halfcheetah_ppo_beta1_noentropy_20k/runs/halfcheetah_ppo_beta1_noentropy_20k__ppo_prior_beta1_no_critic_entropy__s1__f4220e/checkpoints/best.pt"}
+{"utc": "2026-11-03T14:58:27Z", "kind": "numerical_error", "env_transitions": 13000, "error": "17/256 non-finite density values in alpha entropy"}

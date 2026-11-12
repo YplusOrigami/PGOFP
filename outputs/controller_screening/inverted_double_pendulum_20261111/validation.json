@@ -1,0 +1,12 @@
+{
+  "new_tests": {
+    "file": "tests/integration/test_double_pendulum_planning.py",
+    "passed": 3
+  },
+  "existing_regression_tests": {
+    "file": "tests/integration/test_controllers.py",
+    "passed": 4
+  },
+  "command_environment": "PYTHONPATH=src OMP_NUM_THREADS=1 .venv/bin/python -m pytest",
+  "notes": "New state conversion/kinematics/dynamics/cost tests and existing PID/MPC controller tests passed."
+}

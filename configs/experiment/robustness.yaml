@@ -1,0 +1,7 @@
+# A12: multiple prior seeds / held-out parameters. Standard task names are never overwritten.
+matrix:
+  name: robustness
+  seeds: [0, 1, 2]
+  base_overrides: [algorithm=prior_flame_m, prior=ppo, source=constant, env=half_cheetah]
+  axes:
+    prior.artifact_path: ["${prior_dir}/seed100", "${prior_dir}/seed101", "${prior_dir}/seed102"]

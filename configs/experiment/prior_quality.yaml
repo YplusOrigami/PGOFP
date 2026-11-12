@@ -1,0 +1,11 @@
+# A5: independently calibrated quality tiers (configs/controller/*_{good,medium,poor}.yaml from calibrate_controller.py).
+matrix:
+  name: prior_quality
+  seeds: [0, 1, 2]
+  base_overrides: [algorithm=prior_flame_m, prior=pid, source=constant]
+  axes:
+    env: [inverted_pendulum, reacher]
+  variants:
+    - {name: good, overrides: ["prior.controller_config=${env.name}_pid_good"]}
+    - {name: medium, overrides: ["prior.controller_config=${env.name}_pid_medium"]}
+    - {name: poor, overrides: ["prior.controller_config=${env.name}_pid_poor"]}

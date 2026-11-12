@@ -1,0 +1,2 @@
+{"utc": "2026-10-30T17:14:24Z", "kind": "checkpoint", "name": "best", "env_transitions": 10000, "path": "outputs/experiments/halfcheetah_ppo_beta1_300k/runs/halfcheetah_ppo_beta1_300k__ppo_prior_beta1__s1__09784a/checkpoints/best.pt"}
+{"utc": "2026-10-30T17:16:24Z", "kind": "numerical_error", "env_transitions": 10490, "error": "non-finite values in critic loss"}

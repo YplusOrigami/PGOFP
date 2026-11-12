@@ -1,0 +1,22 @@
+# A8/A9/A10: one factor at a time on a fixed prior. no_q keeps log|J_tanh| (Q term set to 0).
+matrix:
+  name: flame_components
+  seeds: [0, 1, 2]
+  base_overrides: [algorithm=prior_flame_m, prior=pid, source=constant, env=inverted_pendulum]
+  variants:
+    - {name: main, overrides: []}
+    - {name: no_q_weights, overrides: [algorithm.actor_objective=reverse_no_q]}
+    - {name: no_bellman_entropy, overrides: [algorithm.use_entropy=false]}
+    - {name: density_steps1, overrides: [algorithm.density.steps=1]}
+    - {name: density_steps10, overrides: [algorithm.density.steps=10]}
+    - {name: K1, overrides: [algorithm.K_train=1]}
+    - {name: K8, overrides: [algorithm.K_train=8]}
+    - {name: pure_reverse_kernel_K_local0, overrides: [algorithm.K_local=0]}
+    - {name: K_local32, overrides: [algorithm.K_local=32]}
+    - {name: scope_exec_only, overrides: ["algorithm.source_scope=[behavior]"]}
+    - {name: scope_actor_only, overrides: ["algorithm.source_scope=[actor]"]}
+    - {name: scope_target_only, overrides: ["algorithm.source_scope=[target]"]}
+    - {name: best_of_4_exec, overrides: [algorithm.K_exec=4]}
+    - {name: auto_alpha, overrides: [algorithm.temperature.mode=auto]}
+    - {name: paired_gaussian_prior_features, overrides: [algorithm=gaussian_flame_m, condition.mode=prior_features]}
+    - {name: paired_prior_features, overrides: [condition.mode=prior_features]}

@@ -1,0 +1,67 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run kvme7zun
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in outputs/experiments/halfcheetah_ppo_prior_300k/runs/halfcheetah_ppo_prior_300k__ppo_prior_native__s0__d5dfba/wandb/run-20261021_190352-kvme7zun
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run halfcheetah_ppo_prior_300k__ppo_prior_native__s0
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/kvme7zun
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0; uploading history steps 298-299, summary
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0; uploading data
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0; uploading data
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0; uploading data
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0
+wandb: uploading events.out.tfevents.1792580633.wuaijiadeMacBook-Air-2.local.28095.0
+wandb: uploading data
+wandb: 
+wandb: Run history:
+wandb: actions/behavior_saturation_frac ▁▂▂▇▇▇▇█▇█▅▆▅▆▆▄▆▅▆▁▅▄▆▆▆▆▅▅▆▆▅▅▆▄▄▅▅▅▅▄
+wandb:                actions/norm_mean ▁▃▅▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇███████▇█▇▇█▇██▇██
+wandb:          actions/saturation_frac ▁▂▅▆▇▇▇▇▇█▇▇█▇▆▇▇▇▇▆▆█▇▇▇▇▇▆▇▇▇█▇▇▇▇▇▇▇█
+wandb:                  actor/clip_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▃▃▃▄▄▄▄▄▅▅▅▅▆▆▆▆▆▇▇▇█
+wandb:                  actor/grad_norm ▁▁▂▂▃▃▃▃▃▃▄▅▄▅▅▅▆▅▅▆▆▆▆▆▆▇▇▇▇▇▇▇▇▇██▇███
+wandb:                            alpha ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                 charts/env_steps ▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▅▅▅▅▅▅▅▆▆▆▆▆▆▆▆▆▇▇▇▇▇████
+wandb:            charts/episode_length ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:            charts/episode_return ▁▁▁▃▄▆▃▆▆▇▆▇▇▇▇▇▇▇▇▇▇▇██▇▇████▇██▇███▇██
+wandb:                  charts/episodes ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                              +70 ...
+wandb: 
+wandb: Run summary:
+wandb: actions/behavior_saturation_frac 0.27517
+wandb:                actions/norm_mean 2.08003
+wandb:          actions/saturation_frac 0.28646
+wandb:                  actor/clip_rate 0.00813
+wandb:                  actor/grad_norm 5.44492
+wandb:                            alpha 0.1
+wandb:                 charts/env_steps 300000
+wandb:            charts/episode_length 1000
+wandb:            charts/episode_return 6855.529
+wandb:                  charts/episodes 1
+wandb:                              +70 ...
+wandb: 
+wandb: 🚀 View run halfcheetah_ppo_prior_300k__ppo_prior_native__s0 at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory/runs/kvme7zun
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-half_cheetah-exploratory
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: outputs/experiments/halfcheetah_ppo_prior_300k/runs/halfcheetah_ppo_prior_300k__ppo_prior_native__s0__d5dfba/wandb/run-20261021_190352-kvme7zun/logs
+{
+  "outcome": "completed",
+  "env_transitions": 300000,
+  "gradient_steps": 295001,
+  "wall_time_sec": 54895.36854672432,
+  "best_eval_return": 6834.477882335649
+}
+run dir: outputs/experiments/halfcheetah_ppo_prior_300k/runs/halfcheetah_ppo_prior_300k__ppo_prior_native__s0__d5dfba

@@ -1,0 +1,3 @@
+checkpoint_step,eval_seed,return,length,terminated,truncated
+24,10000,-6.713539961089895,8,0,1
+24,10000,-8.998524542330433,8,0,1

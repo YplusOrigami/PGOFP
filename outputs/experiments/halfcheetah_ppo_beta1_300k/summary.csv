@@ -1,0 +1,2 @@
+variant,n_seeds_planned,n_completed,n_failed,n_skipped,final_tail_return_mean,final_tail_return_ci_lo,final_tail_return_ci_hi,auc_return_mean,auc_return_ci_lo,auc_return_ci_hi,max_drawdown_mean,max_drawdown_ci_lo,max_drawdown_ci_hi,tail_return_std_mean,tail_return_std_ci_lo,tail_return_std_ci_hi,final_failure_rate_mean,final_failure_rate_ci_lo,final_failure_rate_ci_hi,note
+ppo_prior_beta1,3,0,3,0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,CI over training seeds; unstable for < 5 seeds

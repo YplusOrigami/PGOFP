@@ -1,0 +1,54 @@
+{
+  "run_id": "validation_small__pid_noisy_source_only__s0__f231dd",
+  "parent_run_id": null,
+  "outcome": "completed",
+  "config_hash": "a52d0463afc63f89",
+  "provenance": {
+    "utc_time": "2026-10-20T09:07:24Z",
+    "python": "3.12.11",
+    "platform": "macOS-15.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.4.0",
+      "tensorboard": "2.21.0",
+      "wandb": "not-installed"
+    },
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch_threads": 1,
+    "git": null
+  },
+  "env_spec_hash": "f7dc42d066cad79e",
+  "controller_versions": [
+    "ipend_pid_v1"
+  ],
+  "smoke": false,
+  "updated_utc": "2026-10-20T09:07:24Z",
+  "summary": {
+    "outcome": "completed",
+    "env_transitions": 3000,
+    "gradient_steps": 0,
+    "wall_time_sec": 2.1185998916625977,
+    "best_eval_return": 28.8,
+    "final_eval": {
+      "eval/return_mean": 68.0,
+      "eval/return_std": 34.785054261852174,
+      "eval/length_mean": 69.0,
+      "eval/failure_rate": 1.0,
+      "eval/episodes": 5.0,
+      "eval/action_saturation": 0.024570830857595562,
+      "eval/action_smoothness": 0.5475896761485424,
+      "eval_representative/return_mean": 1000.0,
+      "eval_representative/return_std": 0.0,
+      "eval_representative/length_mean": 1000.0,
+      "eval_representative/failure_rate": 0.0,
+      "eval_representative/episodes": 5.0,
+      "eval_representative/action_saturation": 0.0,
+      "eval_representative/action_smoothness": 2.0850232281643818e-05
+    }
+  }
+}

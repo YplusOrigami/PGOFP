@@ -1,0 +1,33 @@
+{
+  "reference_run": "outputs/experiments/halfcheetah_ppo_beta_sweep_300k/runs/halfcheetah_ppo_beta_sweep_300k__ppo_prior_beta0.25__s0__44e8f3",
+  "current_smoke_run": "outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0__d816d1",
+  "historical_metric_count": 79,
+  "new_metric_count": 85,
+  "missing_observed_in_short_run": [
+    "charts/episode_length",
+    "charts/episode_return",
+    "charts/episodes",
+    "charts/terminated_frac",
+    "timing/checkpoint_calls",
+    "timing/checkpoint_sec",
+    "timing/eval_calls",
+    "timing/eval_sec"
+  ],
+  "added_metrics": [
+    "prior_eval/action_saturation",
+    "prior_eval/action_smoothness",
+    "prior_eval/episodes",
+    "prior_eval/failure_rate",
+    "prior_eval/length_mean",
+    "prior_eval/return_mean",
+    "prior_eval/return_std",
+    "prior_eval_deterministic/action_saturation",
+    "prior_eval_deterministic/action_smoothness",
+    "prior_eval_deterministic/episodes",
+    "prior_eval_deterministic/failure_rate",
+    "prior_eval_deterministic/length_mean",
+    "prior_eval_deterministic/return_mean",
+    "prior_eval_deterministic/return_std"
+  ],
+  "notes": "Missing episode metrics require complete 1000-step training episodes; timing eval/checkpoint flushes at the next training log. All core metrics/files pass the per-run contract."
+}

@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+._*
+.DS_Store
+# Track outputs: configs, JSONL/CSV summaries, evaluation, logs and TensorBoard.
+# Training checkpoints/replay are large mutable files; keep their directories local.
+outputs/**/checkpoints/
+# Frozen prior bundles are small and must be reproducible after a clone.
+# Keep the general model/array exclusions, then explicitly allow complete bundles.
+wandb/
+*.pt
+*.npz
+!artifacts/**/*.pt
+!artifacts/**/*.npz
+# Process locks, temporary writes, plotting caches and local SDK mirrors.
+outputs/.cache/
+outputs/**/*.lock
+outputs/**/*.tmp
+outputs/**/progress_events.jsonl.*.tmp
+.env
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+MUJOCO_LOG.TXT
+!tests/**/*.npz

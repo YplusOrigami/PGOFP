@@ -1,0 +1,1382 @@
+{
+  "env": "Reacher-v5",
+  "episodes": 20,
+  "environment_seeds": [
+    50000,
+    50019
+  ],
+  "purpose": "Independent calibration screening, no learning or tuning; not 20 training seeds",
+  "results": {
+    "random": {
+      "summary": {
+        "eval/return_mean": -45.04059508106708,
+        "eval/return_std": 5.338504875909395,
+        "eval/length_mean": 50.0,
+        "eval/failure_rate": 0.0,
+        "eval/episodes": 20.0,
+        "eval/action_saturation": 0.011000000000000001,
+        "eval/action_smoothness": 0.6970154823165159,
+        "eval/final_distance": 0.20737706340737988,
+        "prior_fallback_rate_mean": 0.0,
+        "wall_time_sec": 0.07068276405334473,
+        "model_rollout_steps": 0
+      },
+      "episodes": [
+        {
+          "seed": 50000,
+          "ret": -47.47433012559364,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.67363120311377,
+            "reward_dist": -0.21115866061782915,
+            "final_distance": 0.21115866061782915,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.022957567125558853
+          }
+        },
+        {
+          "seed": 50001,
+          "ret": -37.465670083917466,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.6395907277355388,
+            "reward_dist": -0.03264080297848812,
+            "final_distance": 0.03264080297848812,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.018705148249864578
+          }
+        },
+        {
+          "seed": 50002,
+          "ret": -45.350288948430396,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.7507975332590998,
+            "reward_dist": -0.2127392455674745,
+            "final_distance": 0.2127392455674745,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01083221286535263
+          }
+        },
+        {
+          "seed": 50003,
+          "ret": -37.97770835669714,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.7241363720018037,
+            "reward_dist": -0.3282373097865415,
+            "final_distance": 0.3282373097865415,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.008705072104930878
+          }
+        },
+        {
+          "seed": 50004,
+          "ret": -48.27030532147021,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.6349866660882015,
+            "reward_dist": -0.3512125194606752,
+            "final_distance": 0.3512125194606752,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.010833144187927246
+          }
+        },
+        {
+          "seed": 50005,
+          "ret": -45.5960503271791,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.7385861292785528,
+            "reward_dist": -0.21105086980164153,
+            "final_distance": 0.21105086980164153,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01400010660290718
+          }
+        },
+        {
+          "seed": 50006,
+          "ret": -37.873067727663674,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.669081334100694,
+            "reward_dist": -0.3208269842838449,
+            "final_distance": 0.3208269842838449,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.012326519936323166
+          }
+        },
+        {
+          "seed": 50007,
+          "ret": -50.53640755366913,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.6954562581923543,
+            "reward_dist": -0.167044219363949,
+            "final_distance": 0.167044219363949,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01329183578491211
+          }
+        },
+        {
+          "seed": 50008,
+          "ret": -43.97500638382877,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.6235048933600893,
+            "reward_dist": -0.2330610029042949,
+            "final_distance": 0.2330610029042949,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.007244758307933807
+          }
+        },
+        {
+          "seed": 50009,
+          "ret": -45.69718823869785,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.7254853189295652,
+            "reward_dist": -0.1585566316673231,
+            "final_distance": 0.1585566316673231,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.007618684321641922
+          }
+        },
+        {
+          "seed": 50010,
+          "ret": -45.04730816591082,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.6896631199182296,
+            "reward_dist": -0.24469288043367918,
+            "final_distance": 0.24469288043367918,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.009578187018632889
+          }
+        },
+        {
+          "seed": 50011,
+          "ret": -51.73353881338232,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.6163949038909406,
+            "reward_dist": -0.4046042743596905,
+            "final_distance": 0.4046042743596905,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.018504448235034943
+          }
+        },
+        {
+          "seed": 50012,
+          "ret": -55.38589894872336,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.7068128601020697,
+            "reward_dist": -0.31564226997932027,
+            "final_distance": 0.31564226997932027,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.009453855454921722
+          }
+        },
+        {
+          "seed": 50013,
+          "ret": -46.500174149915004,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.6961100366042585,
+            "reward_dist": -0.14032730417363012,
+            "final_distance": 0.14032730417363012,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.016500242054462433
+          }
+        },
+        {
+          "seed": 50014,
+          "ret": -37.080701489913835,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.6932273160438148,
+            "reward_dist": -0.0741975123794624,
+            "final_distance": 0.0741975123794624,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01695612445473671
+          }
+        },
+        {
+          "seed": 50015,
+          "ret": -36.25549428518449,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.6647888805185046,
+            "reward_dist": -0.12106142663806503,
+            "final_distance": 0.12106142663806503,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.019249971956014633
+          }
+        },
+        {
+          "seed": 50016,
+          "ret": -52.88189585436367,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.7999207432172737,
+            "reward_dist": -0.271055143205076,
+            "final_distance": 0.271055143205076,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.007996801286935806
+          }
+        },
+        {
+          "seed": 50017,
+          "ret": -43.14333287633347,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.6678687338622249,
+            "reward_dist": -0.18099893446937784,
+            "final_distance": 0.18099893446937784,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.009667128324508667
+          }
+        },
+        {
+          "seed": 50018,
+          "ret": -46.0003804427298,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.7629928263474484,
+            "reward_dist": -0.09335477637978366,
+            "final_distance": 0.09335477637978366,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.016666948795318604
+          }
+        },
+        {
+          "seed": 50019,
+          "ret": -46.56715352773743,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.04,
+            "action_smoothness": 0.7672737897658835,
+            "reward_dist": -0.07507849969745102,
+            "final_distance": 0.07507849969745102,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01762574538588524
+          }
+        }
+      ],
+      "controller": null,
+      "controller_seed": null
+    },
+    "zero": {
+      "summary": {
+        "eval/return_mean": -8.87519240581937,
+        "eval/return_std": 5.435177425762335,
+        "eval/length_mean": 50.0,
+        "eval/failure_rate": 0.0,
+        "eval/episodes": 20.0,
+        "eval/action_saturation": 0.0,
+        "eval/action_smoothness": 0.0,
+        "eval/final_distance": 0.17753689972760262,
+        "prior_fallback_rate_mean": 0.0,
+        "wall_time_sec": 0.057459115982055664,
+        "model_rollout_steps": 0
+      },
+      "episodes": [
+        {
+          "seed": 50000,
+          "ret": -13.924665423059656,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.278623310673632,
+            "final_distance": 0.278623310673632,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.008789356797933578
+          }
+        },
+        {
+          "seed": 50001,
+          "ret": -11.353359677690397,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.2270179010369527,
+            "final_distance": 0.2270179010369527,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.02195313572883606
+          }
+        },
+        {
+          "seed": 50002,
+          "ret": -9.084265511749026,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.18156951282127864,
+            "final_distance": 0.18156951282127864,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.008789822459220886
+          }
+        },
+        {
+          "seed": 50003,
+          "ret": -3.6115975487160132,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.07247488855178534,
+            "final_distance": 0.07247488855178534,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.009996816515922546
+          }
+        },
+        {
+          "seed": 50004,
+          "ret": -15.333522258730227,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.30681426455753913,
+            "final_distance": 0.30681426455753913,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.012246426194906235
+          }
+        },
+        {
+          "seed": 50005,
+          "ret": -6.770916767974778,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.1354548855157795,
+            "final_distance": 0.1354548855157795,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01345248892903328
+          }
+        },
+        {
+          "seed": 50006,
+          "ret": -5.013580762650104,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.1001915835208384,
+            "final_distance": 0.1001915835208384,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.014534220099449158
+          }
+        },
+        {
+          "seed": 50007,
+          "ret": -10.231888072769879,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.20476807675470346,
+            "final_distance": 0.20476807675470346,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.010951422154903412
+          }
+        },
+        {
+          "seed": 50008,
+          "ret": -15.256729565909996,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.3052760579243144,
+            "final_distance": 0.3052760579243144,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.00779004767537117
+          }
+        },
+        {
+          "seed": 50009,
+          "ret": -2.152247285923665,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.043075065512389654,
+            "final_distance": 0.043075065512389654,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01237308606505394
+          }
+        },
+        {
+          "seed": 50010,
+          "ret": -2.3025424646740698,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.046039148886113254,
+            "final_distance": 0.046039148886113254,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.009038019925355911
+          }
+        },
+        {
+          "seed": 50011,
+          "ret": -14.481746671988118,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.28958869444512064,
+            "final_distance": 0.28958869444512064,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.012619420886039734
+          }
+        },
+        {
+          "seed": 50012,
+          "ret": -15.5283042296544,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.31046549218369596,
+            "final_distance": 0.31046549218369596,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.016373582184314728
+          }
+        },
+        {
+          "seed": 50013,
+          "ret": -8.903250346252298,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.1781876576579044,
+            "final_distance": 0.1781876576579044,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.01803506165742874
+          }
+        },
+        {
+          "seed": 50014,
+          "ret": -2.6922027653490055,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.05388537905692551,
+            "final_distance": 0.05388537905692551,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.008537434041500092
+          }
+        },
+        {
+          "seed": 50015,
+          "ret": -1.4498521526795534,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.029102753773422946,
+            "final_distance": 0.029102753773422946,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.012750271707773209
+          }
+        },
+        {
+          "seed": 50016,
+          "ret": -1.4321075824197125,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.028523245946070187,
+            "final_distance": 0.028523245946070187,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.009620562195777893
+          }
+        },
+        {
+          "seed": 50017,
+          "ret": -17.400635252685447,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.348028836393804,
+            "final_distance": 0.348028836393804,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.026002060621976852
+          }
+        },
+        {
+          "seed": 50018,
+          "ret": -14.664721843421164,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.29337297164521914,
+            "final_distance": 0.29337297164521914,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.010746531188488007
+          }
+        },
+        {
+          "seed": 50019,
+          "ret": -5.915711932089857,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.0,
+            "reward_dist": -0.1182782676945635,
+            "final_distance": 0.1182782676945635,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.007076188921928406
+          }
+        }
+      ],
+      "controller": null,
+      "controller_seed": null
+    },
+    "pid": {
+      "summary": {
+        "eval/return_mean": -5.7332522185063,
+        "eval/return_std": 2.1528193386716437,
+        "eval/length_mean": 50.0,
+        "eval/failure_rate": 0.0,
+        "eval/episodes": 20.0,
+        "eval/action_saturation": 0.03250000000000001,
+        "eval/action_smoothness": 0.03140189771029698,
+        "eval/final_distance": 0.00015684905272178123,
+        "prior_fallback_rate_mean": 0.0,
+        "wall_time_sec": 0.182142972946167,
+        "model_rollout_steps": 0
+      },
+      "episodes": [
+        {
+          "seed": 50000,
+          "ret": -10.27092930174437,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.06,
+            "action_smoothness": 0.04085622908671063,
+            "reward_dist": -0.00024314546500557,
+            "final_distance": 0.00024314546500557,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.08478419855237007,
+            "prior/atanh_clamp_ratio": 0.06
+          }
+        },
+        {
+          "seed": 50001,
+          "ret": -7.559393243368866,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.04,
+            "action_smoothness": 0.029524877473871742,
+            "reward_dist": -0.0002553060765329253,
+            "final_distance": 0.0002553060765329253,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07980914786458015,
+            "prior/atanh_clamp_ratio": 0.04
+          }
+        },
+        {
+          "seed": 50002,
+          "ret": -4.382399172772356,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.023483843486209646,
+            "reward_dist": -0.00014554977445676315,
+            "final_distance": 0.00014554977445676315,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.0650483462959528,
+            "prior/atanh_clamp_ratio": 0.02
+          }
+        },
+        {
+          "seed": 50003,
+          "ret": -4.032891799784038,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.03376821180338121,
+            "reward_dist": -5.6070781487577874e-05,
+            "final_distance": 5.6070781487577874e-05,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07941908203065395,
+            "prior/atanh_clamp_ratio": 0.02
+          }
+        },
+        {
+          "seed": 50004,
+          "ret": -5.704986505020365,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.02939074004187168,
+            "reward_dist": -0.00023810303554163822,
+            "final_distance": 0.00023810303554163822,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.0563190970569849,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50005,
+          "ret": -7.889997483168433,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.05,
+            "action_smoothness": 0.03888261785026288,
+            "reward_dist": -0.00017795407350498972,
+            "final_distance": 0.00017795407350498972,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.06909501738846302,
+            "prior/atanh_clamp_ratio": 0.05
+          }
+        },
+        {
+          "seed": 50006,
+          "ret": -5.984039294612551,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.04,
+            "action_smoothness": 0.03434150185384336,
+            "reward_dist": -0.00010501447312103869,
+            "final_distance": 0.00010501447312103869,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.08399843238294125,
+            "prior/atanh_clamp_ratio": 0.04
+          }
+        },
+        {
+          "seed": 50007,
+          "ret": -6.972248878623199,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.04,
+            "action_smoothness": 0.03669632498898938,
+            "reward_dist": -0.00015680388236142555,
+            "final_distance": 0.00015680388236142555,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.05700663663446903,
+            "prior/atanh_clamp_ratio": 0.04
+          }
+        },
+        {
+          "seed": 50008,
+          "ret": -6.158746980046246,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.030859339669405017,
+            "reward_dist": -0.00023332878952130154,
+            "final_distance": 0.00023332878952130154,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07907991297543049,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50009,
+          "ret": -3.774654175986248,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.029218203173736492,
+            "reward_dist": -5.73661615314324e-05,
+            "final_distance": 5.73661615314324e-05,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07137654349207878,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50010,
+          "ret": -2.67222582201958,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.02,
+            "action_smoothness": 0.028144628057872274,
+            "reward_dist": -3.524551287973333e-05,
+            "final_distance": 3.524551287973333e-05,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.04339001141488552,
+            "prior/atanh_clamp_ratio": 0.02
+          }
+        },
+        {
+          "seed": 50011,
+          "ret": -5.462042182983494,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.027306058212588493,
+            "reward_dist": -0.00021958851494944121,
+            "final_distance": 0.00021958851494944121,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.038300007581710815,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50012,
+          "ret": -6.862166797684522,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.04,
+            "action_smoothness": 0.030033636293985776,
+            "reward_dist": -0.0002384033099274245,
+            "final_distance": 0.0002384033099274245,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.06474673748016357,
+            "prior/atanh_clamp_ratio": 0.04
+          }
+        },
+        {
+          "seed": 50013,
+          "ret": -5.000401993871398,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.017645742644645555,
+            "reward_dist": -0.00016247743463432946,
+            "final_distance": 0.00016247743463432946,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07474503479897976,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50014,
+          "ret": -3.908030185440801,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.029751834536148877,
+            "reward_dist": -7.189354897713212e-05,
+            "final_distance": 7.189354897713212e-05,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.06541087292134762,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50015,
+          "ret": -2.2285936357171963,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.02815956954078984,
+            "reward_dist": -2.1323353271170505e-05,
+            "final_distance": 2.1323353271170505e-05,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.038536591455340385,
+            "prior/atanh_clamp_ratio": 0.01
+          }
+        },
+        {
+          "seed": 50016,
+          "ret": -2.2689044332634034,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.01,
+            "action_smoothness": 0.027298789607218113,
+            "reward_dist": -3.191402016513628e-05,
+            "final_distance": 3.191402016513628e-05,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.06045915186405182,
+            "prior/atanh_clamp_ratio": 0.01
+          }
+        },
+        {
+          "seed": 50017,
+          "ret": -8.812442307444366,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.04,
+            "action_smoothness": 0.036628626274064956,
+            "reward_dist": -0.00034073670712456177,
+            "final_distance": 0.00034073670712456177,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07763497531414032,
+            "prior/atanh_clamp_ratio": 0.04
+          }
+        },
+        {
+          "seed": 50018,
+          "ret": -7.623780037133529,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.03,
+            "action_smoothness": 0.03803790739618066,
+            "reward_dist": -0.00022413659245757678,
+            "final_distance": 0.00022413659245757678,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07325169630348682,
+            "prior/atanh_clamp_ratio": 0.03
+          }
+        },
+        {
+          "seed": 50019,
+          "ret": -7.096170139441057,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.05,
+            "action_smoothness": 0.03800927221416306,
+            "reward_dist": -0.00012261954698445664,
+            "final_distance": 0.00012261954698445664,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 0.07581335492432117,
+            "prior/atanh_clamp_ratio": 0.05
+          }
+        }
+      ],
+      "controller": {
+        "name": "reacher_pid",
+        "version": "reacher_pid_v1",
+        "quality": "good",
+        "dt": 0.02,
+        "elbow": 1,
+        "integral_limit": 1.0,
+        "gains": {
+          "kp": [
+            2.0,
+            2.0
+          ],
+          "kd": [
+            0.3,
+            0.3
+          ],
+          "ki": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "controller_seed": 0
+    },
+    "mpc": {
+      "summary": {
+        "eval/return_mean": -6.26129024026037,
+        "eval/return_std": 2.1978523490861224,
+        "eval/length_mean": 50.0,
+        "eval/failure_rate": 0.0,
+        "eval/episodes": 20.0,
+        "eval/action_saturation": 0.0,
+        "eval/action_smoothness": 0.18749091954217575,
+        "eval/final_distance": 0.045418153040844934,
+        "prior_fallback_rate_mean": 0.0,
+        "wall_time_sec": 65.23304891586304,
+        "model_rollout_steps": 2560000
+      },
+      "episodes": [
+        {
+          "seed": 50000,
+          "ret": -7.409690793026292,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.1862577809286969,
+            "reward_dist": -0.031011359511240486,
+            "final_distance": 0.031011359511240486,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 60.3743133880198,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50001,
+          "ret": -11.992336784892021,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.19122324161687676,
+            "reward_dist": -0.1592164161196518,
+            "final_distance": 0.1592164161196518,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 61.1230649612844,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50002,
+          "ret": -6.298403779552081,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.182424699811607,
+            "reward_dist": -0.05966980213029385,
+            "final_distance": 0.05966980213029385,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 63.17518413066864,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50003,
+          "ret": -3.330575384543042,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.15520435849166647,
+            "reward_dist": -0.026775542094359034,
+            "final_distance": 0.026775542094359034,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 64.74282007664442,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50004,
+          "ret": -6.119665146803919,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.19684826092300367,
+            "reward_dist": -0.011551319878973999,
+            "final_distance": 0.011551319878973999,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 62.51650498248637,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50005,
+          "ret": -9.183235344559893,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.22076671874644804,
+            "reward_dist": -0.12637732418842285,
+            "final_distance": 0.12637732418842285,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 63.29967082478106,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50006,
+          "ret": -5.939769969845441,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.17396826342660554,
+            "reward_dist": -0.07269928474378616,
+            "final_distance": 0.07269928474378616,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 66.11387075856328,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50007,
+          "ret": -6.086057709397402,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.20374181501719416,
+            "reward_dist": -0.028506227257849247,
+            "final_distance": 0.028506227257849247,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 66.71254992485046,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50008,
+          "ret": -6.486057914812697,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.17623721420460817,
+            "reward_dist": -0.024876681878393262,
+            "final_distance": 0.024876681878393262,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 64.12794754840434,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50009,
+          "ret": -4.841907616169617,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.21058097352482835,
+            "reward_dist": -0.04171953555027133,
+            "final_distance": 0.04171953555027133,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 62.67080425284803,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50010,
+          "ret": -2.9771382949414735,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.17958420172941927,
+            "reward_dist": -0.01894703733815669,
+            "final_distance": 0.01894703733815669,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 61.54329831711948,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50011,
+          "ret": -6.060393557206548,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.17452108563513172,
+            "reward_dist": -0.007725120565363135,
+            "final_distance": 0.007725120565363135,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 61.72506005503237,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50012,
+          "ret": -7.562454809559884,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.22523731137720907,
+            "reward_dist": -0.014049102653632907,
+            "final_distance": 0.014049102653632907,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 62.759956726804376,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50013,
+          "ret": -7.544745647774318,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.22153192165554786,
+            "reward_dist": -0.06765570421850074,
+            "final_distance": 0.06765570421850074,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 88.38460163213313,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50014,
+          "ret": -5.304529893388867,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.2071599644817868,
+            "reward_dist": -0.05172003017375867,
+            "final_distance": 0.05172003017375867,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 65.73538151569664,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50015,
+          "ret": -2.5420803962280143,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.15999181868926604,
+            "reward_dist": -0.014447316496704228,
+            "final_distance": 0.014447316496704228,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 65.63816339708865,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50016,
+          "ret": -3.6292229236149325,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.1882355270945296,
+            "reward_dist": -0.018667050266949745,
+            "final_distance": 0.018667050266949745,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 70.56855409406126,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50017,
+          "ret": -7.444562863791884,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.16930946099514865,
+            "reward_dist": -0.0028579303771016328,
+            "final_distance": 0.0028579303771016328,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 62.8377200383693,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50018,
+          "ret": -8.642848016234586,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.16532193131896913,
+            "reward_dist": -0.05969757376652369,
+            "final_distance": 0.05969757376652369,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 63.538753259927034,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        },
+        {
+          "seed": 50019,
+          "ret": -5.83012795886447,
+          "length": 50,
+          "terminated": false,
+          "truncated": true,
+          "extras": {
+            "action_saturation": 0.0,
+            "action_smoothness": 0.1616718411749723,
+            "reward_dist": -0.07019270160696524,
+            "final_distance": 0.07019270160696524,
+            "prior/fallback_rate": 0.0,
+            "prior/controller_latency_ms": 62.38391834311187,
+            "prior/atanh_clamp_ratio": 0.0
+          }
+        }
+      ],
+      "controller": {
+        "name": "cem_mpc",
+        "version": "cem_mpc_v1",
+        "model_access": "observation_model",
+        "horizon": 10,
+        "population": 64,
+        "elite_fraction": 0.125,
+        "iterations": 3,
+        "init_std": 0.5,
+        "min_std": 0.05,
+        "timeout_s": 0.5,
+        "tasks": {
+          "InvertedPendulum-v5": {
+            "horizon": 15,
+            "population": 128,
+            "iterations": 5,
+            "init_std": 0.4,
+            "elite_fraction": 0.1,
+            "cost": {
+              "w_x": 3.0,
+              "w_xdot": 1.0,
+              "w_theta": 20.0
+            }
+          },
+          "Reacher-v5": {
+            "horizon": 10,
+            "population": 64,
+            "iterations": 4,
+            "init_std": 0.5,
+            "cost": {
+              "w_u": 0.1
+            }
+          }
+        }
+      },
+      "controller_seed": 0
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "env_id": "Reacher-v5",
+  "prior_type": "pid",
+  "beta": 1.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 1,
+  "max_steps": 8,
+  "smoke": true,
+  "prior_config": {
+    "type": "pid",
+    "controller_config": "reacher_pid",
+    "controller": {
+      "name": "reacher_pid",
+      "version": "reacher_pid_v1",
+      "quality": "good",
+      "dt": 0.02,
+      "elbow": 1,
+      "integral_limit": 1.0,
+      "gains": {
+        "kp": [
+          2.0,
+          2.0
+        ],
+        "kd": [
+          0.3,
+          0.3
+        ],
+        "ki": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "artifact_path": null,
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "deterministic_controller",
+  "controller_versions": [
+    "reacher_pid_v1"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": -7.652098471107861,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 8.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 1.0,
+      "prior_eval/action_saturation": 0.25,
+      "prior_eval/action_smoothness": 0.23597850969859532,
+      "prior_eval/final_distance": 0.16457637508373618
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": -7.652098471107861,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.25,
+          "action_smoothness": 0.23597850969859532,
+          "reward_dist": -0.16457637508373618,
+          "final_distance": 0.16457637508373618,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05559887517847528,
+          "prior/atanh_clamp_ratio": 0.25
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 0.01256837500113761,
+  "attempt_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0__707f30/evaluation/prior_baseline/attempt_377e6182"
+}

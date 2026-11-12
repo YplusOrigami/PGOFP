@@ -1,0 +1,15 @@
+# A4/A6/A7: staged (NOT a full Cartesian product): sigma, then annealing, then time sampling on a fixed prior.
+matrix:
+  name: schedule_time
+  seeds: [0, 1, 2]
+  base_overrides: [algorithm=prior_flame_m, prior=pid, env=inverted_pendulum]
+  variants:
+    - {name: sigma0.1, overrides: [source=constant, source.sigma_prior=0.1]}
+    - {name: sigma0.3, overrides: [source=constant, source.sigma_prior=0.3]}
+    - {name: sigma0.6, overrides: [source=constant, source.sigma_prior=0.6]}
+    - {name: sigma1.0, overrides: [source=constant, source.sigma_prior=1.0]}
+    - {name: anneal_slow, overrides: [source=annealed, source.total_steps=500000]}
+    - {name: anneal_fast, overrides: [source=annealed, source.total_steps=100000]}
+    - {name: time_logit_normal, overrides: [source=constant, algorithm.flow.time_sampling=logit_normal]}
+    - {name: flow_ratio0, overrides: [source=constant, algorithm.flow.flow_ratio=0.0]}
+    - {name: flow_ratio1, overrides: [source=constant, algorithm.flow.flow_ratio=1.0]}

@@ -1,0 +1,41 @@
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from WANDB_API_KEY.
+wandb: Currently logged in as: yplus (ypluss) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Using an existing wandb-core service via WANDB_SERVICE.
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run 0dgaadl7
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__c3a4e0/wandb/run-20261113_015539-0dgaadl7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/0dgaadl7
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+wandb: updating run metadata
+wandb: uploading wandb-metadata.json; uploading requirements.txt; uploading output.log; uploading wandb-summary.json; uploading config.yaml (+ 1 more)
+wandb: uploading requirements.txt; uploading config.yaml; uploading ._events.out.tfevents.1794506140.wuaijiadeMacBook-Air-2.local.11424.0
+wandb: uploading summary, console lines 0-1
+wandb: 
+wandb: Run summary:
+wandb: best_eval_return -0.46059
+wandb:  env_transitions 24
+wandb:   gradient_steps 9
+wandb:          outcome completed
+wandb:    wall_time_sec 1.19034
+wandb: 
+wandb: 🚀 View run mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0 at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke/runs/0dgaadl7
+wandb: ⭐️ View project at: https://forge.coreweave.com/wandb/ypluss/pgofp-smoke
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__c3a4e0/wandb/run-20261113_015539-0dgaadl7/logs
+{
+  "outcome": "completed",
+  "env_transitions": 24,
+  "gradient_steps": 9,
+  "wall_time_sec": 1.190342903137207,
+  "best_eval_return": -0.4605922113212219
+}
+run dir: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_cloud_v2/runs/mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__c3a4e0

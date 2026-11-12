@@ -1,0 +1,9 @@
+# 7 normalized commands -> 12 coil voltages. The real matrix and channel order must come from the device documents.
+# Until then verified: false and the real backend REFUSES to run. No matrix is invented here.
+verified: false
+source: pending_device_documents
+shape: [12, 7]
+matrix: null
+channel_order: null
+voltage_limits_V: {main: 1499.0, shaping: 1499.0}   # proposal quotes -1499..+1499 V overall range; per-channel limits pending
+mock_matrix_for_tests: false

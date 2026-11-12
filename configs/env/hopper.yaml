@@ -1,0 +1,5 @@
+name: hopper
+id: Hopper-v5
+backend: mujoco
+controllers: [ppo]
+notes: Healthy termination and time limit are kept separate.

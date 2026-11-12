@@ -1,0 +1,8 @@
+# A3: beta sweep at fixed prior quality, sigma and time sampling.
+matrix:
+  name: prior_ratio
+  seeds: [0, 1, 2]
+  base_overrides: [algorithm=prior_flame_m, prior=pid, source=constant]
+  axes:
+    env: [inverted_pendulum, reacher]
+    source.beta: [0.0, 0.25, 0.5, 0.75, 1.0]

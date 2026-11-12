@@ -1,0 +1,5 @@
+# External reproduction baseline. Refuses to start without a pinned upstream commit + checkout path.
+name: flame_reference
+params:
+  upstream_commit: null
+  upstream_path: null

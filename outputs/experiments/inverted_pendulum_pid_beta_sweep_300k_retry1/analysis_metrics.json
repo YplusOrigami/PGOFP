@@ -1,0 +1,125 @@
+{
+  "0": [
+    {
+      "seed": 0,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 825.8,
+      "failure": 0.2,
+      "representative": 1000.0,
+      "first900": 70000,
+      "first1000": 70000,
+      "tail": 883.85,
+      "auc": 798.9241379310345,
+      "early_auc": 507.1388888888889
+    },
+    {
+      "seed": 1,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 821.4,
+      "failure": 0.4,
+      "representative": 1000.0,
+      "first900": 20000,
+      "first1000": 40000,
+      "tail": 804.7666666666667,
+      "auc": 811.846551724138,
+      "early_auc": 671.1777777777778
+    },
+    {
+      "seed": 2,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 795.5,
+      "failure": 0.4,
+      "representative": 1000.0,
+      "first900": 20000,
+      "first1000": 30000,
+      "tail": 737.7666666666667,
+      "auc": 879.6034482758621,
+      "early_auc": 914.05
+    }
+  ],
+  "0.5": [
+    {
+      "seed": 0,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 1000.0,
+      "failure": 0.0,
+      "representative": 1000.0,
+      "first900": 40000,
+      "first1000": 50000,
+      "tail": 865.2333333333333,
+      "auc": 851.6862068965518,
+      "early_auc": 836.4888888888889
+    },
+    {
+      "seed": 1,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 1000.0,
+      "failure": 0.0,
+      "representative": 1000.0,
+      "first900": 30000,
+      "first1000": 30000,
+      "tail": 945.5,
+      "auc": 830.5586206896552,
+      "early_auc": 752.6111111111111
+    },
+    {
+      "seed": 2,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 905.7,
+      "failure": 0.2,
+      "representative": 1000.0,
+      "first900": 20000,
+      "first1000": 40000,
+      "tail": 905.45,
+      "auc": 928.101724137931,
+      "early_auc": 927.6111111111111
+    }
+  ],
+  "1": [
+    {
+      "seed": 0,
+      "outcome": "failed_numerical",
+      "stop": 165348,
+      "final": null,
+      "failure": null,
+      "representative": null,
+      "first900": 30000,
+      "first1000": 30000,
+      "tail": null,
+      "auc": null,
+      "early_auc": 675.8
+    },
+    {
+      "seed": 1,
+      "outcome": "completed",
+      "stop": 300000,
+      "final": 3.3,
+      "failure": 1.0,
+      "representative": 3.8,
+      "first900": 30000,
+      "first1000": 30000,
+      "tail": 2.45,
+      "auc": 329.7689655172414,
+      "early_auc": 814.4611111111111
+    },
+    {
+      "seed": 2,
+      "outcome": "failed_numerical",
+      "stop": 50968,
+      "final": null,
+      "failure": null,
+      "representative": null,
+      "first900": 10000,
+      "first1000": 40000,
+      "tail": null,
+      "auc": null,
+      "early_auc": null
+    }
+  ]
+}

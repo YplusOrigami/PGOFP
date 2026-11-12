@@ -1,0 +1,70 @@
+{
+  "env_id": "InvertedPendulum-v5",
+  "prior_type": "pid",
+  "beta": 0.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 1,
+  "max_steps": 8,
+  "smoke": true,
+  "prior_config": {
+    "type": "pid",
+    "controller_config": "inverted_pendulum_pid",
+    "controller": {
+      "name": "inverted_pendulum_pid",
+      "version": "ipend_pid_v1",
+      "quality": "good",
+      "dt": 0.04,
+      "u_max_phys": 3.0,
+      "integral_limit": 5.0,
+      "gains": {
+        "theta": 10.0,
+        "theta_dot": 1.0,
+        "x": 0.5,
+        "x_dot": 0.5,
+        "integral_x": 0.0
+      }
+    },
+    "artifact_path": null,
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "deterministic_controller",
+  "controller_versions": [
+    "ipend_pid_v1"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 8.0,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 8.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 1.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.0014423287440357463
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 8.0,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0014423287440357463,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.04174487457930809,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 0.007917708000604762,
+  "attempt_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_baseline_v4/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0__0f2795/evaluation/prior_baseline/attempt_93e2b61c"
+}

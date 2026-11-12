@@ -1,0 +1,12 @@
+# A1: replace ONLY the source type; everything else (network, K_train, temperature, beta, sigma) fixed.
+matrix:
+  name: source_type
+  seeds: [0, 1, 2]
+  axes:
+    env: [inverted_pendulum, reacher]
+  variants:
+    - {name: gaussian, overrides: [algorithm=gaussian_flame_m, prior=gaussian]}
+    - {name: pid, overrides: [algorithm=prior_flame_m, prior=pid]}
+    - {name: mpc, overrides: [algorithm=prior_flame_m, prior=mpc]}
+    - {name: ppo_native, overrides: [algorithm=prior_flame_m, prior=ppo, prior.distribution=native]}
+    - {name: ppo_center_gaussian, overrides: [algorithm=prior_flame_m, prior=ppo, prior.distribution=center_gaussian]}

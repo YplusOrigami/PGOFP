@@ -1,0 +1,18 @@
+# Pre-formal validation (docs 19.3): 15k transitions on InvertedPendulum. Smoke-sized budget, NOT a formal result.
+matrix:
+  name: validation_small
+  seeds: [0, 1]
+  base_overrides:
+    - env=inverted_pendulum
+    - train.total_env_steps=15000
+    - train.learning_starts=1000
+    - eval.interval=2500
+    - eval.episodes=5
+    - checkpoint.interval=5000
+    - train.log_interval=1000
+    - source=constant
+  variants:
+    - {name: gaussian_flame, overrides: [algorithm=gaussian_flame_m, prior=gaussian]}
+    - {name: pid_prior, overrides: [algorithm=prior_flame_m, prior=pid]}
+    - {name: pid_controller_only, overrides: [algorithm=controller_only, prior=pid, train.total_env_steps=3000, eval.interval=1500]}
+    - {name: pid_noisy_source_only, overrides: [algorithm=controller_only, prior=pid, algorithm.params.mode=noisy_source, train.total_env_steps=3000, eval.interval=1500]}

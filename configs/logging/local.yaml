@@ -1,0 +1,4 @@
+jsonl: true
+tensorboard: true
+flush_every: 20
+wandb: {mode: disabled}

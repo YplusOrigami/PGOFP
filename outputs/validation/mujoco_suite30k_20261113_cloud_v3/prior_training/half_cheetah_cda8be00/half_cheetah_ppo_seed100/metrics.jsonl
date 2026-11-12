@@ -1,0 +1,1 @@
+{"step": 64, "wall_time": 0.02, "loss/policy": 8.568167686462402e-08, "loss/value": 37.96977233886719, "entropy/gaussian_z": 5.513631343841553, "ppo/approx_kl": 1.1175870895385742e-08, "ppo/clip_frac": 0.0, "charts/env_steps": 64.0, "charts/steps_per_second": 3150.5029810807005}

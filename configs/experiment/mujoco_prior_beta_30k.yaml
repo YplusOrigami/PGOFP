@@ -1,0 +1,59 @@
+# Frozen-prior PGOFP suite. 10 task/prior pairs x 5 betas x 3 seeds = 150 Flow runs.
+# Read by scripts/run_mujoco_suite.py, not the generic Cartesian matrix expander.
+suite:
+  name: mujoco_prior_beta_30k_v1
+  seeds: [0, 1, 2]
+  betas: [0.0, 0.25, 0.5, 0.75, 1.0]
+  ppo_envs: [inverted_pendulum, reacher, half_cheetah, hopper, walker2d, inverted_double_pendulum]
+  pid_envs: [inverted_pendulum, reacher]
+  mpc_envs: [reacher, inverted_double_pendulum]
+  prior_seed: 100
+  prior_steps: 1000000
+  mpc_seed: 0
+  # Shared with the historical HalfCheetah prior: complete 2048-step rollouts,
+  # 10 PPO epochs, 64-wide MLP, actual final count = 1,001,472 with one env.
+  prior_overrides:
+    - algorithm.params.rollout_steps=2048
+    - algorithm.params.epochs=10
+    - algorithm.params.minibatch_size=64
+    - algorithm.params.hidden=[64,64]
+    - algorithm.params.lr=0.0003
+    - train.num_envs=1
+    - checkpoint_fractions=[0.1,0.25,0.5,1.0]
+    - calibration.seeds_base=50000
+    - calibration.episodes=10
+  flow_overrides:
+    - algorithm=prior_flame_m
+    - source=constant
+    - condition.mode=public_state
+    - condition.use_controller_features=false
+    - train.total_env_steps=30000
+    - train.num_envs=1
+    - train.learning_starts=5000
+    - train.utd_ratio=1.0
+    - train.batch_size=256
+    - train.warmup_source=uniform_action
+    - replay.capacity=1000000
+    - network.actor_hidden=[256,256,256]
+    - network.critic_hidden=[256,256,256]
+    - algorithm.K_train=32
+    - algorithm.K_local=16
+    - algorithm.K_exec=1
+    - algorithm.K_eval=1
+    - algorithm.use_entropy=true
+    - algorithm.temperature.mode=fixed
+    - algorithm.temperature.alpha=0.1
+    - algorithm.density.steps=5
+    - algorithm.density.solver=heun
+    - source.sigma_prior=0.3
+    - source.sigma_base=1.0
+    - eval.interval=10000
+    - eval.episodes=10
+    - eval.seed_base=10000
+    - eval.prior_before_training=true
+    - eval.representative_action=true
+    - checkpoint.interval=10000
+    - logging.jsonl=true
+    - logging.tensorboard=true
+    - logging.flush_every=1
+    - logging.console_progress=true

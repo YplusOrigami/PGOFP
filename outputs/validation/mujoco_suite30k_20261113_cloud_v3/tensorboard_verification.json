@@ -1,0 +1,246 @@
+{
+  "checked_runs": 30,
+  "all_passed": true,
+  "checks": [
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0__bfca0b",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__188c6f",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0__177c5d",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0__c37941",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0__37d994",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0__c9775a",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__9adf21",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__c00076",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__e69559",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0__cf5c5d",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0__bb0b42",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0__759c77",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0__da4dcc",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0__566ca1",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0__7d37ce",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0__aa0e97",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0__e27558",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0__688128",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0__524431",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0__f225dc",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0__d1326a",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0__71c22b",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0__d91b00",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0__5fcc9e",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0__030dfe",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0__e5256c",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0__641897",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0__1667bd",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__13c512",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__bb4a6f",
+      "ok": true,
+      "records": {
+        "loss/actor_qrmf": 2,
+        "eval/return_mean": 2
+      }
+    }
+  ]
+}

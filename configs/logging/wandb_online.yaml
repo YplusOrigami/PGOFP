@@ -1,0 +1,8 @@
+jsonl: true
+tensorboard: true
+flush_every: 20
+wandb:
+  mode: online              # credentials come from the environment / existing login, never from config
+  project: pgofp
+  entity: null
+  upload_artifacts: true

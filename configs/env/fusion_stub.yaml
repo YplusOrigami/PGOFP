@@ -1,0 +1,7 @@
+# MOCK fusion backend (interface tests only). It is NOT HFM and proves nothing about HFM.
+name: fusion_stub
+id: FusionMock-v0
+backend: fusion_mock
+kwargs: {horizon: 60}
+controllers: []
+notes: Select backend=fusion only after real SDK, schema, coil_map(verified:true) and references are provided.

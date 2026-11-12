@@ -1,0 +1,8 @@
+{
+  "outcome": "completed",
+  "env_transitions": 3000,
+  "gradient_steps": 0,
+  "wall_time_sec": 3.5602359771728516,
+  "best_eval_return": 1000.0
+}
+run dir: outputs/experiments/validation_small/runs/validation_small__pid_controller_only__s1__044898

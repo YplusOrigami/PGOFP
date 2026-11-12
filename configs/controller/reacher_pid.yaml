@@ -1,0 +1,11 @@
+# Joint PD around a fixed-elbow analytic IK reference (elbow=+1). Gains chosen on calibration seeds 50000+.
+name: reacher_pid
+version: reacher_pid_v1
+quality: good
+dt: 0.02
+elbow: 1
+integral_limit: 1.0
+gains:
+  kp: [2.0, 2.0]
+  kd: [0.3, 0.3]
+  ki: [0.0, 0.0]
