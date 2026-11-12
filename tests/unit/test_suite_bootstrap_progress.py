@@ -35,6 +35,31 @@ def test_missing_dependency_install_preserves_existing_cuda_torch(monkeypatch):
     assert calls == [(["scipy"], "torch==2.5.1+cu121\n")]
 
 
+def test_numpy2_incompatible_tensorboard_is_selected_for_upgrade(monkeypatch):
+    module = bootstrap()
+    required = module.required_packages()
+    assert "tensorboard>=2.18" in required
+    original = module.importlib.metadata.version
+    monkeypatch.setattr(module.importlib.metadata, "version", lambda name: "2.14.0" if name == "tensorboard" else original(name))
+    assert module.missing_requirements(required) == ["tensorboard>=2.18"]
+
+
+def test_tensorboard_upgrade_keeps_cuda_torch_and_does_not_request_numpy_change(monkeypatch):
+    module = bootstrap()
+    monkeypatch.setattr(module, "required_packages", lambda: ["tensorboard>=2.18"])
+    original = module.importlib.metadata.version
+
+    def version(name):
+        return {"tensorboard": "2.14.0", "torch": "2.5.1+cu121"}.get(name) or original(name)
+
+    monkeypatch.setattr(module.importlib.metadata, "version", version)
+    monkeypatch.setattr(module, "verify_tensorboard", lambda: None)
+    calls = []
+    monkeypatch.setattr(module, "pip_install", lambda requirements, constraints=None: calls.append((requirements, Path(constraints).read_text())))
+    assert module.main() == 0
+    assert calls == [(["tensorboard>=2.18"], "torch==2.5.1+cu121\n")]
+
+
 def test_progress_reports_failed_child_stage_and_log_path(tmp_path, capsys):
     suite = load_suite()
     plan = build_plans(suite, default_prior_paths(suite, tmp_path))[0]

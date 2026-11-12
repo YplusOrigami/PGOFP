@@ -1,0 +1,12 @@
+{
+  "2.14.0": {
+    "exit_code": 1,
+    "stdout": "",
+    "error_tail": "                          ^^^^^^^^^^\n  File \"/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/numpy/__init__.py\", line 763, in __getattr__\n    raise AttributeError(\nAttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead."
+  },
+  "2.18.0": {
+    "exit_code": 0,
+    "stdout": "[0/6 TensorBoard\u68c0\u67e5] NumPy=2.5.4\uff0cTensorBoard=2.18.0\uff0c\u6765\u6e90=/tmp/pgofp_tensorboard_numpy2_regression/2.18.0/tensorboard/__init__.py\n[0/6 TensorBoard\u68c0\u67e5] \u5b9e\u9645\u5199\u5165/\u56de\u8bfb\u901a\u8fc7\uff0c\u4f7f\u7528\u65e0TensorFlow\u7684\u8f7b\u91cf\u540e\u7aef\u3002\ndtype/scalar/histogram/preflight PASS; numpy=2.5.4 tensorboard=2.18.0\n",
+    "error_tail": ""
+  }
+}

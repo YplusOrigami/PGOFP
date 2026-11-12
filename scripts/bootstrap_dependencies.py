@@ -63,8 +63,17 @@ def verify_tensorboard() -> None:
 
     use_tensorboard_stub()
 
-    # Import the reader after the logger has selected TensorBoard's TF stub.
+    # Import TensorBoard only after selecting its TF stub.
+    import numpy
+    import tensorboard
+
+    print(f"[0/6 TensorBoard检查] NumPy={numpy.__version__}，TensorBoard={tensorboard.__version__}，"
+          f"来源={tensorboard.__file__}", flush=True)
     from tensorboard.backend.event_processing.event_accumulator import EventAccumulator
+    from tensorboard.compat import tensorflow_stub
+
+    if tensorflow_stub.as_dtype(numpy.dtype("float32")).name != "float32":
+        raise RuntimeError("TensorBoard NumPy dtype conversion failed")
 
     with tempfile.TemporaryDirectory(prefix="pgofp-tensorboard-check-") as tmp:
         path = Path(tmp)

@@ -26,6 +26,14 @@ use_tensorboard_stub()
 
 class TensorBoardWriter:
     def __init__(self, log_dir: str | Path, purge_step: Optional[int] = None):
+        from importlib.metadata import version
+
+        from packaging.version import Version
+
+        tb_version = version("tensorboard")
+        if Version(tb_version) < Version("2.18"):
+            raise RuntimeError(f"TensorBoard {tb_version} is too old for this project's NumPy 2-compatible backend; "
+                               "install tensorboard>=2.18 with the Python environment running this job")
         use_tensorboard_stub()
         from torch.utils.tensorboard import SummaryWriter
 

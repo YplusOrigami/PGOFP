@@ -235,3 +235,13 @@ def test_broken_preinstalled_tensorflow_cannot_break_logging_or_preflight(tmp_pa
     )
     assert preflight.returncode == 0, preflight.stderr
     assert "TensorBoard检查" in preflight.stdout and not attempted.exists()
+
+
+def test_old_tensorboard_is_rejected_with_an_upgrade_instruction(tmp_path, monkeypatch):
+    import importlib.metadata
+
+    from pgofp.logging.tensorboard import TensorBoardWriter
+
+    monkeypatch.setattr(importlib.metadata, "version", lambda name: "2.14.0")
+    with pytest.raises(RuntimeError, match="install tensorboard>=2.18"):
+        TensorBoardWriter(tmp_path)
