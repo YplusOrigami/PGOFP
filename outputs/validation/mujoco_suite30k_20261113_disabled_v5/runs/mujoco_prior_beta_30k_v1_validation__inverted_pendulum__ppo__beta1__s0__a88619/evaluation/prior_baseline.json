@@ -1,0 +1,81 @@
+{
+  "env_id": "InvertedPendulum-v5",
+  "prior_type": "ppo",
+  "beta": 1.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 1,
+  "max_steps": 8,
+  "smoke": true,
+  "prior_config": {
+    "type": "ppo",
+    "controller_config": null,
+    "controller": {},
+    "artifact_path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/validation_priors/inverted_pendulum_ppo_seed100/stage_64",
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "native_stochastic",
+  "controller_versions": [
+    "ppo:ffea7346c8dd:native"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 8.0,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 8.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 1.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.5740004884345191
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 8.0,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.5740004884345191,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.09011462498165201
+        }
+      }
+    ]
+  },
+  "prior_eval_deterministic": {
+    "summary": {
+      "prior_eval_deterministic/return_mean": 8.0,
+      "prior_eval_deterministic/return_std": 0.0,
+      "prior_eval_deterministic/length_mean": 8.0,
+      "prior_eval_deterministic/failure_rate": 0.0,
+      "prior_eval_deterministic/episodes": 1.0,
+      "prior_eval_deterministic/action_saturation": 0.0,
+      "prior_eval_deterministic/action_smoothness": 5.328903041247811e-06
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 8.0,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 5.328903041247811e-06,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.04149475034864736
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 0.0212891250012035,
+  "attempt_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/runs/mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0__a88619/evaluation/prior_baseline/attempt_d985b5ac"
+}

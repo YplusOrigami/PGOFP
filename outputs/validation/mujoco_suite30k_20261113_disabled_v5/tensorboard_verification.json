@@ -1,0 +1,125 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0__s0__22cc2d",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta0.5__s0__ad20ab",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__ppo__beta1__s0__a88619",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0__s0__858da6",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta0.5__s0__d67a98",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__ppo__beta1__s0__cf9784",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0__s0__b3f75d",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta0.5__s0__7e4a1b",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__half_cheetah__ppo__beta1__s0__ce81f4",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0__s0__82cf15",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta0.5__s0__e5bee6",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__hopper__ppo__beta1__s0__179aa2",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__520223",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0.5__s0__98a9ae",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__561272",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0__s0__6ead5c",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0__2ea504",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__ppo__beta1__s0__3e67ec",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0__s0__a27ea4",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta0.5__s0__a9d59c",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_pendulum__pid__beta1__s0__f8e33e",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0__s0__acefe7",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta0.5__s0__d1cd91",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__pid__beta1__s0__2d7e14",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0__s0__21f979",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta0.5__s0__0953e4",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__reacher__mpc__beta1__s0__d01daf",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__63d982",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__266a6b",
+      "ok": true
+    },
+    {
+      "run": "mujoco_prior_beta_30k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__3b2e8e",
+      "ok": true
+    }
+  ]
+}

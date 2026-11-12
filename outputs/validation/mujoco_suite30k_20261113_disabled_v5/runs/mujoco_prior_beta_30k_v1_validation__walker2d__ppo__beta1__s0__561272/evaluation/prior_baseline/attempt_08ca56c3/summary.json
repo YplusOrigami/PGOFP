@@ -1,0 +1,81 @@
+{
+  "env_id": "Walker2d-v5",
+  "prior_type": "ppo",
+  "beta": 1.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 1,
+  "max_steps": 8,
+  "smoke": true,
+  "prior_config": {
+    "type": "ppo",
+    "controller_config": null,
+    "controller": {},
+    "artifact_path": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/validation_priors/walker2d_ppo_seed100/stage_64",
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "native_stochastic",
+  "controller_versions": [
+    "ppo:efa5a023c33f:native"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 5.5222363460121,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 8.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 1.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.5750885733536312
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 5.5222363460121,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.5750885733536312,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05702599992218893
+        }
+      }
+    ]
+  },
+  "prior_eval_deterministic": {
+    "summary": {
+      "prior_eval_deterministic/return_mean": 7.965774712076581,
+      "prior_eval_deterministic/return_std": 0.0,
+      "prior_eval_deterministic/length_mean": 8.0,
+      "prior_eval_deterministic/failure_rate": 0.0,
+      "prior_eval_deterministic/episodes": 1.0,
+      "prior_eval_deterministic/action_saturation": 0.0,
+      "prior_eval_deterministic/action_smoothness": 0.0001025898423644581
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 7.965774712076581,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0001025898423644581,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.040828000237524975
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 0.021412292000604793,
+  "attempt_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__561272/evaluation/prior_baseline/attempt_08ca56c3"
+}

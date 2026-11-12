@@ -2,6 +2,8 @@
 # Read by scripts/run_mujoco_suite.py, not the generic Cartesian matrix expander.
 suite:
   name: mujoco_prior_beta_30k_v1
+  # Temporary server default: local JSONL/TensorBoard only; no W&B authentication or upload.
+  wandb_online: false
   seeds: [0, 1, 2]
   betas: [0.0, 0.25, 0.5, 0.75, 1.0]
   ppo_envs: [inverted_pendulum, reacher, half_cheetah, hopper, walker2d, inverted_double_pendulum]

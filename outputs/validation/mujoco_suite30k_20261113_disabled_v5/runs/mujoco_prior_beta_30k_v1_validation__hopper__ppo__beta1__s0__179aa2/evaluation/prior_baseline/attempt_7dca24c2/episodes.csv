@@ -1,0 +1,3 @@
+mode,seed,ret,length,terminated,truncated,extras
+prior_eval,10000,7.877319287968772,8,False,True,"{'action_saturation': 0.0, 'action_smoothness': 0.5068650437252862, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.06439625076382072}"
+prior_eval_deterministic,10000,7.993435386479299,8,False,True,"{'action_saturation': 0.0, 'action_smoothness': 0.0007321338052861392, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.04584874977808795}"

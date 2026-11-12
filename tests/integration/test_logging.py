@@ -161,3 +161,21 @@ def test_direct_cloud_scalars_disable_tb_sync_and_preserve_duplicate_steps(tmp_p
     assert calls[0]["sync_tensorboard"] is False
     assert rows == [{"loss/critic": 1., "charts/env_steps": 24}, {"eval/return_mean": 2., "charts/env_steps": 24}]
     assert axes[-1] == (("*",), {"step_metric": "charts/env_steps"})
+
+
+def test_disabled_logging_does_not_call_wandb_even_when_environment_requests_online(tmp_path, monkeypatch):
+    import sys
+    from types import SimpleNamespace
+
+    def forbidden(*args, **kwargs):
+        pytest.fail("Disabled logging must never authenticate, initialize or upload")
+
+    monkeypatch.setenv("WANDB_MODE", "online")
+    monkeypatch.setitem(sys.modules, "wandb", SimpleNamespace(init=forbidden, Api=forbidden, login=forbidden))
+    cfg = _cfg(["logging=local"])
+    logger = Logger(tmp_path, cfg, to_container(cfg), "no-cloud")
+    logger.write_scalars(MetricRecord(1, {"loss/critic": 2.}))
+    logger.close()
+    assert not logger.wandb.active
+    assert read_jsonl(tmp_path / "metrics.jsonl")[0]["loss/critic"] == 2.
+    assert _tb_scalars(tmp_path)["loss/critic"] == [(1, 2.)]

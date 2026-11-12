@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-11-12T19:56:57Z",
+  "device_requested": "cpu",
+  "device_selected": "cpu",
+  "validation_only": true,
+  "wandb_online_required": false
+}

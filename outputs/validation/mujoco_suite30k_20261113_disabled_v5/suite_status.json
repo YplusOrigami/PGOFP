@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "stage": 6,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "verification": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/verification.json",
+  "updated_utc": "2026-11-12T19:59:51Z"
+}

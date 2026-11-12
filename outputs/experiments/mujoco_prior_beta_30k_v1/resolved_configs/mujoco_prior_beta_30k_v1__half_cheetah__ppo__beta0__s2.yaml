@@ -128,13 +128,13 @@ logging:
   tensorboard: true
   flush_every: 1
   wandb:
-    mode: online
+    mode: disabled
     project: pgofp-half_cheetah-30k
     entity: null
     group: mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0
     tags: []
     upload_artifacts: false
-    require_online: true
+    require_online: false
     scalar_source: direct
   histogram_interval: 0
   video_interval: 0

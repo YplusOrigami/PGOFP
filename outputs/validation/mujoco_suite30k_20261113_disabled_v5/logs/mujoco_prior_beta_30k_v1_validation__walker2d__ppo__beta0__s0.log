@@ -1,0 +1,10 @@
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "outcome": "completed",
+  "env_transitions": 24,
+  "gradient_steps": 9,
+  "wall_time_sec": 1.3236911296844482,
+  "best_eval_return": 6.19657728043042
+}
+run dir: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/runs/mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta0__s0__520223

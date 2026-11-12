@@ -1,0 +1,6 @@
+{
+  "artifact_root": "/Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/validation_priors/inverted_pendulum_ppo_seed100",
+  "tiers": {
+    "stage_64": "poor"
+  }
+}

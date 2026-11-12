@@ -78,8 +78,9 @@ def logging_overrides(env: str, prior: str, beta, *, online: bool, smoke: bool, 
             *([f"logging.wandb.entity={entity}"] if entity else [])]
 
 
-def build_plans(s: dict, prior_paths: dict[str, Path], *, device: str = "auto", online: bool = True,
+def build_plans(s: dict, prior_paths: dict[str, Path], *, device: str = "auto", online: bool | None = None,
                 entity: str | None = None, smoke: bool = False) -> list[RunPlan]:
+    online = bool(s.get("wandb_online", False)) if online is None else online
     plans = []
     betas = [0.0, 0.5, 1.0] if smoke else s["betas"]
     seeds = [0] if smoke else s["seeds"]
@@ -295,14 +296,37 @@ def recover_manifest(man: MatrixManifest, plans: list[RunPlan]) -> None:
         # Include logging requirements in compatibility even though numeric config_hash excludes logging.
         old = compose(rec["overrides"])
         new = compose(expected[rec["run_key"]].overrides)
-        if old.logging.wandb.mode != new.logging.wandb.mode:
-            raise ConfigError("Cannot mix local-only validation and online experiments in one matrix")
-        if old.logging.wandb.scalar_source != new.logging.wandb.scalar_source:
+        if rec["status"] == "running" and _process_alive(rec.get("pid")):
+            raise ConfigError(f"A previous training child is still alive (PID {rec['pid']}); stop it before relaunch")
+        disabling_cloud = old.logging.wandb.mode != "disabled" and new.logging.wandb.mode == "disabled"
+        if old.logging.wandb.mode != new.logging.wandb.mode and not disabling_cloud:
+            raise ConfigError("Enabling cloud for an existing local-only matrix requires a fresh output directory")
+        if not disabling_cloud and old.logging.wandb.scalar_source != new.logging.wandb.scalar_source:
             raise ConfigError("Cloud scalar route changed; use a fresh output directory")
+        if disabling_cloud:
+            rec.setdefault("logging_history", []).append({"updated_utc": utc_now(),
+                "previous_mode": old.logging.wandb.mode, "new_mode": "disabled",
+                "previous_overrides": list(rec["overrides"])})
+            rec["overrides"] = list(expected[rec["run_key"]].overrides)
+            # Retry only an authenticated-startup failure with zero collected data.
+            # Numerical/training failures and completed results remain untouched.
+            if rec["status"] == "failed":
+                dirs = sorted((man.dir / "runs").glob(f"{rec['run_key']}__*"),
+                              key=lambda p: p.stat().st_mtime, reverse=True)
+                if dirs:
+                    latest = dirs[0]
+                    events = read_jsonl(latest / "events.jsonl") if (latest / "events.jsonl").is_file() else []
+                    metrics = read_jsonl(latest / "metrics.jsonl") if (latest / "metrics.jsonl").is_file() else []
+                    auth_failed = any(e.get("kind") == "wandb_required_online_failed" for e in events)
+                    has_checkpoint = any(p.is_file() and not p.name.startswith("._")
+                                         for p in (latest / "checkpoints").rglob("*"))
+                    if (auth_failed and not metrics and not has_checkpoint
+                            and not (latest / "numerical_failure.json").exists()):
+                        rec["status"] = "planned"
+                        rec["retry_note"] = "WandB startup failed before collecting data; retry with cloud disabled"
+            print(f"[日志配置迁移] {rec['run_key']}: {old.logging.wandb.mode} -> disabled；状态={rec['status']}", flush=True)
         if rec["status"] not in ("running", "interrupted"):
             continue
-        if rec["status"] == "running" and _process_alive(rec.get("pid")):
-            raise ConfigError(f"A previous training child is still alive (PID {rec['pid']}); inspect it before relaunch")
         dirs = sorted((man.dir / "runs").glob(f"{rec['run_key']}__*"), key=lambda p: p.stat().st_mtime, reverse=True)
         latest = dirs[0] if dirs else None
         meta = latest / "manifest.json" if latest else None
@@ -384,7 +408,7 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
             smoke: bool, max_parallel: int) -> int:
     with suite_lock(out):
         print(f"模式={'短验证（不是正式训练）' if smoke else '正式训练'} | 输出目录={out}", flush=True)
-        with phase(out, 1, "设备与WandB检查"):
+        with phase(out, 1, "设备与WandB检查" if online else "设备与本地日志检查"):
             selected = select_device(device)
             if selected.type == "cuda":
                 import torch
@@ -435,14 +459,17 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
                     atomic_json(out / "suite_status.json", previous)
         with phase(out, 5, "本地记录核验"):
             local = verify_local(man, 24 if smoke else 30000)
-        report = {"created_utc": utc_now(), "validation_only": smoke, "counts": man.counts(), "local": local}
+        report = {"created_utc": utc_now(), "validation_only": smoke, "counts": man.counts(), "local": local,
+                  "wandb_mode": "online" if online else "disabled"}
         write_json_atomic(out / "verification.json", report)
         if online:
             with phase(out, 6, "WandB曲线回读"):
                 report["cloud"] = verify_cloud(local)
             write_json_atomic(out / "verification.json", report)
         else:
-            print("[6/6 WandB曲线回读] 显式 --local-only，跳过云端核验。", flush=True)
+            report["cloud"] = {"skipped": True, "reason": "WandB is disabled; all metrics remain local"}
+            write_json_atomic(out / "verification.json", report)
+            print("[6/6 WandB曲线回读] WandB已禁用，跳过登录、上传与云端核验；本地记录正常保存。", flush=True)
         passed = local["all_passed"] and (not online or report["cloud"]["all_passed"])
         atomic_json(out / "suite_status.json", {"status": "completed" if passed else "failed", "stage": 6,
                     "counts": man.counts(), "verification": str(out / "verification.json"), "updated_utc": utc_now()})
@@ -462,15 +489,16 @@ def main(argv=None) -> int:
     parser.add_argument("--max-parallel", type=int, default=1, help="Independent runs; start with 1 on the A100 20GB vGPU")
     parser.add_argument("--entity", default=None, help="WandB entity, otherwise existing environment/account default")
     parser.add_argument("--output-dir", type=Path)
-    parser.add_argument("--local-only", action="store_true", help="Validation only: explicitly disable cloud; never used by --run")
+    logging_mode = parser.add_mutually_exclusive_group()
+    logging_mode.add_argument("--local-only", action="store_true", help="Disable W&B for validation or formal training")
+    logging_mode.add_argument("--wandb-online", action="store_true", help="Explicitly enable W&B login/upload (default comes from suite config)")
     args = parser.parse_args(argv)
     try:
         if args.max_parallel < 1:
             raise ConfigError("--max-parallel must be positive")
-        if args.local_only and not args.validate:
-            raise ConfigError("--local-only is allowed only with --validate; formal runs require cloud logging")
         load_dotenv()
         s = load_suite()
+        online = args.wandb_online or (bool(s.get("wandb_online", False)) and not args.local_only)
         out = (args.output_dir or (ROOT / "outputs/experiments" / s["name"])).resolve()
         if args.validate and args.output_dir is None:
             out = ROOT / "outputs/validation" / f"{s['name']}_{time.strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:6]}"
@@ -487,13 +515,13 @@ def main(argv=None) -> int:
             return 0
         if args.plan:
             paths = default_prior_paths(s)
-            plans = build_plans(s, paths, device=args.device, entity=args.entity)
+            plans = build_plans(s, paths, device=args.device, entity=args.entity, online=online)
             write_plan(s, plans, out, paths)
             print(json.dumps({"plan": str(out / "plan.json"), "runs": len(plans), "flow_env_steps": 4500000,
                               "task_prior_pairs": {k: v for k, v in Counter(p.axes["prior"] for p in plans).items()},
                               "missing_ppo_priors": [e for e, p in paths.items() if not (p / "manifest.json").is_file()]}, indent=2))
             return 0
-        return execute(s, out, device=args.device, online=not args.local_only, entity=args.entity or os.getenv("WANDB_ENTITY"),
+        return execute(s, out, device=args.device, online=online, entity=args.entity or os.getenv("WANDB_ENTITY"),
                        smoke=args.validate, max_parallel=args.max_parallel)
     except KeyboardInterrupt:
         print("Interrupted. Completed results/checkpoints are preserved; rerun the same command to continue.", file=sys.stderr)

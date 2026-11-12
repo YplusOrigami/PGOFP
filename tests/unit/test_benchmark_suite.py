@@ -40,7 +40,7 @@ def test_exact_requested_150_run_matrix_and_uniform_flow_budget(tmp_path):
         assert list(cfg.network.actor_hidden) == list(cfg.network.critic_hidden) == [256] * 3
         assert cfg.algorithm.K_train == 32 and cfg.algorithm.K_local == 16
         assert cfg.algorithm.use_entropy and cfg.algorithm.density.steps == 5
-        assert cfg.logging.wandb.mode == "online" and cfg.logging.wandb.require_online
+        assert cfg.logging.wandb.mode == "disabled" and not cfg.logging.wandb.require_online
         assert not cfg.logging.wandb.upload_artifacts
         assert cfg.logging.wandb.scalar_source == "direct"
         assert cfg.logging.tensorboard and cfg.logging.jsonl
@@ -136,3 +136,66 @@ def test_cloud_readback_checks_sparse_eval_separately_from_training(monkeypatch)
     local = {"checks": [{"run_key": "sparse", "wandb": {"entity": "e", "project": "p", "run_id": "id", "url": "test"}}]}
     assert verify_cloud(local)["all_passed"]
     assert requested == [["eval/return_mean", "charts/env_steps"], ["loss/actor_qrmf", "charts/env_steps"]]
+
+
+@pytest.mark.parametrize("args,expected", [
+    (["--run"], False), (["--run", "--local-only"], False),
+    (["--validate"], False), (["--run", "--wandb-online"], True),
+])
+def test_cli_defaults_to_local_even_with_online_environment(monkeypatch, tmp_path, args, expected):
+    import pgofp.experiments.benchmark_suite as suite
+
+    calls = []
+    monkeypatch.setenv("WANDB_MODE", "online")
+    monkeypatch.setattr(suite, "execute", lambda s, out, **kwargs: calls.append(kwargs) or 0)
+    assert suite.main([*args, "--output-dir", str(tmp_path)]) == 0
+    assert calls[0]["online"] is expected
+
+
+def test_disable_cloud_preserves_completed_and_resumes_interrupted(tmp_path):
+    suite = load_suite()
+    paths = default_prior_paths(suite, tmp_path)
+    old = build_plans(suite, paths, online=True)[:2]
+    new = build_plans(suite, paths)[:2]
+    man = MatrixManifest(tmp_path, suite["name"], [p.to_record() for p in old])
+    man.runs[0]["status"] = "completed"
+    man.runs[1]["status"] = "interrupted"
+    directory = tmp_path / "runs" / (old[1].run_key + "__fixture")
+    (directory / "checkpoints").mkdir(parents=True)
+    (directory / "checkpoints/last.pt").write_bytes(b"fixture")
+    recover_manifest(man, new)
+    assert man.runs[0]["status"] == "completed"
+    assert man.runs[1]["status"] == "planned" and man.runs[1]["resume_checkpoint"].endswith("last.pt")
+    assert all(compose(r["overrides"]).logging.wandb.mode == "disabled" for r in man.runs)
+    assert all(r["logging_history"][0]["previous_mode"] == "online" for r in man.runs)
+
+
+def test_only_zero_data_wandb_startup_failures_are_requeued(tmp_path):
+    suite = load_suite()
+    paths = default_prior_paths(suite, tmp_path)
+    old = build_plans(suite, paths, online=True)[:3]
+    man = MatrixManifest(tmp_path, suite["name"], [p.to_record() for p in old])
+    for index, rec in enumerate(man.runs):
+        rec["status"] = "failed"
+        directory = tmp_path / "runs" / (rec["run_key"] + "__fixture")
+        (directory / "checkpoints").mkdir(parents=True)
+        (directory / "events.jsonl").write_text(json.dumps({"kind": "wandb_required_online_failed"}) + "\n")
+        if index == 1:
+            (directory / "numerical_failure.json").write_text("{}")
+        if index == 2:
+            (directory / "metrics.jsonl").write_text(json.dumps({"step": 100, "critic/loss": 1}) + "\n")
+    recover_manifest(man, build_plans(suite, paths)[:3])
+    assert [r["status"] for r in man.runs] == ["planned", "failed", "failed"]
+
+
+def test_logging_migration_rejects_live_children(monkeypatch, tmp_path):
+    import pgofp.experiments.benchmark_suite as module
+
+    suite = load_suite()
+    paths = default_prior_paths(suite, tmp_path)
+    old = build_plans(suite, paths, online=True)[:1]
+    man = MatrixManifest(tmp_path, suite["name"], [p.to_record() for p in old])
+    man.runs[0].update(status="running", pid=123)
+    monkeypatch.setattr(module, "_process_alive", lambda pid: True)
+    with pytest.raises(ConfigError, match="stop it before relaunch"):
+        recover_manifest(man, build_plans(suite, paths)[:1])

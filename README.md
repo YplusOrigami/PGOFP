@@ -12,7 +12,7 @@
 | 主算法 `prior_flame_m` / 同代码高斯对照 `gaussian_flame_m` | ✅ |
 | 控制先验：PID、CEM-MPC、冻结 PPO、混合/多控制器、退火 | ✅ |
 | 基线：Online-OFQL、SAC、PPO、controller-only | ✅（TD3、扩散类基线未做） |
-| 日志：JSONL + TensorBoard；WandB（online/offline/disabled，可选依赖） | ✅（WandB 包未安装时自动降级，**真实在线上传未验证**） |
+| 日志：JSONL + TensorBoard；WandB（online/offline/disabled，可选依赖） | ✅（30k 套件当前默认 disabled；此前已通过在线短验证） |
 | 聚变接口 + mock 后端 | ✅ 仅验证接口契约 |
 | **真实 HFM 接入** | ❌ 未做。观测 schema / 7→12 线圈矩阵 / 任务参数均为 `verified:false`，真实后端拒绝运行 |
 | `flame_reference`（官方 FLAME 复现） | ❌ 未实现，仅占位并拒绝启动 |

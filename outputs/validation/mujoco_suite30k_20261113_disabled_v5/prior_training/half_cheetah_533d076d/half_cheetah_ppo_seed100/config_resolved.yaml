@@ -1,0 +1,52 @@
+seed: 100
+device: cpu
+output_dir: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/prior_training/half_cheetah_533d076d
+artifact_dir: /Volumes/T7/projects/PGOFP/outputs/validation/mujoco_suite30k_20261113_disabled_v5/validation_priors
+checkpoint_fractions:
+- 1.0
+calibration:
+  seeds_base: 50000
+  episodes: 1
+algorithm:
+  name: ppo
+  gamma: 0.99
+  params:
+    rollout_steps: 64
+    gae_lambda: 0.95
+    clip_ratio: 0.2
+    epochs: 1
+    minibatch_size: 64
+    value_coef: 0.5
+    entropy_coef: 0.0
+    lr: 0.0003
+    max_grad_norm: 0.5
+    hidden:
+    - 64
+    - 64
+    total_steps: 64
+    normalize_obs: true
+    normalize_advantage: true
+env:
+  name: half_cheetah
+  id: HalfCheetah-v5
+  backend: mujoco
+  controllers:
+  - ppo
+logging:
+  jsonl: true
+  tensorboard: true
+  flush_every: 20
+  wandb:
+    mode: disabled
+    project: pgofp-smoke
+    group: mujoco_prior_beta_30k_v1__half_cheetah__ppo_pretrain
+    require_online: false
+    upload_artifacts: false
+    scalar_source: direct
+  console_progress: true
+train:
+  num_envs: 1
+smoke: true
+tags:
+- mujoco_prior_beta_30k_v1
+- ppo_preparation

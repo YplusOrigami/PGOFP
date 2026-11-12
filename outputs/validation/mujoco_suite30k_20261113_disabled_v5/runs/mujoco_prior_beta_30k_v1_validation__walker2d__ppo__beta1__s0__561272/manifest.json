@@ -1,0 +1,57 @@
+{
+  "run_id": "mujoco_prior_beta_30k_v1_validation__walker2d__ppo__beta1__s0__561272",
+  "parent_run_id": null,
+  "outcome": "completed",
+  "config_hash": "62688b24540af51c",
+  "provenance": {
+    "utc_time": "2026-11-12T19:58:22Z",
+    "python": "3.12.11",
+    "platform": "macOS-15.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.4.0",
+      "tensorboard": "2.21.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch_threads": 1,
+    "git": {
+      "commit": "b49c17cc5c59f8989a060cd07915d992aad8a2ab",
+      "dirty": true
+    }
+  },
+  "env_spec_hash": "e912011ba7f6302b",
+  "controller_versions": [
+    "ppo:efa5a023c33f:native"
+  ],
+  "smoke": true,
+  "updated_utc": "2026-11-12T19:58:22Z",
+  "summary": {
+    "outcome": "completed",
+    "env_transitions": 24,
+    "gradient_steps": 9,
+    "wall_time_sec": 1.2469582557678223,
+    "best_eval_return": 6.207170362240037,
+    "final_eval": {
+      "eval/return_mean": 6.3475276801883735,
+      "eval/return_std": 0.0,
+      "eval/length_mean": 8.0,
+      "eval/failure_rate": 0.0,
+      "eval/episodes": 1.0,
+      "eval/action_saturation": 0.0,
+      "eval/action_smoothness": 0.5145507710320609,
+      "eval_representative/return_mean": 7.876167642391096,
+      "eval_representative/return_std": 0.0,
+      "eval_representative/length_mean": 8.0,
+      "eval_representative/failure_rate": 0.0,
+      "eval_representative/episodes": 1.0,
+      "eval_representative/action_saturation": 0.0,
+      "eval_representative/action_smoothness": 9.720626154116221e-05
+    }
+  }
+}

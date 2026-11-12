@@ -28,7 +28,7 @@ class Logger:
         self.t0 = time.time()
         self.last_step = -1
         self.progress_file = ProgressFile(self.run_dir / "progress.json", lg.console_progress)
-        self.progress("initializing", 0, 1, unit="tasks")
+        self.progress("initializing", 0, 1, unit="tasks", message=f"WandB={lg.wandb.mode}")
         self.events = JsonlWriter(self.run_dir / "events.jsonl", flush_every=1)
         self.metrics_path = self.run_dir / "metrics.jsonl"
         if resume_step is not None:

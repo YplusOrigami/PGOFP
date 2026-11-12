@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 
 LABELS = {
-    "initializing": "初始化/连接WandB", "prior_evaluation": "先验基线评估",
+    "initializing": "初始化日志", "prior_evaluation": "先验基线评估",
     "prior_evaluation_deterministic": "先验确定性评估", "warmup": "热身采样",
     "prior_evaluation_result": "先验基线结果",
     "flow_training": "Flow训练", "flow_evaluation": "Flow评估", "checkpoint": "保存检查点",
