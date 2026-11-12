@@ -54,6 +54,35 @@ def missing_requirements(requirements: list[str]) -> list[str]:
     return missing
 
 
+def verify_tensorboard() -> None:
+    """Exercise the real logger, not just tensorboard's lightweight top-level import."""
+    project_src = str(ROOT / "src")
+    if project_src not in sys.path:
+        sys.path.insert(0, project_src)
+    from pgofp.logging.tensorboard import TensorBoardWriter, use_tensorboard_stub
+
+    use_tensorboard_stub()
+
+    # Import the reader after the logger has selected TensorBoard's TF stub.
+    from tensorboard.backend.event_processing.event_accumulator import EventAccumulator
+
+    with tempfile.TemporaryDirectory(prefix="pgofp-tensorboard-check-") as tmp:
+        path = Path(tmp)
+        writer = TensorBoardWriter(path)
+        try:
+            writer.scalars(1, {"bootstrap/logging_check": 1.})
+        finally:
+            writer.close()
+        # Select a real event file explicitly, ignoring macOS AppleDouble metadata.
+        event_file = next(path.glob("events.out.tfevents.*"))
+        reader = EventAccumulator(str(event_file))
+        reader.Reload()
+        records = reader.Scalars("bootstrap/logging_check")
+        if len(records) != 1 or records[0].step != 1 or records[0].value != 1.:
+            raise RuntimeError("TensorBoard event write/read verification failed")
+    print("[0/6 TensorBoard检查] 实际写入/回读通过，使用无TensorFlow的轻量后端。", flush=True)
+
+
 def main() -> int:
     if not (3, 10) <= sys.version_info[:2] < (3, 13):
         print("[ERROR 0/6 依赖检查] 本项目需要 Python 3.10–3.12；请设置 PGOFP_PYTHON。", file=sys.stderr)
@@ -86,7 +115,9 @@ def main() -> int:
                 importlib.import_module(name)
             except Exception as exc:
                 raise RuntimeError(f"依赖 {name} 无法导入：{type(exc).__name__}: {exc}") from exc
-        print("[0/6 依赖检查] 完成；所需依赖可用。", flush=True)
+        print("[0/6 TensorBoard检查] 正在测试实际事件写入与回读。", flush=True)
+        verify_tensorboard()
+        print("[0/6 依赖检查] 完成；所需依赖及TensorBoard写入可用。", flush=True)
         return 0
     except Exception as exc:  # noqa: BLE001 -- bootstrap boundary must identify dependency failures
         print(f"[ERROR 0/6 依赖安装] {type(exc).__name__}: {exc}\n"

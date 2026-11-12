@@ -179,3 +179,59 @@ def test_disabled_logging_does_not_call_wandb_even_when_environment_requests_onl
     assert not logger.wandb.active
     assert read_jsonl(tmp_path / "metrics.jsonl")[0]["loss/critic"] == 2.
     assert _tb_scalars(tmp_path)["loss/critic"] == [(1, 2.)]
+
+
+def test_broken_preinstalled_tensorflow_cannot_break_logging_or_preflight(tmp_path):
+    """Reproduce the server's ABI error in fresh interpreters, then verify both entry paths."""
+    import os
+    import subprocess
+    import sys
+
+    root = Path(__file__).resolve().parents[2]
+    fake = tmp_path / "preinstalled" / "tensorflow"
+    fake.mkdir(parents=True)
+    attempted = tmp_path / "tensorflow_import_attempted"
+    (fake / "__init__.py").write_text(
+        "from pathlib import Path\n"
+        f"Path({str(attempted)!r}).write_text('attempted')\n"
+        "raise ValueError('numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88')\n"
+    )
+    env = dict(os.environ)
+    env["PYTHONPATH"] = os.pathsep.join([str(fake.parent), str(root / "src"), env.get("PYTHONPATH", "")])
+
+    def run(code):
+        return subprocess.run([sys.executable, "-c", code], env=env, cwd=tmp_path,
+                              capture_output=True, text=True, timeout=60, check=False)
+
+    broken = run("from torch.utils.tensorboard import SummaryWriter")
+    assert broken.returncode != 0 and "numpy.dtype size changed" in broken.stderr
+    assert attempted.is_file()
+    attempted.unlink()
+
+    fixed = run(
+        "from pathlib import Path\n"
+        "import numpy as np\n"
+        "from pgofp.config.compose import compose,to_container\n"
+        "from pgofp.logging.logger import Logger\n"
+        "from pgofp.core.types import MetricRecord\n"
+        "from tensorboard.backend.event_processing.event_accumulator import EventAccumulator\n"
+        "cfg=compose(['env=toy','prior=gaussian','algorithm=gaussian_flame_m','logging=local'])\n"
+        "logger=Logger(Path('run'),cfg,to_container(cfg),'tf-isolation')\n"
+        "logger.write_scalars(MetricRecord(9,{'loss/critic':3.5}))\n"
+        "logger.histogram('test/histogram',np.asarray([0.,1.,2.]),9)\n"
+        "logger.close()\n"
+        "ea=EventAccumulator(str(next(Path('run/tensorboard').glob('events.out.tfevents.*'))));ea.Reload()\n"
+        "assert [(x.step,x.value) for x in ea.Scalars('loss/critic')]==[(9,3.5)]\n"
+        "assert len(ea.Histograms('test/histogram'))==1\n"
+    )
+    assert fixed.returncode == 0, fixed.stderr
+    assert not attempted.exists()
+
+    preflight = run(
+        "import importlib.util\n"
+        f"spec=importlib.util.spec_from_file_location('bootstrap',{str(root / 'scripts/bootstrap_dependencies.py')!r})\n"
+        "module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)\n"
+        "module.verify_tensorboard()\n"
+    )
+    assert preflight.returncode == 0, preflight.stderr
+    assert "TensorBoard检查" in preflight.stdout and not attempted.exists()

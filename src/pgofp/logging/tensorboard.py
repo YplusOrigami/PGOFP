@@ -5,8 +5,28 @@ from pathlib import Path
 from typing import Dict, Optional
 
 
+def use_tensorboard_stub() -> None:
+    """Select TensorBoard's supported no-TensorFlow compatibility backend.
+
+    TensorBoard otherwise prefers an installed TensorFlow, even in PyTorch-only
+    jobs. A server's unrelated TF wheel may have an incompatible NumPy ABI.
+    The `notf` marker is checked by tensorboard.compat before it imports TF:
+    https://github.com/tensorflow/tensorboard/blob/master/tensorboard/compat/__init__.py
+    This affects TensorBoard's backend only; it does not replace tensorflow.
+    """
+    import sys
+    from types import ModuleType
+
+    sys.modules.setdefault("tensorboard.compat.notf", ModuleType("tensorboard.compat.notf"))
+
+
+# Install the marker before W&B or PyTorch can resolve TensorBoard's lazy TF API.
+use_tensorboard_stub()
+
+
 class TensorBoardWriter:
     def __init__(self, log_dir: str | Path, purge_step: Optional[int] = None):
+        use_tensorboard_stub()
         from torch.utils.tensorboard import SummaryWriter
 
         Path(log_dir).mkdir(parents=True, exist_ok=True)
