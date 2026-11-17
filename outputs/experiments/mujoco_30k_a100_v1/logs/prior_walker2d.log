@@ -1,0 +1,12 @@
+[HAMI-core Msg(561965:139684948464704:libvgpu.c:837)]: Initializing.....
+[HAMI-core Msg(561965:139684948464704:libvgpu.c:853)]: Initialized
+{
+  "artifact_root": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/walker2d_ppo_seed100",
+  "tiers": {
+    "stage_100000": "poor",
+    "stage_250000": "poor",
+    "stage_500000": "good",
+    "stage_1000000": "good"
+  }
+}
+[HAMI-core Msg(561965:139684948464704:multiprocess_memory_limit.c:459)]: Calling exit handler 561965

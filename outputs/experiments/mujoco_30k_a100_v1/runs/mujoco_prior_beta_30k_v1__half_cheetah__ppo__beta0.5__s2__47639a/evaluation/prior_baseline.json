@@ -1,0 +1,315 @@
+{
+  "env_id": "HalfCheetah-v5",
+  "prior_type": "ppo",
+  "beta": 0.5,
+  "flow_seed": 2,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 10,
+  "max_steps": null,
+  "smoke": false,
+  "prior_config": {
+    "type": "ppo",
+    "controller_config": null,
+    "controller": {},
+    "artifact_path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/half_cheetah_ppo_seed100/stage_1000000",
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "native_stochastic",
+  "controller_versions": [
+    "ppo:a27496680c58:native"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 4416.718319915284,
+      "prior_eval/return_std": 1739.1581308399466,
+      "prior_eval/length_mean": 1000.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 10.0,
+      "prior_eval/action_saturation": 0.003950000000000007,
+      "prior_eval/action_smoothness": 0.5900215516758112
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 5263.3439916281295,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0006666666666666666,
+          "action_smoothness": 0.6686461930488562,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1384766511619091
+        }
+      },
+      {
+        "seed": 10001,
+        "ret": 5221.883874481244,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0009999999999999998,
+          "action_smoothness": 0.6658984944000617,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1341538354754448
+        }
+      },
+      {
+        "seed": 10002,
+        "ret": 5038.710883074571,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0015,
+          "action_smoothness": 0.6566402247106587,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13541899621486664
+        }
+      },
+      {
+        "seed": 10003,
+        "ret": 2276.849202389608,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0009999999999999998,
+          "action_smoothness": 0.4112481341191061,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13667967170476913
+        }
+      },
+      {
+        "seed": 10004,
+        "ret": -67.37629730580178,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.029833333333333403,
+          "action_smoothness": 0.1619532638256465,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13364242762327194
+        }
+      },
+      {
+        "seed": 10005,
+        "ret": 5182.280903304958,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0009999999999999998,
+          "action_smoothness": 0.6676033898904636,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.132239930331707
+        }
+      },
+      {
+        "seed": 10006,
+        "ret": 5263.879891958327,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0009999999999999998,
+          "action_smoothness": 0.6664443105399549,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13057363033294678
+        }
+      },
+      {
+        "seed": 10007,
+        "ret": 5261.051845211137,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0015,
+          "action_smoothness": 0.6645428613051996,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13173022121191025
+        }
+      },
+      {
+        "seed": 10008,
+        "ret": 5362.7983327534275,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0009999999999999998,
+          "action_smoothness": 0.667662723495199,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13015498965978622
+        }
+      },
+      {
+        "seed": 10009,
+        "ret": 5363.760571657245,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0009999999999999998,
+          "action_smoothness": 0.6695759214229651,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13238053023815155
+        }
+      }
+    ]
+  },
+  "prior_eval_deterministic": {
+    "summary": {
+      "prior_eval_deterministic/return_mean": 4527.366411760424,
+      "prior_eval_deterministic/return_std": 2125.3138681136124,
+      "prior_eval_deterministic/length_mean": 1000.0,
+      "prior_eval_deterministic/failure_rate": 0.0,
+      "prior_eval_deterministic/episodes": 10.0,
+      "prior_eval_deterministic/action_saturation": 6.666666666666667e-05,
+      "prior_eval_deterministic/action_smoothness": 0.5499517824891887
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": -178.310068145335,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0005,
+          "action_smoothness": 0.023362837624996143,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13097143545746803
+        }
+      },
+      {
+        "seed": 10001,
+        "ret": 5561.804041215188,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6676096501531782,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13043002411723137
+        }
+      },
+      {
+        "seed": 10002,
+        "ret": 5591.9196993923815,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6680350752623828,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12801146879792213
+        }
+      },
+      {
+        "seed": 10003,
+        "ret": 5622.633203567958,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6685432980398277,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12989213317632675
+        }
+      },
+      {
+        "seed": 10004,
+        "ret": 5611.238556718647,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.00016666666666666666,
+          "action_smoothness": 0.6698148843941388,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12835879996418953
+        }
+      },
+      {
+        "seed": 10005,
+        "ret": 5569.3441980175185,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6697575207557287,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12722691893577576
+        }
+      },
+      {
+        "seed": 10006,
+        "ret": 5608.453450530089,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6685829919141095,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12899504974484444
+        }
+      },
+      {
+        "seed": 10007,
+        "ret": 5496.5756916355485,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6636213871153506,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12809725105762482
+        }
+      },
+      {
+        "seed": 10008,
+        "ret": 5614.119905359255,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.6721215131762508,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1296420395374298
+        }
+      },
+      {
+        "seed": 10009,
+        "ret": 775.8854393129853,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.12806866645592402,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.16357702761888504
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 5.900463830679655,
+  "attempt_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s2__47639a/evaluation/prior_baseline/attempt_492c4edf"
+}

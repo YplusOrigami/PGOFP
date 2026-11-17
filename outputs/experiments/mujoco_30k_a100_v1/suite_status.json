@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "stage": 6,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 129,
+    "failed": 21,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "verification": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/verification.json",
+  "updated_utc": "2026-11-17T03:01:14Z"
+}

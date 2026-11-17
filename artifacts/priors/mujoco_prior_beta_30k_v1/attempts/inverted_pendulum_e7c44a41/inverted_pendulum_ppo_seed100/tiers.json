@@ -1,0 +1,40 @@
+{
+  "tiers": {
+    "stage_100000": "good",
+    "stage_250000": "good",
+    "stage_500000": "good",
+    "stage_1000000": "good"
+  },
+  "calibration": {
+    "stage_100000": {
+      "return_mean": 1000.0,
+      "return_std": 0.0,
+      "length_mean": 1000.0,
+      "failure_rate": 0.0,
+      "episodes": 10
+    },
+    "stage_250000": {
+      "return_mean": 1000.0,
+      "return_std": 0.0,
+      "length_mean": 1000.0,
+      "failure_rate": 0.0,
+      "episodes": 10
+    },
+    "stage_500000": {
+      "return_mean": 1000.0,
+      "return_std": 0.0,
+      "length_mean": 1000.0,
+      "failure_rate": 0.0,
+      "episodes": 10
+    },
+    "stage_1000000": {
+      "return_mean": 1000.0,
+      "return_std": 0.0,
+      "length_mean": 1000.0,
+      "failure_rate": 0.0,
+      "episodes": 10
+    }
+  },
+  "random_action_return": 5.4,
+  "note": "tiers are derived from independent calibration seeds only"
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "flow_training",
+  "current": 14627,
+  "total": 30000,
+  "unit": "steps",
+  "message": "non-finite values in critic loss",
+  "status": "failed",
+  "updated_at": 1794731142.5031455
+}

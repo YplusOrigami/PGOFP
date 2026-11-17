@@ -1,0 +1,196 @@
+{
+  "env_id": "InvertedPendulum-v5",
+  "prior_type": "pid",
+  "beta": 1.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 10,
+  "max_steps": null,
+  "smoke": false,
+  "prior_config": {
+    "type": "pid",
+    "controller_config": "inverted_pendulum_pid",
+    "controller": {
+      "name": "inverted_pendulum_pid",
+      "version": "ipend_pid_v1",
+      "quality": "good",
+      "dt": 0.04,
+      "u_max_phys": 3.0,
+      "integral_limit": 5.0,
+      "gains": {
+        "theta": 10.0,
+        "theta_dot": 1.0,
+        "x": 0.5,
+        "x_dot": 0.5,
+        "integral_x": 0.0
+      }
+    },
+    "artifact_path": null,
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "deterministic_controller",
+  "controller_versions": [
+    "ipend_pid_v1"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 1000.0,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 1000.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 10.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 1.992402057263379e-05
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 1.3199994047328487e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.0577230378985405,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10001,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 1.2058670643488889e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05743514373898506,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10002,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 3.1447836150649986e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05716320127248764,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10003,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 2.508714651726928e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05710456520318985,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10004,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 2.2457510409836658e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.060619525611400604,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10005,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 1.819591481541202e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05679813772439957,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10006,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 2.0949870118057967e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.05840286239981651,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10007,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 4.450283832577971e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.057857975363731384,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10008,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 4.871302300101031e-06,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.057058289647102356,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10009,
+        "ret": 1000.0,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 6.469122398413887e-06,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.058178551495075226,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 1.6662699989974499,
+  "attempt_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s0__2ea955/evaluation/prior_baseline/attempt_3c9ecc9b"
+}

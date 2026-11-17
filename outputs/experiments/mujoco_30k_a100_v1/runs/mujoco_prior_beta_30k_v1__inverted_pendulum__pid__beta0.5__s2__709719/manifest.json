@@ -1,0 +1,54 @@
+{
+  "run_id": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s2__709719",
+  "parent_run_id": null,
+  "outcome": "completed",
+  "config_hash": "dd6b119c53de4448",
+  "provenance": {
+    "utc_time": "2026-11-15T10:07:18Z",
+    "python": "3.10.12",
+    "platform": "Linux-5.10.134-16.3.al8.x86_64-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "numpy": "2.2.6",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.3.0",
+      "tensorboard": "2.18.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": true,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "torch_threads": 1,
+    "git": null
+  },
+  "env_spec_hash": "f7dc42d066cad79e",
+  "controller_versions": [
+    "ipend_pid_v1"
+  ],
+  "smoke": false,
+  "updated_utc": "2026-11-15T10:07:24Z",
+  "summary": {
+    "outcome": "completed",
+    "env_transitions": 30000,
+    "gradient_steps": 25001,
+    "wall_time_sec": 723.803715467453,
+    "best_eval_return": 814.2,
+    "final_eval": {
+      "eval/return_mean": 746.8,
+      "eval/return_std": 387.2765936640116,
+      "eval/length_mean": 747.1,
+      "eval/failure_rate": 0.3,
+      "eval/episodes": 10.0,
+      "eval/action_saturation": 0.0038840099715099718,
+      "eval/action_smoothness": 0.585364524131038,
+      "eval_representative/return_mean": 1000.0,
+      "eval_representative/return_std": 0.0,
+      "eval_representative/length_mean": 1000.0,
+      "eval_representative/failure_rate": 0.0,
+      "eval_representative/episodes": 5.0,
+      "eval_representative/action_saturation": 0.0,
+      "eval_representative/action_smoothness": 0.0004424216184491018
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[HAMI-core Msg(3330469:140106929665088:libvgpu.c:837)]: Initializing.....
+[HAMI-core Msg(3330469:140106929665088:libvgpu.c:853)]: Initialized
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:1072: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:410.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "outcome": "completed",
+  "env_transitions": 30000,
+  "gradient_steps": 25001,
+  "wall_time_sec": 1670.1109080314636,
+  "best_eval_return": 321.95998790252725
+}
+run dir: /inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s1__3b6574
+[HAMI-core Msg(3330469:140106929665088:multiprocess_memory_limit.c:459)]: Calling exit handler 3330469

@@ -1,0 +1,57 @@
+seed: 100
+device: cuda
+output_dir: /inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/prior_training/hopper_0bcfb6d9
+artifact_dir: /inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1
+checkpoint_fractions:
+- 0.1
+- 0.25
+- 0.5
+- 1.0
+calibration:
+  seeds_base: 50000
+  episodes: 10
+algorithm:
+  name: ppo
+  gamma: 0.99
+  params:
+    rollout_steps: 2048
+    gae_lambda: 0.95
+    clip_ratio: 0.2
+    epochs: 10
+    minibatch_size: 64
+    value_coef: 0.5
+    entropy_coef: 0.0
+    lr: 0.0003
+    max_grad_norm: 0.5
+    hidden:
+    - 64
+    - 64
+    total_steps: 1000000
+    normalize_obs: true
+    normalize_advantage: true
+env:
+  name: hopper
+  id: Hopper-v5
+  backend: mujoco
+  controllers:
+  - ppo
+  notes: Healthy termination and time limit are kept separate.
+logging:
+  jsonl: true
+  tensorboard: true
+  flush_every: 20
+  wandb:
+    mode: disabled
+    project: pgofp-hopper-30k
+    group: mujoco_prior_beta_30k_v1__hopper__ppo_pretrain
+    require_online: false
+    upload_artifacts: false
+    scalar_source: direct
+    entity: ypluss
+  console_progress: true
+train:
+  num_envs: 1
+smoke: false
+tags:
+- mujoco_prior_beta_30k_v1
+- ppo_preparation

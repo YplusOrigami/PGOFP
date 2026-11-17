@@ -1,0 +1,56 @@
+{
+  "inverted_pendulum": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/attempts/inverted_pendulum_e7c44a41/inverted_pendulum_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "e583a5a7d2bccc4ef7f31af00484a0244c9dca387c2211bae0f528bf7ba2e0d4",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-12T21:52:57Z"
+  },
+  "reacher": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/reacher_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "6d7f305a5e4fde88cec6fd1060e5bc1762019b8c799748bc70161936867377a8",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-12T23:17:57Z"
+  },
+  "half_cheetah": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/half_cheetah_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "a27496680c583ad0a4be1ec77e40eaf358944b63351b54defbe5dec6498c7e38",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-12T23:17:57Z"
+  },
+  "hopper": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/hopper_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "b029416d931b9a00861afbadd21d5fa552d7b5b1f4885fcf72601b5fdc0fe1ad",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-13T01:14:08Z"
+  },
+  "walker2d": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/walker2d_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "187f6087195c4e6daf3ac39cd933654be5077c70175b2176fe3f12348093423a",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-13T02:53:05Z"
+  },
+  "inverted_double_pendulum": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/inverted_double_pendulum_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "5e9e89068316fda9691be6aecb056bc006055d01dfba76af5c184016b227014b",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-13T04:13:33Z"
+  }
+}

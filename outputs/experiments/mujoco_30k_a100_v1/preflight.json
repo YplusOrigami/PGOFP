@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-11-12T20:27:09Z",
+  "device_requested": "cuda",
+  "device_selected": "cuda",
+  "validation_only": false,
+  "wandb_online_required": false
+}

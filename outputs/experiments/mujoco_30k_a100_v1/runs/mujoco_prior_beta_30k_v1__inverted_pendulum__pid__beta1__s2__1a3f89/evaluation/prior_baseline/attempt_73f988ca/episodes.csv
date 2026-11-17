@@ -1,0 +1,11 @@
+mode,seed,ret,length,terminated,truncated,extras
+prior_eval,10000,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 1.3199994047328487e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05685766041278839, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10001,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 1.2058670643488889e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05689210817217827, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10002,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 3.1447836150649986e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05848626792430878, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10003,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 2.508714651726928e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.058933183550834656, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10004,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 2.2457510409836658e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05666225776076317, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10005,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 1.819591481541202e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05657346546649933, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10006,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 2.0949870118057967e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05724740028381348, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10007,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 4.450283832577971e-05, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05710097402334213, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10008,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 4.871302300101031e-06, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.057803764939308167, 'prior/atanh_clamp_ratio': 0.0}"
+prior_eval,10009,1000.0,1000,False,True,"{'action_saturation': 0.0, 'action_smoothness': 6.469122398413887e-06, 'prior/fallback_rate': 0.0, 'prior/controller_latency_ms': 0.05789468437433243, 'prior/atanh_clamp_ratio': 0.0}"

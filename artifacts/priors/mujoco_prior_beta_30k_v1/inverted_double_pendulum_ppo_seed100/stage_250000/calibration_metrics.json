@@ -1,0 +1,21 @@
+{
+  "stochastic": {
+    "return_mean": 8727.321303801951,
+    "return_std": 1809.0219629433107,
+    "length_mean": 935.5,
+    "failure_rate": 0.1,
+    "episodes": 10
+  },
+  "deterministic": {
+    "return_mean": 9329.016133352507,
+    "return_std": 0.04084726845630345,
+    "length_mean": 1000.0,
+    "failure_rate": 0.0,
+    "episodes": 10
+  },
+  "random_action_return": 49.25709223819704,
+  "calibration_seeds": [
+    50000,
+    50009
+  ]
+}

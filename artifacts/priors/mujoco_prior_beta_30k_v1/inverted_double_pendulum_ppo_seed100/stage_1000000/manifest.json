@@ -1,0 +1,19 @@
+{
+  "schema": "pgofp.prior_artifact.v1",
+  "created_utc": "2026-11-13T04:13:31Z",
+  "env_id": "InvertedDoublePendulum-v5",
+  "obs_dim": 9,
+  "action_dim": 1,
+  "action_low": [
+    -1.0
+  ],
+  "action_high": [
+    1.0
+  ],
+  "distribution": "tanh_gaussian",
+  "prior_seed": 100,
+  "stateful": false,
+  "smoke": false,
+  "requested_prior_steps": 1000000,
+  "content_hash": "5e9e89068316fda9691be6aecb056bc006055d01dfba76af5c184016b227014b"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "pgofp.prior_artifact.v1",
+  "created_utc": "2026-11-12T22:46:45Z",
+  "env_id": "Reacher-v5",
+  "obs_dim": 10,
+  "action_dim": 2,
+  "action_low": [
+    -1.0,
+    -1.0
+  ],
+  "action_high": [
+    1.0,
+    1.0
+  ],
+  "distribution": "tanh_gaussian",
+  "prior_seed": 100,
+  "stateful": false,
+  "smoke": false,
+  "requested_prior_steps": 1000000,
+  "content_hash": "259fa91ca993f9a6b6f3791050543e89418a384c58b8ccbee474f5fca72c9233"
+}

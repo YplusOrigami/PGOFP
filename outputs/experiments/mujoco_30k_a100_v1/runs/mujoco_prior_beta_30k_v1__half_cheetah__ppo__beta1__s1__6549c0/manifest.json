@@ -1,0 +1,42 @@
+{
+  "run_id": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s1__6549c0",
+  "parent_run_id": null,
+  "outcome": "failed_numerical",
+  "config_hash": "ae5940edeb4ea608",
+  "provenance": {
+    "utc_time": "2026-11-14T11:17:18Z",
+    "python": "3.10.12",
+    "platform": "Linux-5.10.134-16.3.al8.x86_64-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "numpy": "2.2.6",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.3.0",
+      "tensorboard": "2.18.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": true,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "torch_threads": 1,
+    "git": {
+      "commit": "4e154ad04fde574f912af3eb2ffb013a12f03443",
+      "dirty": true
+    }
+  },
+  "env_spec_hash": "00b64f29d43de416",
+  "controller_versions": [
+    "ppo:a27496680c58:native"
+  ],
+  "smoke": false,
+  "updated_utc": "2026-11-14T11:17:18Z",
+  "summary": {
+    "outcome": "failed_numerical",
+    "env_transitions": 6658,
+    "gradient_steps": 1658,
+    "wall_time_sec": 343.1217212677002,
+    "best_eval_return": null,
+    "failure_stage": "flow_training"
+  }
+}

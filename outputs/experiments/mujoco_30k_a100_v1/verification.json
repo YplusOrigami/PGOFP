@@ -1,0 +1,3202 @@
+{
+  "created_utc": "2026-11-17T03:01:14Z",
+  "validation_only": false,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 129,
+    "failed": 21,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "local": {
+    "all_passed": false,
+    "checks": [
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0__s0__38ff25",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0__s1__44a7c3",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0__s2__859fca",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.25__s0__334a56",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.25__s1__d67550",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.25__s2__22c31c",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.5__s0__2c2d4f",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.5__s1__aeb436",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.5__s2__6199eb",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.75__s0__6b8476",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.75__s1__c70e98",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta0.75__s2__d1516c",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta1__s0__ad0db2",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta1__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta1__s1__456701",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta1__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__ppo__beta1__s2__21ccfc",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0__s0__50a656",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 97,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0__s1__c06cc6",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 97,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0__s2__44f979",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 97,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.25__s0__043289",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.25__s1__40b13d",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.25__s2__cf231b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.5__s0__3f608a",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.5__s1__bca5c4",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.5__s2__1bcf1c",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.75__s0__a1d01b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.75__s1__062bf9",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta0.75__s2__071e6b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 99,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta1__s0__36c220",
+        "eval_records": 2,
+        "update_log_records": 19,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 97,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta1__s1__590db7",
+        "eval_records": 1,
+        "update_log_records": 13,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 97,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__ppo__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__ppo__beta1__s2__464d79",
+        "eval_records": 1,
+        "update_log_records": 8,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 97,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0__s0__bb814c",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0__s1__da2ea1",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0__s2__ef3382",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.25__s0__b9e811",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.25__s1__d4623d",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.25__s2__fe48c5",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s0__14e6f1",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s1__0702cb",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.5__s2__47639a",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.75__s0__50a482",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.75__s1__656f26",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta0.75__s2__6711fd",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s0__249f5d",
+        "eval_records": 0,
+        "update_log_records": 5,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/episodes.csv",
+            "evaluation/summary.json",
+            "checkpoints/best.pt",
+            "checkpoints/best.json",
+            "checkpoints/last.pt",
+            "checkpoints/last.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json",
+            "checkpoints/replay/replay.npz"
+          ],
+          "missing_metrics": [
+            "eval/action_saturation",
+            "eval/action_smoothness",
+            "eval/episodes",
+            "eval/failure_rate",
+            "eval/length_mean",
+            "eval/return_mean",
+            "eval/return_std",
+            "eval_representative/return_mean",
+            "eval_representative/return_std"
+          ],
+          "finite_metric_count": 75,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s1__6549c0",
+        "eval_records": 0,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/episodes.csv",
+            "evaluation/summary.json",
+            "checkpoints/best.pt",
+            "checkpoints/best.json",
+            "checkpoints/last.pt",
+            "checkpoints/last.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json",
+            "checkpoints/replay/replay.npz"
+          ],
+          "missing_metrics": [
+            "eval/action_saturation",
+            "eval/action_smoothness",
+            "eval/episodes",
+            "eval/failure_rate",
+            "eval/length_mean",
+            "eval/return_mean",
+            "eval/return_std",
+            "eval_representative/return_mean",
+            "eval_representative/return_std"
+          ],
+          "finite_metric_count": 75,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__half_cheetah__ppo__beta1__s2__9138b6",
+        "eval_records": 1,
+        "update_log_records": 10,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0__s0__9eecdf",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0__s1__ec1309",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0__s2__4f5073",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.25__s0__d01c16",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.25__s1__8a19b2",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.25__s2__600011",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.5__s0__319575",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.5__s1__a1e436",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.5__s2__b68108",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.75__s0__329788",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.75__s1__2b832d",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta0.75__s2__eed7f3",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta1__s0__5633f0",
+        "eval_records": 0,
+        "update_log_records": 3,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/episodes.csv",
+            "evaluation/summary.json",
+            "checkpoints/best.pt",
+            "checkpoints/best.json",
+            "checkpoints/last.pt",
+            "checkpoints/last.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json",
+            "checkpoints/replay/replay.npz"
+          ],
+          "missing_metrics": [
+            "eval/action_saturation",
+            "eval/action_smoothness",
+            "eval/episodes",
+            "eval/failure_rate",
+            "eval/length_mean",
+            "eval/return_mean",
+            "eval/return_std",
+            "eval_representative/return_mean",
+            "eval_representative/return_std"
+          ],
+          "finite_metric_count": 75,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta1__s1__486640",
+        "eval_records": 0,
+        "update_log_records": 4,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/episodes.csv",
+            "evaluation/summary.json",
+            "checkpoints/best.pt",
+            "checkpoints/best.json",
+            "checkpoints/last.pt",
+            "checkpoints/last.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json",
+            "checkpoints/replay/replay.npz"
+          ],
+          "missing_metrics": [
+            "eval/action_saturation",
+            "eval/action_smoothness",
+            "eval/episodes",
+            "eval/failure_rate",
+            "eval/length_mean",
+            "eval/return_mean",
+            "eval/return_std",
+            "eval_representative/return_mean",
+            "eval_representative/return_std"
+          ],
+          "finite_metric_count": 75,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__hopper__ppo__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__hopper__ppo__beta1__s2__111bae",
+        "eval_records": 0,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/episodes.csv",
+            "evaluation/summary.json",
+            "checkpoints/best.pt",
+            "checkpoints/best.json",
+            "checkpoints/last.pt",
+            "checkpoints/last.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json",
+            "checkpoints/replay/replay.npz"
+          ],
+          "missing_metrics": [
+            "eval/action_saturation",
+            "eval/action_smoothness",
+            "eval/episodes",
+            "eval/failure_rate",
+            "eval/length_mean",
+            "eval/return_mean",
+            "eval/return_std",
+            "eval_representative/return_mean",
+            "eval_representative/return_std"
+          ],
+          "finite_metric_count": 75,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0__s0__dde475",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0__s1__43882a",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0__s2__4357b8",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s0__5b0811",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s1__3b6574",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.25__s2__bbc6ab",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5__s0__d215ac",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5__s1__d50d61",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.5__s2__4b19e3",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.75__s0__531adc",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.75__s1__5dfa11",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta0.75__s2__6ac8b1",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta1__s0__bd9d25",
+        "eval_records": 1,
+        "update_log_records": 7,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta1__s1__18e3ec",
+        "eval_records": 1,
+        "update_log_records": 10,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__walker2d__ppo__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__walker2d__ppo__beta1__s2__10cfa0",
+        "eval_records": 1,
+        "update_log_records": 8,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0__s0__a8f3c3",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0__s1__d2b56f",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0__s2__683327",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.25__s0__6a7d71",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.25__s1__6f73ab",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.25__s2__0302c1",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.5__s0__c64c0c",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.5__s1__6251a7",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.5__s2__3c7e6d",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.75__s0__76028e",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.75__s1__ff5d7e",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta0.75__s2__2291d5",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 95,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta1__s0__d5c060",
+        "eval_records": 1,
+        "update_log_records": 10,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta1__s1__d3748e",
+        "eval_records": 1,
+        "update_log_records": 10,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 93,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__ppo__beta1__s2__66cb70",
+        "eval_records": 0,
+        "update_log_records": 5,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/episodes.csv",
+            "evaluation/summary.json",
+            "checkpoints/best.pt",
+            "checkpoints/best.json",
+            "checkpoints/last.pt",
+            "checkpoints/last.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json",
+            "checkpoints/replay/replay.npz"
+          ],
+          "missing_metrics": [
+            "eval/action_saturation",
+            "eval/action_smoothness",
+            "eval/episodes",
+            "eval/failure_rate",
+            "eval/length_mean",
+            "eval/return_mean",
+            "eval/return_std",
+            "eval_representative/return_mean",
+            "eval_representative/return_std"
+          ],
+          "finite_metric_count": 75,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0__s0__92828f",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0__s1__238349",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0__s2__71cc5f",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.25__s0__51c415",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.25__s1__787686",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.25__s2__0e84c2",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s0__a2fce6",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s1__5daab1",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.5__s2__709719",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.75__s0__d6def9",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.75__s1__0d26b8",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta0.75__s2__12fd2a",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s0__2ea955",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s1__86f9c2",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_pendulum__pid__beta1__s2__1a3f89",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0__s0__483dee",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0__s1__0dbe00",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0__s2__cca630",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.25__s0__751e63",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.25__s1__d55515",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.25__s2__b5ad14",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.5__s0__64f6f9",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.5__s1__456491",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.5__s2__b5d722",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.75__s0__fc2f0f",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.75__s1__9bb139",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta0.75__s2__f2339b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta1__s0__c7f1a4",
+        "eval_records": 2,
+        "update_log_records": 22,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta1__s1__2665c2",
+        "eval_records": 1,
+        "update_log_records": 7,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__pid__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__pid__beta1__s2__8039db",
+        "eval_records": 2,
+        "update_log_records": 21,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0__s0__996eb5",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0__s1__34de53",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0__s2__9576c0",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s0__90a713",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s1__8de5eb",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s2__cebc07",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.5__s0__d35d14",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.5__s1__0f04f9",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.5__s2__309a28",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.75__s0__ae148b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.75__s1__5d8248",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.75__s2__317109",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 92,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta1__s0",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta1__s0__c2bee1",
+        "eval_records": 1,
+        "update_log_records": 8,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta1__s1",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta1__s1__63ea08",
+        "eval_records": 1,
+        "update_log_records": 7,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 90,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__reacher__mpc__beta1__s2",
+        "ok": false,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta1__s2__0022a8",
+        "eval_records": 1,
+        "update_log_records": 6,
+        "wandb": null,
+        "record_audit": {
+          "ok": false,
+          "missing_files": [
+            "evaluation/summary.json",
+            "checkpoints/final.pt",
+            "checkpoints/final.json"
+          ],
+          "missing_metrics": [],
+          "finite_metric_count": 86,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0__s0__0fb294",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0__s1__b1d0d9",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0__s2__1b7da2",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.25__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.25__s0__36e1eb",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.25__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.25__s1__a5c6e7",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.25__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.25__s2__a1a26b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.5__s0__0bc81a",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.5__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.5__s1__c8e0ef",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.5__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.5__s2__e26d79",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.75__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.75__s0__c49404",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.75__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.75__s1__68df9d",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.75__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta0.75__s2__f255a7",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta1__s0",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta1__s0__035577",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta1__s1",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta1__s1__f9a7d0",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta1__s2",
+        "ok": true,
+        "run_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__inverted_double_pendulum__mpc__beta1__s2__80491b",
+        "eval_records": 4,
+        "update_log_records": 26,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 87,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      }
+    ]
+  },
+  "wandb_mode": "disabled",
+  "cloud": {
+    "skipped": true,
+    "reason": "WandB is disabled; all metrics remain local"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "outcome": "completed",
+  "env_transitions": 30000,
+  "gradient_steps": 25001,
+  "wall_time_sec": 2613.1852416992188,
+  "best_eval_return": 382.4450892464565,
+  "final_eval": {
+    "eval/return_mean": 287.51246549207104,
+    "eval/return_std": 116.58919155831238,
+    "eval/length_mean": 129.5,
+    "eval/failure_rate": 1.0,
+    "eval/episodes": 10.0,
+    "eval/action_saturation": 0.08403785669361963,
+    "eval/action_smoothness": 0.44666641304870935,
+    "eval_representative/return_mean": 104.46877699551786,
+    "eval_representative/return_std": 3.6115372516665905,
+    "eval_representative/length_mean": 60.8,
+    "eval_representative/failure_rate": 1.0,
+    "eval_representative/episodes": 5.0,
+    "eval_representative/action_saturation": 0.030158058640343148,
+    "eval_representative/action_smoothness": 0.23783504248881293
+  }
+}

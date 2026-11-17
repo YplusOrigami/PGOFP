@@ -1,0 +1,238 @@
+{
+  "env_id": "Reacher-v5",
+  "prior_type": "cem_mpc",
+  "beta": 0.25,
+  "flow_seed": 2,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 10,
+  "max_steps": null,
+  "smoke": false,
+  "prior_config": {
+    "type": "cem_mpc",
+    "controller_config": "cem_mpc",
+    "controller": {
+      "name": "cem_mpc",
+      "version": "cem_mpc_v1",
+      "model_access": "observation_model",
+      "horizon": 10,
+      "population": 64,
+      "elite_fraction": 0.125,
+      "iterations": 3,
+      "init_std": 0.5,
+      "min_std": 0.05,
+      "timeout_s": 0.5,
+      "tasks": {
+        "InvertedPendulum-v5": {
+          "horizon": 15,
+          "population": 128,
+          "iterations": 5,
+          "init_std": 0.4,
+          "elite_fraction": 0.1,
+          "cost": {
+            "w_x": 3.0,
+            "w_xdot": 1.0,
+            "w_theta": 20.0
+          }
+        },
+        "Reacher-v5": {
+          "horizon": 10,
+          "population": 64,
+          "iterations": 4,
+          "init_std": 0.5,
+          "cost": {
+            "w_u": 0.1
+          }
+        }
+      },
+      "seed": 0
+    },
+    "artifact_path": null,
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "deterministic_controller",
+  "controller_versions": [
+    "cem_mpc_v1"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": -8.29030556628081,
+      "prior_eval/return_std": 1.8133231677038961,
+      "prior_eval/length_mean": 50.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 10.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.18782679679214348,
+      "prior_eval/final_distance": 0.0665981197123082
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": -8.508823412931148,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.18452208576609894,
+          "reward_dist": -0.0042036282943818835,
+          "final_distance": 0.0042036282943818835,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 49.28727611899376,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10001,
+        "ret": -9.97241154859171,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.19545494711824826,
+          "reward_dist": -0.04713446926201961,
+          "final_distance": 0.04713446926201961,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 50.257252529263496,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10002,
+        "ret": -6.043896325171258,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.1899111771918073,
+          "reward_dist": -0.033187590398805734,
+          "final_distance": 0.033187590398805734,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 48.787811845541,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10003,
+        "ret": -9.363674297821712,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.17426781394347854,
+          "reward_dist": -0.11703716977348702,
+          "final_distance": 0.11703716977348702,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 48.32260459661484,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10004,
+        "ret": -9.131540890435032,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.207272647138761,
+          "reward_dist": -0.035053200182986397,
+          "final_distance": 0.035053200182986397,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 48.25208082795143,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10005,
+        "ret": -10.328764816801515,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.1572505156604611,
+          "reward_dist": -0.1459633946198388,
+          "final_distance": 0.1459633946198388,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 49.725271090865135,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10006,
+        "ret": -8.616452496927026,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.1798636208535457,
+          "reward_dist": -0.0696591817326511,
+          "final_distance": 0.0696591817326511,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 48.261457309126854,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10007,
+        "ret": -9.240101397691417,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.2086520688418223,
+          "reward_dist": -0.07389892864174669,
+          "final_distance": 0.07389892864174669,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 49.51463229954243,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10008,
+        "ret": -4.115013506856006,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.1982920453408543,
+          "reward_dist": -0.03596194837023787,
+          "final_distance": 0.03596194837023787,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 50.85732877254486,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      },
+      {
+        "seed": 10009,
+        "ret": -7.582376969581285,
+        "length": 50,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.18278104606635717,
+          "reward_dist": -0.10388168584692684,
+          "final_distance": 0.10388168584692684,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 48.70213828980923,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 24.74213306978345,
+  "attempt_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/mujoco_30k_a100_v1/runs/mujoco_prior_beta_30k_v1__reacher__mpc__beta0.25__s2__cebc07/evaluation/prior_baseline/attempt_d5211138"
+}
