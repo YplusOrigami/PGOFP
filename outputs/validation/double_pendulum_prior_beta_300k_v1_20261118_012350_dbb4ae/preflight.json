@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-11-17T17:23:50Z",
+  "device_requested": "cpu",
+  "device_selected": "cpu",
+  "validation_only": true,
+  "wandb_online_required": false,
+  "max_parallel": 3,
+  "flow_steps_each": 24,
+  "suite_name": "double_pendulum_prior_beta_300k_v1"
+}

@@ -1,4 +1,4 @@
-"""Portable preparation, validation and execution of the requested 150-run suite.
+"""Portable preparation, validation and execution of fixed-budget prior/beta suites.
 
 Formal PPO artifacts are frozen and shared across Flow seeds. Validation artifacts
 have their own directories and can never be selected by the formal plan.
@@ -39,10 +39,20 @@ SPEC = ROOT / "configs/experiment/mujoco_prior_beta_30k.yaml"
 
 def load_suite(path: Path = SPEC) -> dict:
     s = yaml.safe_load(path.read_text())["suite"]
-    if s["seeds"] != [0, 1, 2] or s["betas"] != [0, 0.25, 0.5, 0.75, 1]:
-        raise ConfigError("This suite requires seeds=0/1/2 and beta=0/0.25/0.5/0.75/1")
-    if len(task_pairs(s)) != 10:
-        raise ConfigError("Expected six PPO, two PID and two MPC task/prior pairs")
+    if s["seeds"] != [0, 1, 2]:
+        raise ConfigError("This suite requires seeds=0/1/2")
+    betas = s["betas"]
+    if not betas or len(set(betas)) != len(betas) or any(not 0 <= b <= 1 for b in betas):
+        raise ConfigError("Suite betas must be distinct values in [0,1]")
+    pairs = task_pairs(s)
+    if not pairs or len(set(pairs)) != len(pairs):
+        raise ConfigError("Suite task/prior pairs must be nonempty and distinct")
+    s.setdefault("flow_steps", 30000)
+    s.setdefault("max_parallel", 1)
+    if not isinstance(s["flow_steps"], int) or s["flow_steps"] <= 0:
+        raise ConfigError("flow_steps must be a positive integer")
+    if not isinstance(s["max_parallel"], int) or s["max_parallel"] < 1:
+        raise ConfigError("max_parallel must be a positive integer")
     return s
 
 
@@ -62,13 +72,23 @@ def default_prior_paths(s: dict, root: Path = ROOT) -> dict[str, Path]:
     paths = {}
     for env in s["ppo_envs"]:
         historical = artifact_for(s, env, root / "artifacts/priors")
-        paths[env] = historical if historical.is_dir() else artifact_for(s, env, root / "artifacts/priors" / s["name"])
+        reuse = s.get("reuse_prior_paths", {}).get(env)
+        reuse_path = root / reuse if reuse else None
+        if reuse_path is not None and (reuse_path / "manifest.json").is_file():
+            paths[env] = reuse_path
+        else:
+            paths[env] = historical if historical.is_dir() else artifact_for(s, env, root / "artifacts/priors" / s["name"])
     return paths
 
 
+def budget_label(s: dict) -> str:
+    steps = s["flow_steps"]
+    return f"{steps // 1000}k" if steps % 1000 == 0 else str(steps)
+
+
 def logging_overrides(env: str, prior: str, beta, *, online: bool, smoke: bool, entity: str | None,
-                      suite_name: str) -> list[str]:
-    project = "pgofp-smoke" if smoke else f"pgofp-{env}-30k"
+                      suite_name: str, budget: str = "30k") -> list[str]:
+    project = "pgofp-smoke" if smoke else f"pgofp-{env}-{budget}"
     group = f"{suite_name}__{env}__{prior}__beta{beta:g}" if beta is not None else f"{suite_name}__{env}__ppo_pretrain"
     return ["logging=wandb_online" if online else "logging=local", f"logging.wandb.project={project}",
             f"logging.wandb.group={group}", f"logging.wandb.require_online={str(online).lower()}",
@@ -89,7 +109,8 @@ def build_plans(s: dict, prior_paths: dict[str, Path], *, device: str = "auto", 
         for beta in betas:
             for seed in seeds:
                 b = f"{beta:g}"
-                ov = list(s["flow_overrides"]) + [f"env={env}", f"prior={prior}", f"source.beta={b}",
+                ov = list(s["flow_overrides"]) + [f"train.total_env_steps={s['flow_steps']}",
+                                                        f"env={env}", f"prior={prior}", f"source.beta={b}",
                                                         f"seed={seed}", f"device={device}"]
                 if prior == "ppo":
                     ov += ["prior.distribution=native", f"prior.artifact_path={prior_paths[env]}"]
@@ -97,8 +118,9 @@ def build_plans(s: dict, prior_paths: dict[str, Path], *, device: str = "auto", 
                     ov += [f"prior.controller.seed={s['mpc_seed']}"]
                     if env == "inverted_double_pendulum":
                         ov += ["prior.controller_config=inverted_double_pendulum_mpc"]
-                ov += logging_overrides(env, prior, beta, online=online, smoke=smoke, entity=entity, suite_name=s["name"])
-                ov += [f"tags=[{name},budget30k,{prior},beta_sweep]", f"smoke={str(smoke).lower()}"]
+                ov += logging_overrides(env, prior, beta, online=online, smoke=smoke, entity=entity,
+                                        suite_name=s["name"], budget=budget_label(s))
+                ov += [f"tags=[{name},budget{budget_label(s)},{prior},beta_sweep]", f"smoke={str(smoke).lower()}"]
                 if smoke:
                     # Preserve B=256, network sizes, candidate budget and density settings.
                     # Only the interaction budget, warmup and evaluation horizon are shortened.
@@ -110,7 +132,7 @@ def build_plans(s: dict, prior_paths: dict[str, Path], *, device: str = "auto", 
                 key = f"{name}__{env}__{prior}__beta{b}__s{seed}"
                 plans.append(RunPlan(key, ov, seed, f"{prior}_beta{b}",
                                      {"env": env, "prior": prior, "source.beta": beta}, config_hash(cfg)))
-    if len(plans) != (30 if smoke else 150):
+    if len(plans) != len(task_pairs(s)) * len(betas) * len(seeds):
         raise ConfigError("Unexpected run count")
     return plans
 
@@ -123,7 +145,8 @@ def write_plan(s: dict, plans: list[RunPlan], out: Path, prior_paths: dict[str, 
         if index % 25 == 0 or index == len(plans):
             print(f"[计划生成] {bar(index, len(plans))}", flush=True)
     write_json_atomic(out / "plan.json", {"created_utc": utc_now(), "suite": s, "flow_run_count": len(plans),
-                      "flow_steps_each": 30000, "total_flow_steps": len(plans) * 30000,
+                      "flow_steps_each": s["flow_steps"], "total_flow_steps": len(plans) * s["flow_steps"],
+                      "max_parallel_default": s["max_parallel"],
                       "prior_steps_requested_each": s["prior_steps"], "prior_seed": s["prior_seed"],
                       "prior_paths": {k: str(v) for k, v in prior_paths.items()},
                       "note": "Plan only. Missing priors are prepared before formal execution; no combinations are skipped.",
@@ -256,7 +279,8 @@ def prepare_priors(s: dict, paths: dict[str, Path], out: Path, *, device: str, o
             ov = [f"env={env}", f"seed={s['prior_seed']}", f"device={device}",
                   f"algorithm.params.total_steps={s['prior_steps']}", f"artifact_dir={path.parents[1]}",
                   f"output_dir={output}", *s["prior_overrides"]]
-            ov += logging_overrides(env, "ppo", None, online=online, smoke=smoke, entity=entity, suite_name=s["name"])
+            ov += logging_overrides(env, "ppo", None, online=online, smoke=smoke, entity=entity,
+                                    suite_name=s["name"], budget=budget_label(s))
             ov += [f"smoke={str(smoke).lower()}", f"tags=[{s['name']},ppo_preparation]"]
             if smoke:
                 ov += ["algorithm.params.rollout_steps=64", "algorithm.params.epochs=1",
@@ -408,6 +432,9 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
             smoke: bool, max_parallel: int) -> int:
     with suite_lock(out):
         print(f"模式={'短验证（不是正式训练）' if smoke else '正式训练'} | 输出目录={out}", flush=True)
+        count = len(task_pairs(s)) * (3 if smoke else len(s["betas"])) * (1 if smoke else len(s["seeds"]))
+        print(f"矩阵={s['name']} | {count} runs | {24 if smoke else s['flow_steps']:,} 步/run | "
+              f"并发={max_parallel} | WandB={'online' if online else 'disabled'}", flush=True)
         with phase(out, 1, "设备与WandB检查" if online else "设备与本地日志检查"):
             selected = select_device(device)
             if selected.type == "cuda":
@@ -415,7 +442,9 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
                 if not torch.cuda.is_available():
                     raise ConfigError("device=cuda requested but CUDA is unavailable; refusing a silent CPU fallback")
             preflight = {"created_utc": utc_now(), "device_requested": device, "device_selected": str(selected),
-                         "validation_only": smoke, "wandb_online_required": online}
+                         "validation_only": smoke, "wandb_online_required": online,
+                         "max_parallel": max_parallel, "flow_steps_each": 24 if smoke else s["flow_steps"],
+                         "suite_name": s["name"]}
             if online:
                 preflight["wandb"] = wandb_preflight()
                 if entity is None:
@@ -433,7 +462,7 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
         try:
             with phase(out, 3, "逐run先验评估与Flow训练"):
                 plans = build_plans(s, paths, device=device, online=online, entity=entity, smoke=smoke)
-                # No skipped combinations after preparation: load and hash-check all six priors.
+                # No skipped combinations after preparation: load and hash-check every PPO prior.
                 for env, path in paths.items():
                     check_artifact(path, env, min_steps=s["prior_steps"], prior_seed=s["prior_seed"], smoke=smoke)
                 for p in plans:
@@ -458,7 +487,7 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
                 if previous.get("status") in ("failed", "interrupted"):
                     atomic_json(out / "suite_status.json", previous)
         with phase(out, 5, "本地记录核验"):
-            local = verify_local(man, 24 if smoke else 30000)
+            local = verify_local(man, 24 if smoke else s["flow_steps"])
         report = {"created_utc": utc_now(), "validation_only": smoke, "counts": man.counts(), "local": local,
                   "wandb_mode": "online" if online else "disabled"}
         write_json_atomic(out / "verification.json", report)
@@ -481,12 +510,13 @@ def execute(s: dict, out: Path, *, device: str, online: bool, entity: str | None
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     action = parser.add_mutually_exclusive_group(required=True)
-    action.add_argument("--plan", action="store_true", help="Write all 150 configs without training or network access")
-    action.add_argument("--validate", action="store_true", help="Six tiny PPO preparations + 30 short Flow runs; never formal results")
-    action.add_argument("--run", action="store_true", help="Prepare/reuse million-step PPO priors then run 150 x 30k Flow jobs")
+    action.add_argument("--plan", action="store_true", help="Write the suite configs without training or network access")
+    action.add_argument("--validate", action="store_true", help="Isolated tiny priors and short Flow runs; never formal results")
+    action.add_argument("--run", action="store_true", help="Prepare/reuse frozen PPO priors then execute the selected suite")
     action.add_argument("--status", action="store_true")
-    parser.add_argument("--device", default="auto", help="auto / cpu / cuda / cuda:0; scheduler visibility is preserved")
-    parser.add_argument("--max-parallel", type=int, default=1, help="Independent runs; start with 1 on the A100 20GB vGPU")
+    parser.add_argument("--spec", type=Path, default=SPEC, help="Suite YAML (defaults to the original MuJoCo 30k suite)")
+    parser.add_argument("--device", default=None, help="auto / cpu / cuda / cuda:0; defaults to suite.device or auto")
+    parser.add_argument("--max-parallel", type=int, default=None, help="Independent runs; defaults to suite.max_parallel")
     parser.add_argument("--entity", default=None, help="WandB entity, otherwise existing environment/account default")
     parser.add_argument("--output-dir", type=Path)
     logging_mode = parser.add_mutually_exclusive_group()
@@ -494,10 +524,12 @@ def main(argv=None) -> int:
     logging_mode.add_argument("--wandb-online", action="store_true", help="Explicitly enable W&B login/upload (default comes from suite config)")
     args = parser.parse_args(argv)
     try:
-        if args.max_parallel < 1:
+        if args.max_parallel is not None and args.max_parallel < 1:
             raise ConfigError("--max-parallel must be positive")
         load_dotenv()
-        s = load_suite()
+        s = load_suite(args.spec)
+        device = args.device or s.get("device", "auto")
+        max_parallel = args.max_parallel if args.max_parallel is not None else s["max_parallel"]
         online = args.wandb_online or (bool(s.get("wandb_online", False)) and not args.local_only)
         out = (args.output_dir or (ROOT / "outputs/experiments" / s["name"])).resolve()
         if args.validate and args.output_dir is None:
@@ -515,14 +547,16 @@ def main(argv=None) -> int:
             return 0
         if args.plan:
             paths = default_prior_paths(s)
-            plans = build_plans(s, paths, device=args.device, entity=args.entity, online=online)
+            plans = build_plans(s, paths, device=device, entity=args.entity, online=online)
             write_plan(s, plans, out, paths)
-            print(json.dumps({"plan": str(out / "plan.json"), "runs": len(plans), "flow_env_steps": 4500000,
+            print(json.dumps({"plan": str(out / "plan.json"), "runs": len(plans),
+                              "flow_steps_each": s["flow_steps"], "flow_env_steps": len(plans) * s["flow_steps"],
+                              "max_parallel": max_parallel, "device": device,
                               "task_prior_pairs": {k: v for k, v in Counter(p.axes["prior"] for p in plans).items()},
                               "missing_ppo_priors": [e for e, p in paths.items() if not (p / "manifest.json").is_file()]}, indent=2))
             return 0
-        return execute(s, out, device=args.device, online=online, entity=args.entity or os.getenv("WANDB_ENTITY"),
-                       smoke=args.validate, max_parallel=args.max_parallel)
+        return execute(s, out, device=device, online=online, entity=args.entity or os.getenv("WANDB_ENTITY"),
+                       smoke=args.validate, max_parallel=max_parallel)
     except KeyboardInterrupt:
         print("Interrupted. Completed results/checkpoints are preserved; rerun the same command to continue.", file=sys.stderr)
         return 130

@@ -1,0 +1,11 @@
+{"stage": "initializing", "current": 0, "total": 1, "unit": "tasks", "message": "WandB=disabled", "status": "running", "updated_at": 1794936231.507875}
+{"stage": "ppo_calibration", "current": 0, "total": 1, "unit": "episodes", "message": "random-action reference", "status": "running", "updated_at": 1794936232.808102}
+{"stage": "ppo_calibration", "current": 1, "total": 1, "unit": "episodes", "message": "", "status": "running", "updated_at": 1794936232.811666}
+{"stage": "ppo_rollout", "current": 64, "total": 64, "unit": "steps", "message": "", "status": "running", "updated_at": 1794936232.8354502}
+{"stage": "ppo_update", "current": 64, "total": 64, "unit": "steps", "message": "", "status": "running", "updated_at": 1794936232.839592}
+{"stage": "ppo_calibration", "current": 0, "total": 1, "unit": "episodes", "message": "episode_step=1; deterministic=False", "status": "running", "updated_at": 1794936232.920043}
+{"stage": "ppo_calibration", "current": 1, "total": 1, "unit": "episodes", "message": "", "status": "running", "updated_at": 1794936232.929656}
+{"stage": "ppo_calibration", "current": 1, "total": 1, "unit": "episodes", "message": "", "status": "running", "updated_at": 1794936232.9357219}
+{"stage": "ppo_export", "current": 0, "total": 1, "unit": "artifacts", "message": "stage_64", "status": "running", "updated_at": 1794936232.9420679}
+{"stage": "ppo_export", "current": 1, "total": 1, "unit": "artifacts", "message": "stage_64", "status": "running", "updated_at": 1794936232.9615848}
+{"stage": "completed", "current": 64, "total": 64, "unit": "steps", "message": "", "status": "completed", "updated_at": 1794936232.964556}

@@ -1,0 +1,6 @@
+{
+  "artifact_root": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/validation_priors/inverted_double_pendulum_ppo_seed100",
+  "tiers": {
+    "stage_64": "poor"
+  }
+}

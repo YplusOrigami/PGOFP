@@ -1,0 +1,11 @@
+{
+  "inverted_double_pendulum": {
+    "path": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/validation_priors/inverted_double_pendulum_ppo_seed100/stage_64",
+    "status": "ready",
+    "content_hash": "58c58a610f95be548c9ecf4d1f1b19357a7024a4df3f79ac14779745b52e9e4f",
+    "actual_env_steps": 64,
+    "prior_seed": 100,
+    "validation_only": true,
+    "updated_utc": "2026-11-17T17:23:53Z"
+  }
+}

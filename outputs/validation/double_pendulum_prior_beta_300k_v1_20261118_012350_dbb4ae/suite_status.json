@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "stage": 6,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "verification": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/verification.json",
+  "updated_utc": "2026-11-17T17:24:16Z"
+}

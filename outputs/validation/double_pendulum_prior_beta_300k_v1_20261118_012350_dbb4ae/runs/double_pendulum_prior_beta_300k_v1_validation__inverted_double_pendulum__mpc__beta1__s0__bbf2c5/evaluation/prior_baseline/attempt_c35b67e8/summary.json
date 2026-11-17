@@ -1,0 +1,71 @@
+{
+  "env_id": "InvertedDoublePendulum-v5",
+  "prior_type": "cem_mpc",
+  "beta": 1.0,
+  "flow_seed": 0,
+  "checkpoint_step": 0,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 1,
+  "max_steps": 8,
+  "smoke": true,
+  "prior_config": {
+    "type": "cem_mpc",
+    "controller_config": "inverted_double_pendulum_mpc",
+    "controller": {
+      "name": "cem_mpc",
+      "version": "double_pendulum_cem_v1",
+      "model_access": "observation_model",
+      "horizon": 10,
+      "population": 64,
+      "elite_fraction": 0.125,
+      "iterations": 4,
+      "init_std": 0.5,
+      "min_std": 0.05,
+      "timeout_s": 0.5,
+      "cost": {
+        "healthy_reward": 10.0
+      },
+      "seed": 0
+    },
+    "artifact_path": null,
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "deterministic_controller",
+  "controller_versions": [
+    "double_pendulum_cem_v1"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 74.84981183122338,
+      "prior_eval/return_std": 0.0,
+      "prior_eval/length_mean": 8.0,
+      "prior_eval/failure_rate": 0.0,
+      "prior_eval/episodes": 1.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.1934134369449956
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 74.84981183122338,
+        "length": 8,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.1934134369449956,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 73.16170824924484,
+          "prior/atanh_clamp_ratio": 0.0
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 0.5986134999984642,
+  "attempt_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__bbf2c5/evaluation/prior_baseline/attempt_c35b67e8"
+}

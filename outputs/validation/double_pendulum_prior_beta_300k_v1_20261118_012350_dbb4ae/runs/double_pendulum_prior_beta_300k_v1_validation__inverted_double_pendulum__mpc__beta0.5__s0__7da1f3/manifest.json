@@ -1,0 +1,57 @@
+{
+  "run_id": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__7da1f3",
+  "parent_run_id": null,
+  "outcome": "completed",
+  "config_hash": "4a50124f31dcc054",
+  "provenance": {
+    "utc_time": "2026-11-17T17:24:14Z",
+    "python": "3.12.11",
+    "platform": "macOS-15.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.14.1",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.4.0",
+      "tensorboard": "2.21.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch_threads": 1,
+    "git": {
+      "commit": "e8f7036e095b5c6d76bdb7a0e56e714752103c22",
+      "dirty": true
+    }
+  },
+  "env_spec_hash": "08a1d9a83dd73b61",
+  "controller_versions": [
+    "double_pendulum_cem_v1"
+  ],
+  "smoke": true,
+  "updated_utc": "2026-11-17T17:24:14Z",
+  "summary": {
+    "outcome": "completed",
+    "env_transitions": 24,
+    "gradient_steps": 9,
+    "wall_time_sec": 8.364700317382812,
+    "best_eval_return": 44.917950478081416,
+    "final_eval": {
+      "eval/return_mean": 73.4632197051913,
+      "eval/return_std": 0.0,
+      "eval/length_mean": 8.0,
+      "eval/failure_rate": 0.0,
+      "eval/episodes": 1.0,
+      "eval/action_saturation": 0.0,
+      "eval/action_smoothness": 0.9080243280955723,
+      "eval_representative/return_mean": 74.67565501902418,
+      "eval_representative/return_std": 0.0,
+      "eval_representative/length_mean": 8.0,
+      "eval_representative/failure_rate": 0.0,
+      "eval_representative/episodes": 1.0,
+      "eval_representative/action_saturation": 0.0,
+      "eval_representative/action_smoothness": 0.0005710126965173654
+    }
+  }
+}

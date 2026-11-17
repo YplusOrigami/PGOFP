@@ -1,0 +1,15 @@
+{
+  "formal_training_started": false,
+  "formal_runs_planned": 18,
+  "flow_steps_each": 300000,
+  "total_flow_steps_planned": 5400000,
+  "default_parallel": 3,
+  "formal_prior_content_hash": "5e9e89068316fda9691be6aecb056bc006055d01dfba76af5c184016b227014b",
+  "local_validation_dir": "outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae",
+  "validation_completed": 6,
+  "validation_failed": 0,
+  "validation_maximum_concurrent_jobs": 3,
+  "validation_device": "cpu",
+  "validation_steps_each": 24,
+  "local_records_verified": true
+}

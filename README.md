@@ -16,10 +16,14 @@
 | 聚变接口 + mock 后端 | ✅ 仅验证接口契约 |
 | **真实 HFM 接入** | ❌ 未做。观测 schema / 7→12 线圈矩阵 / 任务参数均为 `verified:false`，真实后端拒绝运行 |
 | `flame_reference`（官方 FLAME 复现） | ❌ 未实现，仅占位并拒绝启动 |
-| 正式实验结果 | ❌ **没有**。仓库中的运行都是链路验证规模 |
+| 实验结果 | 已有历史 300k 探索与服务器 150-run MuJoCo 30k 扫描（129 完成、21 数值失败）；见下方报告入口 |
 | 测试 | 136 个非 slow 测试全部通过；2 个 slow 测试中 **1 个失败**（见「已知问题」） |
 
-> 本仓库不含任何论文级结论。是否"先验优于高斯"是待做实验，不是已有结果。
+> 当前结果属于阶段性探索：部分任务的先验混合优于同实现高斯对照，尚未证明稳定优于原控制器或跨任务普遍有效。
+
+人读报告与配图：[MuJoCo 30k 实验总结](docs/experiment_reports/mujoco_30k_a100_v1/实验总结.md)。Agent 接续用：[实验总索引](docs/experiment_records/实验记录.md)、[EXP-010 详细记录](docs/experiment_records/EXP-010/实验记录.md)。
+
+下一批倒立双摆 MPC/PPO 扫描：`bash launch_double_pendulum_300k.sh` 直接运行 **18×300k、CUDA、并发3**；`--plan` 只生成计划。详见[运行说明](docs/experiment_records/double_pendulum_300k/运行说明.md)。
 
 ## 已知问题与偏离（务必知晓）
 
@@ -41,7 +45,7 @@ pytest -m "not slow"                           # 约 1–2 分钟
 ```
 
 - Python 3.10–3.12；已验证环境：macOS arm64、CPU、torch 2.14、gymnasium 1.4、mujoco 3.16。
-- CUDA 预期可用（`device=auto`），**未在 CUDA 上验证**；**不支持 MPS**（JVP/密度数值未验证）。
+- CUDA 已用于服务器 30k 批次（日志设备 A100，129/150 完成，21 个 β=1 数值失败）；**不支持 MPS**（JVP/密度数值未验证）。
 - 不依赖 WandB 账号、HFM SDK 或显示服务即可训练（渲染不是必须）。
 
 ## 方法名（不要混用）

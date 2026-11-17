@@ -1,0 +1,142 @@
+{
+  "created_utc": "2026-11-17T17:24:16Z",
+  "validation_only": true,
+  "counts": {
+    "planned": 0,
+    "running": 0,
+    "completed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "interrupted": 0
+  },
+  "local": {
+    "all_passed": true,
+    "checks": [
+      {
+        "run_key": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__ppo__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__ppo__beta0__s0__b128fe",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__ppo__beta0.5__s0__80420f",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 91,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__ppo__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__ppo__beta1__s0__70cfa4",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 89,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta0__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__f836e4",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 83,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta0.5__s0__7da1f3",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 85,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      },
+      {
+        "run_key": "double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta1__s0",
+        "ok": true,
+        "run_dir": "/Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta1__s0__bbf2c5",
+        "eval_records": 2,
+        "update_log_records": 2,
+        "wandb": null,
+        "record_audit": {
+          "ok": true,
+          "missing_files": [],
+          "missing_metrics": [],
+          "finite_metric_count": 83,
+          "conditional_metrics": {
+            "training_episode_returns": "Emitted when a training episode completes; no synthetic zero is written",
+            "discarded_metrics": "metrics_discarded.jsonl exists only after truncating a resumed run"
+          }
+        },
+        "prior_baseline_required": true,
+        "representative_eval_required": true
+      }
+    ]
+  },
+  "wandb_mode": "disabled",
+  "cloud": {
+    "skipped": true,
+    "reason": "WandB is disabled; all metrics remain local"
+  }
+}

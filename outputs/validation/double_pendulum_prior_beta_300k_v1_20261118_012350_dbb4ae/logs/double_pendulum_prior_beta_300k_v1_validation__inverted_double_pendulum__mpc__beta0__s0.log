@@ -1,0 +1,10 @@
+/Volumes/T7/projects/PGOFP/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "outcome": "completed",
+  "env_transitions": 24,
+  "gradient_steps": 9,
+  "wall_time_sec": 8.369335174560547,
+  "best_eval_return": 44.30476383950044
+}
+run dir: /Volumes/T7/projects/PGOFP/outputs/validation/double_pendulum_prior_beta_300k_v1_20261118_012350_dbb4ae/runs/double_pendulum_prior_beta_300k_v1_validation__inverted_double_pendulum__mpc__beta0__s0__f836e4

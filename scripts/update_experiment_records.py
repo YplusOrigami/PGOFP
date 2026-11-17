@@ -46,7 +46,7 @@ text=['# PGOFP 本地实验记录','', '## Agent 记录写入规范','',
 '3. 日期统一北京时间（UTC+8），优先采用日志中的 UTC 时间换算；缺失时间写“未知”，不得把文件修改时间当作实验开始时间。恢复后的 manifest 可能覆盖首次启动时间，须结合事件和矩阵记录判断。',
 '4. 启动前记录目的、配置路径、全部解析配置、seed、预算、先验版本和实验差异；启动后记录状态；完成或失败后补上实际步数、评估、异常与图像。算法改动必须记录改动文件及版本/哈希。',
 '5. 最终回报仅取 summary.final_eval；未完成实验不得把中途评估写作最终结果。均值和样本标准差以 seed 为单位；评估回合数与训练 seed 数分别注明。失败率须保留失败 seed，不得只报告成功样本。',
-'6. 曲线横轴为环境步数，使用本地原始评估，不平滑；同一步重复评估取最后一条。当前图像分别绘制每个 seed，不使用阴影。缺失评估不补造，不外推。',
+'6. Agent 记录中的曲线横轴为环境步数，使用本地原始评估，不平滑；同一步重复评估取最后一条。图像分别绘制每个 seed，不使用阴影。缺失评估不补造，不外推。人读报告另行注明聚合均值与 SD 图的口径。',
 '7. 恢复必须记录恢复模式与检查点步数；本地 metrics_discarded.jsonl 保留回退数据，恢复曲线以当前 metrics.jsonl 为准。MuJoCo episode_restart 不保证逐步一致。',
 '8. 每次更新运行 `.venv/bin/python scripts/update_experiment_records.py` 重建本报告与图片。自动生成区请勿手工维护；研究解释写入同目录 notes.md，避免刷新时丢失。不得在记录中写入账号密钥或 .env 内容。',
 '9. 新配置后续默认启用 JSONL/TensorBoard 本地记录；WandB 账号已不可用，不应把在线连接作为实验启动前提。更改日志后端须显式记录，已有历史配置快照保持原样。','',
@@ -56,6 +56,10 @@ for i,(start,p,rs) in enumerate(experiments,1):
  text.append(f'| EXP-{i:03d} | {date(start)} | {p.name} | {sum(r["m"].get("outcome")=="completed" for r in rs)}/{len(rs)} |')
 for i,(start,p,rs) in enumerate(experiments,1):
  ident=f'EXP-{i:03d}';asset=OUT/ident;asset.mkdir(exist_ok=True)
+ if p.name == 'mujoco_30k_a100_v1':
+  from experiment_record_mujoco_30k import write_record
+  text += write_record(p, asset, ident)
+  continue
  text+=['',f'## {ident} · {p.name}','',f'配置入口：{link(ROOT/"configs/experiment"/(p.name+".yaml"))}；原始目录：{link(p)}。','',
 '| run / seed | 状态 | 开始/最近清单时间（北京） | 实际步数 | 最终回报 | 最后中途评估（步数:回报） |','|---|---|---|---:|---:|---|']
  groups={};fig,ax=plt.subplots(figsize=(9,4.6));curves={}
