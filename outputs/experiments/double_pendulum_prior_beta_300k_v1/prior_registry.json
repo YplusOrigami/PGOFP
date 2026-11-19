@@ -1,0 +1,11 @@
+{
+  "inverted_double_pendulum": {
+    "path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/inverted_double_pendulum_ppo_seed100/stage_1000000",
+    "status": "ready",
+    "content_hash": "5e9e89068316fda9691be6aecb056bc006055d01dfba76af5c184016b227014b",
+    "actual_env_steps": 1001472,
+    "prior_seed": 100,
+    "validation_only": false,
+    "updated_utc": "2026-11-19T10:46:32Z"
+  }
+}

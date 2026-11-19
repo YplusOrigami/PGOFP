@@ -8,5 +8,10 @@ iterations: 4
 init_std: 0.5
 min_std: 0.05
 timeout_s: 0.5
+# Parallelizes the population dimension of each CEM rollout across CPU threads (see
+# RolloutPlanner/CEMMPC). Pure perf knob: verified bit-identical actions vs nthread=1 at
+# nthread in {1,2,4,8}. Benchmark (single plan() call, this horizon/population/iterations):
+# nthread=1 -> ~92ms, 2 -> ~58ms, 4 -> ~40ms, 8 -> ~37ms (diminishing past 4).
+nthread: 4
 cost:
   healthy_reward: 10.0

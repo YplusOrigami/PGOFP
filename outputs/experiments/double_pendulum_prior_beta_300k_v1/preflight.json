@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-11-19T10:46:32Z",
+  "device_requested": "cuda",
+  "device_selected": "cuda",
+  "validation_only": false,
+  "wandb_online_required": false,
+  "max_parallel": 3,
+  "flow_steps_each": 300000,
+  "suite_name": "double_pendulum_prior_beta_300k_v1"
+}

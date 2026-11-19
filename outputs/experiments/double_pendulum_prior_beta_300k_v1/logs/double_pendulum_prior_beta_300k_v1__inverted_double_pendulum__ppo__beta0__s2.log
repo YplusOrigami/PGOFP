@@ -1,0 +1,16 @@
+[HAMI-core Msg(3991463:140066338169920:libvgpu.c:837)]: Initializing.....
+[HAMI-core Msg(3991463:140066338169920:utils.c:32)]: unified_lock locked, waiting 1 second...
+[HAMI-core Msg(3991463:140066338169920:libvgpu.c:853)]: Initialized
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:1072: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:410.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "outcome": "completed",
+  "env_transitions": 300000,
+  "gradient_steps": 295001,
+  "wall_time_sec": 23833.492027759552,
+  "best_eval_return": 8650.949804538775
+}
+run dir: /inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/runs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__ppo__beta0__s2__c5f2af
+[HAMI-core Msg(3991463:140066338169920:multiprocess_memory_limit.c:459)]: Calling exit handler 3991463

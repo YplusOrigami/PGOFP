@@ -1,0 +1,7 @@
+{
+  "stage": 2,
+  "label": "PPO先验准备",
+  "status": "failed",
+  "updated_utc": "2026-11-12T20:07:47Z",
+  "error": "ConfigError: [2/6 PPO先验准备] inverted_pendulum (1/6): 出错步骤=initializing，退出码=1\n日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/validation/mujoco_prior_beta_30k_v1_20261112_200738_057b6e/logs/prior_inverted_pendulum.log\n    from tensorflow.python.framework import tensor as tensor_lib\n  File \"/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/tensor.py\", line 35, in <module>\n    from tensorflow.python.framework import tensor_util\n  File \"/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/tensor_util.py\", line 35, in <module>\n    from tensorflow.python.framework import fast_tensor_util\n  File \"tensorflow/python/framework/fast_tensor_util.pyx\", line 1, in init tensorflow.python.framework.fast_tensor_util\nValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject\n[HAMI-core Msg(220047:140327837422656:multiprocess_memory_limit.c:459)]: Calling exit handler 220047"
+}

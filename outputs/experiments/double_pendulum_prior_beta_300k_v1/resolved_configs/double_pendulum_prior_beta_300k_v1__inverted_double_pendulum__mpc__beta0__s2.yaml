@@ -105,6 +105,7 @@ prior:
     init_std: 0.5
     min_std: 0.05
     timeout_s: 0.5
+    nthread: 4
     cost:
       healthy_reward: 10.0
     seed: 0
@@ -144,7 +145,7 @@ logging:
   wandb:
     mode: disabled
     project: pgofp-inverted_double_pendulum-300k
-    entity: null
+    entity: ypluss
     group: double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0
     tags: []
     upload_artifacts: false

@@ -1,0 +1,1 @@
+{"step": 0, "wall_time": 21.795, "prior_eval/return_mean": 619.2371594207367, "prior_eval/return_std": 299.59348908584235, "prior_eval/length_mean": 67.5, "prior_eval/failure_rate": 1.0, "prior_eval/episodes": 10.0, "prior_eval/action_saturation": 0.00125, "prior_eval/action_smoothness": 0.24487004686776165}

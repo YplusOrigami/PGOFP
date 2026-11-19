@@ -17,7 +17,7 @@ from .features import REACHER_L1, REACHER_L2
 
 
 class RolloutPlanner:
-    def __init__(self, env_id: str, kwargs: dict | None = None):
+    def __init__(self, env_id: str, kwargs: dict | None = None, nthread: int = 1):
         import gymnasium as gym
         import mujoco
         from mujoco import rollout
@@ -37,6 +37,14 @@ class RolloutPlanner:
         self.ctrl_high = self.model.actuator_ctrlrange[:, 1].copy()
         self.nq, self.nv = int(self.model.nq), int(self.model.nv)
         env.close()
+        # `mujoco.rollout.rollout` only parallelizes across the batch (population) dimension when
+        # `data` is a sequence of >1 MjData instances; nthread is inferred as len(data). A persistent
+        # thread pool avoids re-spawning threads on every `plan()` call (one call per CEM iteration,
+        # every env step). nthread=1 reproduces the prior single-threaded behavior exactly (same
+        # outputs, since rollout results are a pure function of model/init/control regardless of how
+        # the batch is partitioned across threads).
+        self.nthread = max(1, int(nthread))
+        self._rollout_data = [mujoco.MjData(self.model) for _ in range(self.nthread)] if self.nthread > 1 else self.data
 
     # ------------------------------------------------------------------ obs -> state
     def state_from_obs(self, obs: np.ndarray) -> np.ndarray:
@@ -64,7 +72,7 @@ class RolloutPlanner:
         phys = bias + scale * np.clip(ctrl_norm, -1.0, 1.0)
         ctrl = np.repeat(phys, self.frame_skip, axis=1)  # hold each command for frame_skip physics steps
         init = np.broadcast_to(init_state, (P, self.nstate)).copy()
-        states, _ = self._rollout.rollout(self.model, self.data, init, ctrl)
+        states, _ = self._rollout.rollout(self.model, self._rollout_data, init, ctrl, persistent_pool=self.nthread > 1)
         idx = np.arange(1, H + 1) * self.frame_skip - 1
         st = states[:, idx, :]
         return st[..., 1:1 + self.nq], st[..., 1 + self.nq:1 + self.nq + self.nv]

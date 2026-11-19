@@ -1,0 +1,9 @@
+{
+  "stage": "flow_training",
+  "current": 6249,
+  "total": 300000,
+  "unit": "steps",
+  "message": "gradient_steps=1250",
+  "status": "running",
+  "updated_at": 1795084628.6638076
+}

@@ -95,7 +95,7 @@ prior:
   type: ppo
   controller_config: null
   controller: {}
-  artifact_path: /Volumes/T7/projects/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/inverted_double_pendulum_ppo_seed100/stage_1000000
+  artifact_path: /inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/inverted_double_pendulum_ppo_seed100/stage_1000000
   distribution: native
   components: []
   fallback: gaussian
@@ -131,7 +131,7 @@ logging:
   wandb:
     mode: disabled
     project: pgofp-inverted_double_pendulum-300k
-    entity: null
+    entity: ypluss
     group: double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__ppo__beta0.5
     tags: []
     upload_artifacts: false

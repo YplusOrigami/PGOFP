@@ -1,0 +1,9 @@
+{
+  "stage": "warmup",
+  "current": 616,
+  "total": 5000,
+  "unit": "steps",
+  "message": "gradient_steps=0",
+  "status": "running",
+  "updated_at": 1795085180.9293783
+}

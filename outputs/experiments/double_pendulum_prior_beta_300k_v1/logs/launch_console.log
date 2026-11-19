@@ -1,0 +1,729 @@
+[0/6 依赖检查] Python=/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/bin/python
+[0/6 依赖检查 1/11] numpy: 2.2.6 OK
+[0/6 依赖检查 2/11] torch: 2.14.1 OK
+[0/6 依赖检查 3/11] omegaconf: 2.3.0 OK
+[0/6 依赖检查 4/11] pyyaml: 6.0.3 OK
+[0/6 依赖检查 5/11] tensorboard: 2.18.0 OK
+[0/6 依赖检查 6/11] gymnasium: 1.4.0 OK
+[0/6 依赖检查 7/11] mujoco: 3.16.0 OK
+[0/6 依赖检查 8/11] wandb: 0.31.0 OK
+[0/6 依赖检查 9/11] pandas: 2.3.3 OK
+[0/6 依赖检查 10/11] matplotlib: 3.10.8 OK
+[0/6 依赖检查 11/11] scipy: 1.15.3 OK
+[0/6 TensorBoard检查] 正在测试实际事件写入与回读。
+[0/6 TensorBoard检查] NumPy=2.2.6，TensorBoard=2.18.0，来源=/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/tensorboard/__init__.py
+[0/6 TensorBoard检查] 实际写入/回读通过，使用无TensorFlow的轻量后端。
+[0/6 依赖检查] 完成；所需依赖及TensorBoard写入可用。
+模式=正式训练 | 输出目录=/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1
+矩阵=double_pendulum_prior_beta_300k_v1 | 18 runs | 300,000 步/run | 并发=3 | WandB=disabled
+[1/6 设备与本地日志检查] [------------------] 0/6 (0%) 开始
+[1/6] device=cuda, online=False
+[1/6 设备与本地日志检查] [###---------------] 1/6 (17%) 完成
+[2/6 PPO先验准备] [###---------------] 1/6 (17%) 开始
+[2/6 PPO先验准备] [------------------] 0/1 (0%) 当前任务=inverted_double_pendulum
+[prior] reuse inverted_double_pendulum: /inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/inverted_double_pendulum_ppo_seed100/stage_1000000
+[2/6 PPO先验准备] [##################] 1/1 (100%) inverted_double_pendulum 已就绪，实际步数=1,001,472
+[2/6 PPO先验准备] [######------------] 2/6 (33%) 完成
+[3/6 逐run先验评估与Flow训练] [######------------] 2/6 (33%) 开始
+[3/6] 18 runs; 待运行=9; 并发=3
+[3/6 Flow总进度] [#########---------] 9/18 (50%) 成功=6 失败=3 运行=0 待运行=9
+[run] started double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s0 (pid=70062)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 启动子进程；完整日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s0.log
+[run] started double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s1 (pid=70063)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 启动子进程；完整日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s1.log
+[run] started double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s2 (pid=70064)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 启动子进程；完整日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s2.log
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 热身采样 [------------------] 0/5,000 (0%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 热身采样 [##################] 5,000/5,000 (100%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [------------------] 5,000/300,000 (2%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=10000; episode_step=66/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=10000; episode_step=41/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [------------------] 10,000/300,000 (3%) steps gradient_steps=5001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=20000; episode_step=20/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=20000; episode_step=18/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#-----------------] 20,000/300,000 (7%) steps gradient_steps=15001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=30000; episode_step=68/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=30000; episode_step=37/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#-----------------] 30,000/300,000 (10%) steps gradient_steps=25001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=40000; episode_step=46/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=40000; episode_step=45/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [##----------------] 40,000/300,000 (13%) steps gradient_steps=35001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=50000; episode_step=110/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=50000; episode_step=248/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [###---------------] 50,000/300,000 (17%) steps gradient_steps=45001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=60000; episode_step=261/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=60000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [###---------------] 60,000/300,000 (20%) steps gradient_steps=55001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=70000; episode_step=9/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=70000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [####--------------] 70,000/300,000 (23%) steps gradient_steps=65001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=80000; episode_step=317/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=80000; episode_step=120/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [####--------------] 80,000/300,000 (27%) steps gradient_steps=75001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=90000; episode_step=428/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=90000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#####-------------] 90,000/300,000 (30%) steps gradient_steps=85001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=100000; episode_step=138/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=100000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [######------------] 100,000/300,000 (33%) steps gradient_steps=95001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=110000; episode_step=18/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=110000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [######------------] 110,000/300,000 (37%) steps gradient_steps=105001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=120000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=120000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#######-----------] 120,000/300,000 (40%) steps gradient_steps=115001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=130000; episode_step=31/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=130000; episode_step=30/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#######-----------] 130,000/300,000 (43%) steps gradient_steps=125001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=140000; episode_step=42/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=140000; episode_step=15/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [########----------] 140,000/300,000 (47%) steps gradient_steps=135001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=150000; episode_step=11/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=150000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#########---------] 150,000/300,000 (50%) steps gradient_steps=145001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#########---------] 150,000/300,000 (50%) steps gradient_steps=145001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#########---------] 150,001/300,000 (50%) steps gradient_steps=145002
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=160000; episode_step=40/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=160000; episode_step=628/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#########---------] 160,000/300,000 (53%) steps gradient_steps=155001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=170000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=170000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [##########--------] 170,000/300,000 (57%) steps gradient_steps=165001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=180000; episode_step=8/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=180000; episode_step=67/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [##########--------] 180,000/300,000 (60%) steps gradient_steps=175001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=190000; episode_step=129/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=190000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [###########-------] 190,000/300,000 (63%) steps gradient_steps=185001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=200000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=200000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [############------] 200,000/300,000 (67%) steps gradient_steps=195001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 10/10 (100%) episodes env_steps=210000; episode_step=112/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow评估 [##################] 5/5 (100%) episodes env_steps=210000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [############------] 210,000/300,000 (70%) steps gradient_steps=205001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 热身采样 [------------------] 0/5,000 (0%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 热身采样 [##################] 5,000/5,000 (100%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [------------------] 5,000/300,000 (2%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=10000; episode_step=100/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=10000; episode_step=58/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [------------------] 10,000/300,000 (3%) steps gradient_steps=5001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=20000; episode_step=21/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=20000; episode_step=104/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#-----------------] 20,000/300,000 (7%) steps gradient_steps=15001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=30000; episode_step=13/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=30000; episode_step=46/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#-----------------] 30,000/300,000 (10%) steps gradient_steps=25001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=40000; episode_step=14/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=40000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [##----------------] 40,000/300,000 (13%) steps gradient_steps=35001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=50000; episode_step=23/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=50000; episode_step=19/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [###---------------] 50,000/300,000 (17%) steps gradient_steps=45001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=60000; episode_step=232/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=60000; episode_step=211/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [###---------------] 60,000/300,000 (20%) steps gradient_steps=55001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=70000; episode_step=49/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=70000; episode_step=55/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [####--------------] 70,000/300,000 (23%) steps gradient_steps=65001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=80000; episode_step=34/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=80000; episode_step=26/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [####--------------] 80,000/300,000 (27%) steps gradient_steps=75001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=90000; episode_step=243/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=90000; episode_step=258/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#####-------------] 90,000/300,000 (30%) steps gradient_steps=85001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=100000; episode_step=167/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=100000; episode_step=140/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [######------------] 100,000/300,000 (33%) steps gradient_steps=95001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=110000; episode_step=84/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=110000; episode_step=57/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [######------------] 110,000/300,000 (37%) steps gradient_steps=105001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=120000; episode_step=44/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=120000; episode_step=42/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#######-----------] 120,000/300,000 (40%) steps gradient_steps=115001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=130000; episode_step=196/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=130000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#######-----------] 130,000/300,000 (43%) steps gradient_steps=125001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=140000; episode_step=22/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=140000; episode_step=64/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [########----------] 140,000/300,000 (47%) steps gradient_steps=135001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=150000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=150000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#########---------] 150,000/300,000 (50%) steps gradient_steps=145001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#########---------] 150,000/300,000 (50%) steps gradient_steps=145001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#########---------] 150,001/300,000 (50%) steps gradient_steps=145002
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=160000; episode_step=49/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=160000; episode_step=34/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#########---------] 160,000/300,000 (53%) steps gradient_steps=155001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=170000; episode_step=18/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=170000; episode_step=21/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [##########--------] 170,000/300,000 (57%) steps gradient_steps=165001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=180000; episode_step=98/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=180000; episode_step=11/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [##########--------] 180,000/300,000 (60%) steps gradient_steps=175001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=190000; episode_step=727/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=190000; episode_step=26/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [###########-------] 190,000/300,000 (63%) steps gradient_steps=185001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=200000; episode_step=55/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=200000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [############------] 200,000/300,000 (67%) steps gradient_steps=195001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=210000; episode_step=29/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=210000; episode_step=13/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [############------] 210,000/300,000 (70%) steps gradient_steps=205001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=220000; episode_step=99/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=220000; episode_step=843/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#############-----] 220,000/300,000 (73%) steps gradient_steps=215001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 10/10 (100%) episodes env_steps=230000; episode_step=19/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow评估 [##################] 5/5 (100%) episodes env_steps=230000; episode_step=13/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#############-----] 230,000/300,000 (77%) steps gradient_steps=225001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 热身采样 [------------------] 0/5,000 (0%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 热身采样 [##################] 5,000/5,000 (100%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [------------------] 5,000/300,000 (2%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=10000; episode_step=41/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=10000; episode_step=56/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [------------------] 10,000/300,000 (3%) steps gradient_steps=5001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=20000; episode_step=84/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=20000; episode_step=82/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#-----------------] 20,000/300,000 (7%) steps gradient_steps=15001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=30000; episode_step=45/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=30000; episode_step=144/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#-----------------] 30,000/300,000 (10%) steps gradient_steps=25001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=40000; episode_step=38/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=40000; episode_step=89/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [##----------------] 40,000/300,000 (13%) steps gradient_steps=35001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=50000; episode_step=103/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=50000; episode_step=191/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [###---------------] 50,000/300,000 (17%) steps gradient_steps=45001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=60000; episode_step=60/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=60000; episode_step=52/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [###---------------] 60,000/300,000 (20%) steps gradient_steps=55001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=70000; episode_step=73/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=70000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [####--------------] 70,000/300,000 (23%) steps gradient_steps=65001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=80000; episode_step=57/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=80000; episode_step=14/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [####--------------] 80,000/300,000 (27%) steps gradient_steps=75001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=90000; episode_step=850/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=90000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#####-------------] 90,000/300,000 (30%) steps gradient_steps=85001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=100000; episode_step=25/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=100000; episode_step=21/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [######------------] 100,000/300,000 (33%) steps gradient_steps=95001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=110000; episode_step=89/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=110000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [######------------] 110,000/300,000 (37%) steps gradient_steps=105001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=120000; episode_step=18/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=120000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#######-----------] 120,000/300,000 (40%) steps gradient_steps=115001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=130000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=130000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#######-----------] 130,000/300,000 (43%) steps gradient_steps=125001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=140000; episode_step=542/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=140000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files best
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [########----------] 140,000/300,000 (47%) steps gradient_steps=135001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=150000; episode_step=19/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=150000; episode_step=173/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#########---------] 150,000/300,000 (50%) steps gradient_steps=145001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#########---------] 150,000/300,000 (50%) steps gradient_steps=145001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#########---------] 150,001/300,000 (50%) steps gradient_steps=145002
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=160000; episode_step=141/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=160000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#########---------] 160,000/300,000 (53%) steps gradient_steps=155001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=170000; episode_step=70/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=170000; episode_step=1000/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [##########--------] 170,000/300,000 (57%) steps gradient_steps=165001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=180000; episode_step=80/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=180000; episode_step=53/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [##########--------] 180,000/300,000 (60%) steps gradient_steps=175001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=190000; episode_step=12/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=190000; episode_step=16/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [###########-------] 190,000/300,000 (63%) steps gradient_steps=185001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=200000; episode_step=9/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=200000; episode_step=14/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [############------] 200,000/300,000 (67%) steps gradient_steps=195001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=210000; episode_step=82/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=210000; episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [############------] 210,000/300,000 (70%) steps gradient_steps=205001
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [------------------] 0/10 (0%) episodes 
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 10/10 (100%) episodes env_steps=220000; episode_step=228/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow评估 [##################] 5/5 (100%) episodes env_steps=220000; episode_step=28/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [------------------] 0/1 (0%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | 保存检查点 [##################] 1/1 (100%) files last
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#############-----] 220,000/300,000 (73%) steps gradient_steps=215001
+[run] failed double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s0 (exit=1)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=0 | Flow训练 [#############-----] 217,631/300,000 (73%) steps gradient_steps=212632
+[ERROR 3/6] double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s0 | 出错步骤=flow_training exit=1
+日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s0.log
+[HAMI-core Msg(2671688:140012225545280:utils.c:32)]: unified_lock locked, waiting 1 second...
+[HAMI-core Msg(2671688:140012225545280:libvgpu.c:853)]: Initialized
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:1072: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:410.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[ResumeIncompatibleError] checkpoint is incompatible with the current configuration (task / action chart / prior artifact / network / condition / source schema changed). Use resume_mode=weights_only for a new run with new budget.
+[ResumeIncompatibleError] checkpoint is incompatible with the current configuration (task / action chart / prior artifact / network / condition / source schema changed). Use resume_mode=weights_only for a new run with new budget.
+[3/6 Flow总进度] [##########--------] 10/18 (56%) 成功=6 失败=4 运行=2 待运行=6
+[run] failed double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s1 (exit=1)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=1 | Flow训练 [#############-----] 232,440/300,000 (77%) steps gradient_steps=227441
+[ERROR 3/6] double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s1 | 出错步骤=flow_training exit=1
+日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s1.log
+[HAMI-core Msg(2671689:139709054497856:libvgpu.c:837)]: Initializing.....
+[HAMI-core Msg(2671689:139709054497856:libvgpu.c:853)]: Initialized
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:1072: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:410.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[ResumeIncompatibleError] checkpoint is incompatible with the current configuration (task / action chart / prior artifact / network / condition / source schema changed). Use resume_mode=weights_only for a new run with new budget.
+[ResumeIncompatibleError] checkpoint is incompatible with the current configuration (task / action chart / prior artifact / network / condition / source schema changed). Use resume_mode=weights_only for a new run with new budget.
+[3/6 Flow总进度] [###########-------] 11/18 (61%) 成功=6 失败=5 运行=1 待运行=6
+[run] failed double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s2 (exit=1)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.0 seed=2 | Flow训练 [#############-----] 229,354/300,000 (76%) steps gradient_steps=224355
+[ERROR 3/6] double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s2 | 出错步骤=flow_training exit=1
+日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0__s2.log
+[HAMI-core Msg(2671690:140088172241984:utils.c:32)]: unified_lock locked, waiting 1 second...
+[HAMI-core Msg(2671690:140088172241984:libvgpu.c:853)]: Initialized
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:1072: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:410.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[ResumeIncompatibleError] checkpoint is incompatible with the current configuration (task / action chart / prior artifact / network / condition / source schema changed). Use resume_mode=weights_only for a new run with new budget.
+[ResumeIncompatibleError] checkpoint is incompatible with the current configuration (task / action chart / prior artifact / network / condition / source schema changed). Use resume_mode=weights_only for a new run with new budget.
+[3/6 Flow总进度] [############------] 12/18 (67%) 成功=6 失败=6 运行=0 待运行=6
+[run] started double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0.5__s0 (pid=70950)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 启动子进程；完整日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0.5__s0.log
+[run] started double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0.5__s1 (pid=70963)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 启动子进程；完整日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0.5__s1.log
+[run] started double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0.5__s2 (pid=70979)
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 启动子进程；完整日志：/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/logs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__mpc__beta0.5__s2.log
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 初始化日志 [------------------] 0/1 (0%) tasks WandB=disabled
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线评估 [------------------] 0/10 (0%) episodes deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线评估 [###---------------] 2/10 (20%) episodes episode_step=32/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线评估 [###---------------] 2/10 (20%) episodes episode_step=28/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线评估 [###---------------] 2/10 (20%) episodes episode_step=32/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线评估 [#######-----------] 4/10 (40%) episodes episode_step=77/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线评估 [#######-----------] 4/10 (40%) episodes episode_step=74/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线评估 [#######-----------] 4/10 (40%) episodes episode_step=77/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线评估 [##########--------] 6/10 (60%) episodes episode_step=94/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线评估 [##########--------] 6/10 (60%) episodes episode_step=128/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线评估 [##########--------] 6/10 (60%) episodes episode_step=127/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线评估 [##############----] 8/10 (80%) episodes episode_step=48/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线评估 [##############----] 8/10 (80%) episodes episode_step=46/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线评估 [################--] 9/10 (90%) episodes episode_step=23/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [------------------] 0/5,000 (0%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线评估 [##################] 10/10 (100%) episodes episode_step=51/1000
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 先验基线结果 [##################] 10/10 (100%) episodes mean_return=619.2372, std=299.5935; deterministic_controller
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [------------------] 0/5,000 (0%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [------------------] 0/5,000 (0%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [------------------] 117/5,000 (2%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [------------------] 116/5,000 (2%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [------------------] 146/5,000 (3%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [------------------] 264/5,000 (5%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [------------------] 261/5,000 (5%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#-----------------] 288/5,000 (6%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#-----------------] 408/5,000 (8%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#-----------------] 402/5,000 (8%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#-----------------] 433/5,000 (9%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#-----------------] 555/5,000 (11%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#-----------------] 551/5,000 (11%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##----------------] 576/5,000 (12%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [##----------------] 699/5,000 (14%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [##----------------] 697/5,000 (14%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##----------------] 720/5,000 (14%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [###---------------] 844/5,000 (17%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [###---------------] 842/5,000 (17%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [###---------------] 863/5,000 (17%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [###---------------] 988/5,000 (20%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [###---------------] 989/5,000 (20%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [###---------------] 1,011/5,000 (20%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [####--------------] 1,136/5,000 (23%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [####--------------] 1,135/5,000 (23%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [####--------------] 1,157/5,000 (23%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [####--------------] 1,280/5,000 (26%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [####--------------] 1,281/5,000 (26%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [####--------------] 1,302/5,000 (26%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#####-------------] 1,393/5,000 (28%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#####-------------] 1,427/5,000 (29%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#####-------------] 1,418/5,000 (28%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#####-------------] 1,538/5,000 (31%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#####-------------] 1,572/5,000 (31%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#####-------------] 1,564/5,000 (31%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [######------------] 1,682/5,000 (34%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [######------------] 1,686/5,000 (34%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [######------------] 1,709/5,000 (34%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [######------------] 1,825/5,000 (36%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [######------------] 1,826/5,000 (37%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [######------------] 1,853/5,000 (37%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#######-----------] 1,968/5,000 (39%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#######-----------] 1,971/5,000 (39%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#######-----------] 1,999/5,000 (40%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#######-----------] 2,109/5,000 (42%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#######-----------] 2,115/5,000 (42%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#######-----------] 2,140/5,000 (43%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [########----------] 2,254/5,000 (45%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [########----------] 2,260/5,000 (45%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [########----------] 2,283/5,000 (46%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [########----------] 2,399/5,000 (48%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [########----------] 2,402/5,000 (48%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [########----------] 2,424/5,000 (48%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#########---------] 2,543/5,000 (51%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#########---------] 2,543/5,000 (51%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#########---------] 2,568/5,000 (51%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#########---------] 2,688/5,000 (54%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#########---------] 2,690/5,000 (54%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#########---------] 2,714/5,000 (54%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [##########--------] 2,832/5,000 (57%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [##########--------] 2,839/5,000 (57%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##########--------] 2,860/5,000 (57%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [##########--------] 2,947/5,000 (59%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [##########--------] 2,982/5,000 (60%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##########--------] 2,978/5,000 (60%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [###########-------] 3,091/5,000 (62%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [###########-------] 3,127/5,000 (63%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [###########-------] 3,119/5,000 (62%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [###########-------] 3,236/5,000 (65%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [###########-------] 3,246/5,000 (65%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [###########-------] 3,266/5,000 (65%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [############------] 3,379/5,000 (68%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [############------] 3,389/5,000 (68%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [############------] 3,408/5,000 (68%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [############------] 3,520/5,000 (70%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [############------] 3,530/5,000 (71%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [############------] 3,551/5,000 (71%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#############-----] 3,662/5,000 (73%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#############-----] 3,674/5,000 (73%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#############-----] 3,691/5,000 (74%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#############-----] 3,802/5,000 (76%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#############-----] 3,813/5,000 (76%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#############-----] 3,831/5,000 (77%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [##############----] 3,941/5,000 (79%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [##############----] 3,953/5,000 (79%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##############----] 3,972/5,000 (79%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [##############----] 4,080/5,000 (82%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [##############----] 4,098/5,000 (82%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##############----] 4,115/5,000 (82%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [###############---] 4,223/5,000 (84%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [###############---] 4,239/5,000 (85%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [###############---] 4,257/5,000 (85%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [###############---] 4,364/5,000 (87%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [###############---] 4,380/5,000 (88%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [###############---] 4,397/5,000 (88%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [################--] 4,505/5,000 (90%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [################--] 4,523/5,000 (90%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [################--] 4,538/5,000 (91%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [################--] 4,645/5,000 (93%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [################--] 4,663/5,000 (93%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [################--] 4,681/5,000 (94%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#################-] 4,755/5,000 (95%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#################-] 4,778/5,000 (96%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#################-] 4,796/5,000 (96%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#################-] 4,893/5,000 (98%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#################-] 4,917/5,000 (98%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [#################-] 4,935/5,000 (99%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [#################-] 4,977/5,000 (100%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [#################-] 4,975/5,000 (100%) steps gradient_steps=0
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | 热身采样 [##################] 5,000/5,000 (100%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,000/300,000 (2%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | 热身采样 [##################] 5,000/5,000 (100%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,000/300,000 (2%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | 热身采样 [##################] 5,000/5,000 (100%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,000/300,000 (2%) steps gradient_steps=1
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,071/300,000 (2%) steps gradient_steps=72
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,068/300,000 (2%) steps gradient_steps=69
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,070/300,000 (2%) steps gradient_steps=71
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,145/300,000 (2%) steps gradient_steps=146
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,140/300,000 (2%) steps gradient_steps=141
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,140/300,000 (2%) steps gradient_steps=141
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,215/300,000 (2%) steps gradient_steps=216
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,214/300,000 (2%) steps gradient_steps=215
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,208/300,000 (2%) steps gradient_steps=209
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,288/300,000 (2%) steps gradient_steps=289
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,289/300,000 (2%) steps gradient_steps=290
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,278/300,000 (2%) steps gradient_steps=279
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,347/300,000 (2%) steps gradient_steps=348
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,360/300,000 (2%) steps gradient_steps=361
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,351/300,000 (2%) steps gradient_steps=352
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,419/300,000 (2%) steps gradient_steps=420
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,416/300,000 (2%) steps gradient_steps=417
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,407/300,000 (2%) steps gradient_steps=408
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,491/300,000 (2%) steps gradient_steps=492
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,485/300,000 (2%) steps gradient_steps=486
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,480/300,000 (2%) steps gradient_steps=481
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,564/300,000 (2%) steps gradient_steps=565
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,558/300,000 (2%) steps gradient_steps=559
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,551/300,000 (2%) steps gradient_steps=552
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,635/300,000 (2%) steps gradient_steps=636
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,631/300,000 (2%) steps gradient_steps=632
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,623/300,000 (2%) steps gradient_steps=624
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,708/300,000 (2%) steps gradient_steps=709
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,706/300,000 (2%) steps gradient_steps=707
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,683/300,000 (2%) steps gradient_steps=684
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,766/300,000 (2%) steps gradient_steps=767
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,775/300,000 (2%) steps gradient_steps=776
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,755/300,000 (2%) steps gradient_steps=756
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,836/300,000 (2%) steps gradient_steps=837
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,830/300,000 (2%) steps gradient_steps=831
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,827/300,000 (2%) steps gradient_steps=828
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,910/300,000 (2%) steps gradient_steps=911
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,902/300,000 (2%) steps gradient_steps=903
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,900/300,000 (2%) steps gradient_steps=901
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 5,985/300,000 (2%) steps gradient_steps=986
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 5,974/300,000 (2%) steps gradient_steps=975
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 5,975/300,000 (2%) steps gradient_steps=976
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 6,058/300,000 (2%) steps gradient_steps=1059
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 6,046/300,000 (2%) steps gradient_steps=1047
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 6,047/300,000 (2%) steps gradient_steps=1048
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 6,129/300,000 (2%) steps gradient_steps=1130
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 6,122/300,000 (2%) steps gradient_steps=1123
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 6,103/300,000 (2%) steps gradient_steps=1104
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 6,190/300,000 (2%) steps gradient_steps=1191
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 6,195/300,000 (2%) steps gradient_steps=1196
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 6,176/300,000 (2%) steps gradient_steps=1177
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=0 | Flow训练 [------------------] 6,266/300,000 (2%) steps gradient_steps=1267
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=1 | Flow训练 [------------------] 6,255/300,000 (2%) steps gradient_steps=1256
+[3/6 Flow] inverted_double_pendulum/mpc β=0.5 seed=2 | Flow训练 [------------------] 6,249/300,000 (2%) steps gradient_steps=1250

@@ -1,0 +1,42 @@
+{
+  "run_id": "double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__ppo__beta1__s1__969f64",
+  "parent_run_id": null,
+  "outcome": "failed_numerical",
+  "config_hash": "573dadf9b1140446",
+  "provenance": {
+    "utc_time": "2026-11-18T10:04:20Z",
+    "python": "3.10.12",
+    "platform": "Linux-5.10.134-16.3.al8.x86_64-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "numpy": "2.2.6",
+      "gymnasium": "1.4.0",
+      "mujoco": "3.16.0",
+      "omegaconf": "2.3.0",
+      "tensorboard": "2.18.0",
+      "wandb": "0.31.0"
+    },
+    "cuda_available": true,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "torch_threads": 1,
+    "git": {
+      "commit": "87804eb17b601f9e52b379d451ced005d274ae66",
+      "dirty": true
+    }
+  },
+  "env_spec_hash": "08a1d9a83dd73b61",
+  "controller_versions": [
+    "ppo:5e9e89068316:native"
+  ],
+  "smoke": false,
+  "updated_utc": "2026-11-18T10:04:20Z",
+  "summary": {
+    "outcome": "failed_numerical",
+    "env_transitions": 14628,
+    "gradient_steps": 9628,
+    "wall_time_sec": 2236.5646624565125,
+    "best_eval_return": 56.50078583588354,
+    "failure_stage": "flow_training"
+  }
+}

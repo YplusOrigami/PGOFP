@@ -47,7 +47,10 @@ class CEMMPC(BaseController):
         self.cost_cfg = dict(cfg.get("cost", {}))
         self.version = str(cfg.get("version", "cem_mpc_v1"))
         self.action_dim = env_spec.action_dim
-        self.planner = RolloutPlanner(env_spec.env_id, env_kwargs)
+        # Parallelizes the population dimension of each CEM rollout across threads (see RolloutPlanner).
+        # nthread=1 (default) reproduces the previous single-threaded behavior bit-for-bit.
+        self.nthread = int(cfg.get("nthread", 1))
+        self.planner = RolloutPlanner(env_spec.env_id, env_kwargs, nthread=self.nthread)
         self.model_rollouts = 0  # counted separately from environment interaction
 
     def _rng(self, obs_row: np.ndarray) -> np.random.Generator:

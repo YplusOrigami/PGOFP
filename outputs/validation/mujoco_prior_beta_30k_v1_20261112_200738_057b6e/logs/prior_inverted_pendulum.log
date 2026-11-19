@@ -1,0 +1,53 @@
+[HAMI-core Msg(220047:140327837422656:libvgpu.c:837)]: Initializing.....
+2026-11-12 20:07:46.916323: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-11-12 20:07:47.030292: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/tensorboard/compat/__init__.py", line 42, in tf
+    from tensorboard.compat import notf  # noqa: F401
+ImportError: cannot import name 'notf' from 'tensorboard.compat' (/usr/local/lib/python3.10/dist-packages/tensorboard/compat/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/scripts/train_prior.py", line 8, in <module>
+    sys.exit(COMMANDS["train_prior"](sys.argv[1:]))
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/src/pgofp/cli.py", line 128, in train_prior
+    logger = Logger(run_dir, cfg, OmegaConf.to_container(cfg, resolve=True), prior_id)
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/src/pgofp/logging/logger.py", line 59, in __init__
+    self.tb = TensorBoardWriter(tb_dir, purge_step=None if resume_step is None else resume_step + 1) if lg.tensorboard else None
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/src/pgofp/logging/tensorboard.py", line 10, in __init__
+    from torch.utils.tensorboard import SummaryWriter
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/utils/tensorboard/__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/utils/tensorboard/writer.py", line 20, in <module>
+    from ._embedding import get_embedding_info, make_mat, make_sprite, make_tsv, write_pbtxt
+  File "/inspire/hdd/project/fdu-weilong/public/PGOFP/.venv/lib/python3.10/site-packages/torch/utils/tensorboard/_embedding.py", line 10, in <module>
+    _HAS_GFILE_JOIN = hasattr(tf.io.gfile, "join")
+  File "/usr/local/lib/python3.10/dist-packages/tensorboard/lazy.py", line 65, in __getattr__
+    return getattr(load_once(self), attr_name)
+  File "/usr/local/lib/python3.10/dist-packages/tensorboard/lazy.py", line 97, in wrapper
+    cache[arg] = f(arg)
+  File "/usr/local/lib/python3.10/dist-packages/tensorboard/lazy.py", line 50, in load_once
+    module = load_fn()
+  File "/usr/local/lib/python3.10/dist-packages/tensorboard/compat/__init__.py", line 45, in tf
+    import tensorflow
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/__init__.py", line 38, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/__init__.py", line 42, in <module>
+    from tensorflow.python.saved_model import saved_model
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/saved_model/saved_model.py", line 20, in <module>
+    from tensorflow.python.saved_model import builder
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/saved_model/builder.py", line 23, in <module>
+    from tensorflow.python.saved_model.builder_impl import _SavedModelBuilder
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/saved_model/builder_impl.py", line 27, in <module>
+    from tensorflow.python.framework import ops
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/ops.py", line 56, in <module>
+    from tensorflow.python.framework import tensor as tensor_lib
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/tensor.py", line 35, in <module>
+    from tensorflow.python.framework import tensor_util
+  File "/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/tensor_util.py", line 35, in <module>
+    from tensorflow.python.framework import fast_tensor_util
+  File "tensorflow/python/framework/fast_tensor_util.pyx", line 1, in init tensorflow.python.framework.fast_tensor_util
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+[HAMI-core Msg(220047:140327837422656:multiprocess_memory_limit.c:459)]: Calling exit handler 220047

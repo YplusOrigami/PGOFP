@@ -1,0 +1,315 @@
+{
+  "env_id": "InvertedDoublePendulum-v5",
+  "prior_type": "ppo",
+  "beta": 0.5,
+  "flow_seed": 0,
+  "checkpoint_step": 150000,
+  "eval_seed_base": 10000,
+  "policy_rng_seed": 2884281698,
+  "episodes": 10,
+  "max_steps": null,
+  "smoke": false,
+  "prior_config": {
+    "type": "ppo",
+    "controller_config": null,
+    "controller": {},
+    "artifact_path": "/inspire/hdd/project/fdu-weilong/public/PGOFP/artifacts/priors/mujoco_prior_beta_30k_v1/inverted_double_pendulum_ppo_seed100/stage_1000000",
+    "distribution": "native",
+    "components": [],
+    "fallback": "gaussian",
+    "model_access": "observation_model",
+    "cache_in_replay": true
+  },
+  "primary_policy": "native_stochastic",
+  "controller_versions": [
+    "ppo:5e9e89068316:native"
+  ],
+  "prior_eval": {
+    "summary": {
+      "prior_eval/return_mean": 8433.072657500581,
+      "prior_eval/return_std": 2780.4944667829,
+      "prior_eval/length_mean": 901.1,
+      "prior_eval/failure_rate": 0.1,
+      "prior_eval/episodes": 10.0,
+      "prior_eval/action_saturation": 0.0,
+      "prior_eval/action_smoothness": 0.05143963810591475
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 9359.944227888805,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.035827159201162306,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1351390890777111
+        }
+      },
+      {
+        "seed": 10001,
+        "ret": 9359.936936213731,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.03436565542946923,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13104361668229103
+        }
+      },
+      {
+        "seed": 10002,
+        "ret": 9359.929247184764,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.034753373656458024,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13308986276388168
+        }
+      },
+      {
+        "seed": 10003,
+        "ret": 91.58925851372861,
+        "length": 11,
+        "terminated": true,
+        "truncated": false,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.19385769814252854,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.15292316675186157
+        }
+      },
+      {
+        "seed": 10004,
+        "ret": 9359.935262782461,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.03578221237092783,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.13338294625282288
+        }
+      },
+      {
+        "seed": 10005,
+        "ret": 9359.815703052234,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0364449932795224,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1284528747200966
+        }
+      },
+      {
+        "seed": 10006,
+        "ret": 9359.922076519642,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.036260367459939186,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12846381589770317
+        }
+      },
+      {
+        "seed": 10007,
+        "ret": 9359.796403611062,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.036101720379676565,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12937960773706436
+        }
+      },
+      {
+        "seed": 10008,
+        "ret": 9359.927467722251,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.035455977941212524,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12767289578914642
+        }
+      },
+      {
+        "seed": 10009,
+        "ret": 9359.929991517129,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.03554722319825089,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12674377113580704
+        }
+      }
+    ]
+  },
+  "prior_eval_deterministic": {
+    "summary": {
+      "prior_eval_deterministic/return_mean": 8433.123892855605,
+      "prior_eval_deterministic/return_std": 2780.498965372142,
+      "prior_eval_deterministic/length_mean": 901.1,
+      "prior_eval_deterministic/failure_rate": 0.1,
+      "prior_eval_deterministic/episodes": 10.0,
+      "prior_eval_deterministic/action_saturation": 0.0,
+      "prior_eval_deterministic/action_smoothness": 0.020024789809931633
+    },
+    "episodes": [
+      {
+        "seed": 10000,
+        "ret": 9359.996853484145,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.00018179914192156726,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12933143600821495
+        }
+      },
+      {
+        "seed": 10001,
+        "ret": 9359.989943676661,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0003695901369911854,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1269778050482273
+        }
+      },
+      {
+        "seed": 10002,
+        "ret": 9359.979670022003,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.00032388528977223376,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12654996663331985
+        }
+      },
+      {
+        "seed": 10003,
+        "ret": 91.6269980693105,
+        "length": 11,
+        "terminated": true,
+        "truncated": false,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.19524265080690384,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1297955485907468
+        }
+      },
+      {
+        "seed": 10004,
+        "ret": 9359.988174068449,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.00021672050299186322,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12962906062602997
+        }
+      },
+      {
+        "seed": 10005,
+        "ret": 9359.86779693395,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0017867134877590572,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1458474025130272
+        }
+      },
+      {
+        "seed": 10006,
+        "ret": 9359.974822989707,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0007841957406629366,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12774457409977913
+        }
+      },
+      {
+        "seed": 10007,
+        "ret": 9359.85195122166,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.0007836346606466662,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12805597484111786
+        }
+      },
+      {
+        "seed": 10008,
+        "ret": 9359.981104499737,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 7.099629554839746e-05,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.1299203336238861
+        }
+      },
+      {
+        "seed": 10009,
+        "ret": 9359.98161359044,
+        "length": 1000,
+        "terminated": false,
+        "truncated": true,
+        "extras": {
+          "action_saturation": 0.0,
+          "action_smoothness": 0.00048771203611860866,
+          "prior/fallback_rate": 0.0,
+          "prior/controller_latency_ms": 0.12670104578137398
+        }
+      }
+    ]
+  },
+  "wall_time_sec": 5.2356625609099865,
+  "attempt_dir": "/inspire/hdd/project/fdu-weilong/public/PGOFP/outputs/experiments/double_pendulum_prior_beta_300k_v1/runs/double_pendulum_prior_beta_300k_v1__inverted_double_pendulum__ppo__beta0.5__s0__fc6e09/evaluation/prior_baseline/attempt_fc8f1bb3"
+}
